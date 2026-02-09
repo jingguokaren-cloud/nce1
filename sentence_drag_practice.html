@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新概念英语第一册 - 句子重组练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* 课程选择器样式 */
+        .lesson-selector {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lesson-selector label {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .lesson-select {
+            padding: 12px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #374151;
+            cursor: pointer;
+            min-width: 280px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .lesson-select:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .lesson-select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            height: 12px;
+            margin: 20px auto;
+            max-width: 400px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #00f260, #0575e6);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: 20px;
+        }
+
+        .score-display {
+            color: white;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .exercise-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .speaker-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .speaker-sam {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+
+        .speaker-penny {
+            background: linear-gradient(135deg, #ec4899, #be185d);
+            color: white;
+        }
+
+        .chinese-hint {
+            color: #6b7280;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        /* 讲解区域样式 */
+        .explanation-area {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .explanation-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-left: 4px solid;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .grammar-card {
+            border-left-color: #8b5cf6;
+        }
+
+        .phrases-card {
+            border-left-color: #10b981;
+        }
+
+        .explanation-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .grammar-card .explanation-title {
+            color: #7c3aed;
+        }
+
+        .phrases-card .explanation-title {
+            color: #059669;
+        }
+
+        .explanation-content {
+            color: #374151;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .explanation-content strong {
+            color: #1f2937;
+            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .phrase-item {
+            padding: 8px 12px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .phrase-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .phrase-en {
+            font-weight: 600;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phrase-cn {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-top: 4px;
+        }
+
+        /* 句子控制区域 */
+        .sentence-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-speak-sentence {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s ease;
+        }
+
+        .btn-speak-sentence:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        .toggle-chinese {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f3f4f6;
+            border: 2px solid #e5e7eb;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-chinese:hover {
+            border-color: #9ca3af;
+        }
+
+        .toggle-chinese.hidden-mode {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            border-color: transparent;
+        }
+
+        .chinese-hint.hidden {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        /* 语法总结区域样式 */
+        .grammar-summary {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .grammar-summary h3 {
+            color: #92400e;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grammar-point {
+            background: white;
+            border-radius: 12px;
+            padding: 15px 18px;
+            margin-bottom: 12px;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .grammar-point:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 新的语法讲解样式 */
+        .grammar-explanation {
+            color: #374151;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 8px;
+        }
+
+        .grammar-examples {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .grammar-example {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border-left: 3px solid #10b981;
+        }
+
+        .example-en {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95em;
+        }
+
+        .example-cn {
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+
+        .example-answer {
+            color: #059669;
+            font-weight: 500;
+            font-size: 0.9em;
+            background: #d1fae5;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .grammar-point-title {
+            font-weight: 600;
+            color: #92400e;
+            font-size: 1em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grammar-point-content {
+            color: #374151;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .btn-speak-grammar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-speak-grammar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 3px 10px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-speak-grammar svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        /* 发音图标样式 */
+        .speak-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .speak-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+        }
+
+        .speak-icon:active {
+            transform: scale(0.95);
+        }
+
+        .speak-icon svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        .speak-icon.playing {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        /* 单词发音提示 */
+        .word {
+            position: relative;
+        }
+
+        .word::after {
+            content: '🔊';
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .word:hover::after {
+            opacity: 1;
+        }
+
+        .drop-zone {
+            min-height: 60px;
+            border: 3px dashed #d1d5db;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+
+        .drop-zone.drag-over {
+            border-color: #667eea;
+            background: #f0f4ff;
+            transform: scale(1.02);
+        }
+
+        .drop-zone.correct {
+            border-color: #10b981;
+            background: #ecfdf5;
+            border-style: solid;
+        }
+
+        .drop-zone.wrong {
+            border-color: #ef4444;
+            background: #fef2f2;
+            animation: shake 0.5s ease;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-10px);
+            }
+
+            75% {
+                transform: translateX(10px);
+            }
+        }
+
+        .word-pool {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 15px;
+            min-height: 50px;
+        }
+
+        .word {
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 25px;
+            cursor: grab;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            user-select: none;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .word:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .word:active {
+            cursor: grabbing;
+            transform: scale(0.95);
+        }
+
+        .word.dragging {
+            opacity: 0.5;
+        }
+
+        .word.in-zone {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-check {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+
+        .btn-check:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-reset {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            color: white;
+        }
+
+        .btn-reset:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(107, 114, 128, 0.4);
+        }
+
+        .btn-next {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+
+        .btn-next:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-prev {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        .btn-prev:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-prev:disabled,
+        .btn-nav-next:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-nav-next {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+        }
+
+        .btn-nav-next:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .result-message {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .result-message.correct {
+            display: block;
+            background: #ecfdf5;
+            color: #059669;
+        }
+
+        .result-message.wrong {
+            display: block;
+            background: #fef2f2;
+            color: #dc2626;
+        }
+
+        .completion-screen {
+            display: none;
+            text-align: center;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .completion-screen h2 {
+            font-size: 2em;
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+
+        .completion-screen .emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .completion-screen .final-score {
+            font-size: 1.5em;
+            color: #374151;
+            margin-bottom: 30px;
+        }
+
+        .btn-restart {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1em;
+        }
+
+        /* 课程导航按钮容器 */
+        .lesson-nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn-lesson-nav {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-lesson-nav:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-lesson-nav:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .btn-lesson-prev {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+        }
+
+        .btn-lesson-prev:hover:not(:disabled) {
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-lesson-next {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .btn-lesson-next:hover:not(:disabled) {
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        /* 触摸设备优化 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .exercise-card {
+                padding: 20px;
+            }
+
+            .word {
+                padding: 8px 14px;
+                font-size: 0.9em;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .lesson-selector {
+                flex-direction: column;
+            }
+
+            .lesson-select {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 新概念英语第一册</h1>
+            <p>拖拽单词，重组句子</p>
+
+            <div class="lesson-selector">
+                <label for="lessonSelect">选择课程：</label>
+                <select id="lessonSelect" class="lesson-select" onchange="changeLesson()">
+                    <!-- 由JS动态填充 -->
+                </select>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="score-display">
+                进度: <span id="currentIndex">1</span> / <span id="totalCount">9</span> |
+                得分: <span id="score">0</span>
+            </div>
+        </div>
+
+        <div id="exerciseArea">
+            <div class="exercise-card" id="exerciseCard">
+                <div class="sentence-controls">
+                    <button class="btn-speak-sentence" onclick="speakCurrentSentence()">
+                        🔊 听句子
+                    </button>
+                    <button class="toggle-chinese" id="toggleChinese" onclick="toggleChineseHint()">
+                        👁️ 隐藏中文
+                    </button>
+                </div>
+                <div class="speaker-badge" id="speakerBadge">SAM</div>
+                <div class="chinese-hint" id="chineseHint">中文提示</div>
+
+                <div class="drop-zone" id="dropZone">
+                    <span style="color: #9ca3af; font-style: italic;">将单词拖到这里...</span>
+                </div>
+
+                <div class="word-pool" id="wordPool"></div>
+
+                <div class="buttons">
+                    <button class="btn btn-reset" onclick="resetCurrentExercise()">🔄 重置</button>
+                    <button class="btn btn-check" onclick="checkAnswer()">✓ 检查答案</button>
+                    <button class="btn btn-next" onclick="goToNextAfterCorrect()" id="btnNext" style="display:none;">下一题
+                        →</button>
+                </div>
+
+                <div class="result-message" id="resultMessage"></div>
+
+                <!-- 语法和词组讲解区域 -->
+                <div class="explanation-area" id="explanationArea">
+                    <div class="explanation-card phrases-card">
+                        <div class="explanation-title">
+                            <span>�</span> 词组讲解
+                        </div>
+                        <div class="explanation-content" id="phrasesContent">
+                            <!-- 词组内容将由JS填充 -->
+                        </div>
+                    </div>
+                    <div class="explanation-card grammar-card">
+                        <div class="explanation-title">
+                            <span>�</span> 语法讲解
+                        </div>
+                        <div class="explanation-content" id="grammarContent">
+                            <!-- 语法内容将由JS填充 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-prev" onclick="prevExercise()" id="btnPrev">← 上一句</button>
+                    <button class="btn btn-nav-next" onclick="navNextExercise()" id="btnNavNext">下一句 →</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="completion-screen" id="completionScreen">
+            <div class="emoji">🎉</div>
+            <h2>太棒了！练习完成！</h2>
+            <div class="final-score">
+                你的得分: <span id="finalScore">0</span> / <span id="finalTotal">9</span>
+            </div>
+            <button class="btn btn-restart" onclick="restartExercise()">🔄 重新开始</button>
+
+            <!-- 语法总结区域 -->
+            <div class="grammar-summary" id="grammarSummary">
+                <h3>📚 本课语法小课堂</h3>
+                <div id="grammarPointsContainer">
+                    <!-- 语法点将由JS填充 -->
+                </div>
+            </div>
+
+            <div class="lesson-nav-buttons">
+                <button class="btn btn-lesson-nav btn-lesson-prev" id="btnLessonPrev" onclick="goToPrevLesson()">
+                    ⬅️ 上一课
+                </button>
+                <button class="btn btn-lesson-nav btn-lesson-next" id="btnLessonNext" onclick="goToNextLesson()">
+                    下一课 ➡️
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入课程数据 -->
+    <script src="nce_lessons_data.js"></script>
+
+    <script>
+        // 当前状态
+        let currentLesson = 1;
+        let sentences = [];
+        let currentIndex = 0;
+        let score = 0;
+        let draggedWord = null;
+        let currentWords = [];
+
+        // 初始化课程选择器
+        function initLessonSelector() {
+            const select = document.getElementById('lessonSelect');
+            select.innerHTML = '';
+            availableLessons.forEach(lessonNum => {
+                const lesson = lessonsData[lessonNum];
+                const option = document.createElement('option');
+                option.value = lessonNum;
+                option.textContent = `Lesson ${lessonNum}: ${lesson.title} (${lesson.titleCn})`;
+                select.appendChild(option);
+            });
+            select.value = currentLesson;
+        }
+
+        // 切换课程
+        function changeLesson() {
+            const select = document.getElementById('lessonSelect');
+            currentLesson = parseInt(select.value);
+            loadLesson(currentLesson);
+        }
+
+        // 加载课程
+        function loadLesson(lessonNum) {
+            const lesson = lessonsData[lessonNum];
+            sentences = lesson.sentences;
+            currentIndex = 0;
+            score = 0;
+
+            document.getElementById('score').textContent = 0;
+            document.getElementById('totalCount').textContent = sentences.length;
+            document.getElementById('finalTotal').textContent = sentences.length;
+
+            // 显示练习区域，隐藏完成界面
+            document.getElementById('exerciseArea').style.display = 'block';
+            document.getElementById('completionScreen').style.display = 'none';
+
+            loadExercise(0);
+            updateNavButtons();
+        }
+
+        // 初始化
+        function init() {
+            initLessonSelector();
+            loadLesson(currentLesson);
+            setupDragAndDrop();
+        }
+
+        // 加载练习题
+        function loadExercise(index) {
+            const sentence = sentences[index];
+            const badge = document.getElementById('speakerBadge');
+            badge.textContent = sentence.speaker;
+            badge.className = 'speaker-badge ' + sentence.speakerClass;
+
+            document.getElementById('chineseHint').textContent = sentence.chinese;
+            document.getElementById('currentIndex').textContent = index + 1;
+
+            // 更新进度条
+            const progress = ((index) / sentences.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+
+            // 打乱单词顺序
+            currentWords = shuffleArray(tokenizeSentence(sentence.english));
+
+            // 渲染单词池
+            renderWordPool();
+
+            // 清空放置区
+            const dropZone = document.getElementById('dropZone');
+            dropZone.innerHTML = '<span style="color: #9ca3af; font-style: italic;">将单词拖到这里...</span>';
+            dropZone.classList.remove('correct', 'wrong');
+
+            // 隐藏结果和下一题按钮
+            document.getElementById('resultMessage').className = 'result-message';
+            document.getElementById('btnNext').style.display = 'none';
+
+            // 隐藏讲解区域
+            document.getElementById('explanationArea').style.display = 'none';
+        }
+
+        // 分词函数
+        function tokenizeSentence(sentence) {
+            const tokens = [];
+            const regex = /(\w+[']?\w*|[!?,.])/g;
+            let match;
+            while ((match = regex.exec(sentence)) !== null) {
+                tokens.push(match[0]);
+            }
+            return tokens;
+        }
+
+        // 打乱数组
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // 渲染单词池
+        function renderWordPool() {
+            const pool = document.getElementById('wordPool');
+            pool.innerHTML = '';
+            currentWords.forEach((word, index) => {
+                const wordEl = createWordElement(word, index);
+                pool.appendChild(wordEl);
+            });
+        }
+
+        // 创建单词元素
+        function createWordElement(word, index) {
+            const el = document.createElement('div');
+            el.className = 'word';
+            el.textContent = word;
+            el.draggable = true;
+            el.dataset.word = word;
+            el.dataset.index = index;
+
+            // 添加点击发音功能（不干扰拖拽）
+            el.addEventListener('mousedown', (e) => {
+                // 记录点击时间，用于区分点击和拖拽
+                el.dataset.clickTime = Date.now();
+            });
+
+            el.addEventListener('mouseup', (e) => {
+                const clickTime = parseInt(el.dataset.clickTime) || 0;
+                const elapsed = Date.now() - clickTime;
+                // 如果是快速点击（<200ms），触发发音
+                if (elapsed < 200 && !isPunctuation(word)) {
+                    speakWord(word);
+                }
+            });
+
+            return el;
+        }
+
+        // 判断是否是标点符号
+        function isPunctuation(str) {
+            return /^[!?,.'"\-;:]+$/.test(str);
+        }
+
+        // 使用有道词典API发音
+        function speakWord(word) {
+            // 清理单词中可能的标点
+            const cleanWord = word.replace(/[^a-zA-Z']/g, '');
+            if (!cleanWord) return;
+
+            // 停止之前的音频
+            if (window.currentAudio) {
+                window.currentAudio.pause();
+                window.currentAudio = null;
+            }
+
+            // 有道词典API - type=1美式，type=2英式
+            const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanWord)}&type=1`;
+
+            const audio = new Audio(audioUrl);
+            window.currentAudio = audio;
+
+            audio.play().catch(err => {
+                console.log('发音加载失败:', err);
+            });
+        }
+
+        // 发音按钮点击
+        function speakPhrase(text) {
+            // 对于短语，逐词发音或发整句
+            const cleanText = text.trim();
+            if (!cleanText) return;
+
+            if (window.currentAudio) {
+                window.currentAudio.pause();
+                window.currentAudio = null;
+            }
+
+            const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
+            const audio = new Audio(audioUrl);
+            window.currentAudio = audio;
+            audio.play().catch(err => console.log('发音加载失败:', err));
+        }
+
+        // 设置拖拽事件
+        function setupDragAndDrop() {
+            const dropZone = document.getElementById('dropZone');
+            const wordPool = document.getElementById('wordPool');
+
+            document.addEventListener('dragstart', (e) => {
+                if (e.target.classList.contains('word')) {
+                    draggedWord = e.target;
+                    e.target.classList.add('dragging');
+                    e.dataTransfer.effectAllowed = 'move';
+                }
+            });
+
+            document.addEventListener('dragend', (e) => {
+                if (e.target.classList.contains('word')) {
+                    e.target.classList.remove('dragging');
+                    draggedWord = null;
+                }
+            });
+
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropZone.classList.add('drag-over');
+            });
+
+            dropZone.addEventListener('dragleave', () => {
+                dropZone.classList.remove('drag-over');
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('drag-over');
+
+                if (draggedWord) {
+                    const placeholder = dropZone.querySelector('span[style*="italic"]');
+                    if (placeholder) placeholder.remove();
+
+                    draggedWord.classList.add('in-zone');
+                    dropZone.appendChild(draggedWord);
+                }
+            });
+
+            wordPool.addEventListener('dragover', (e) => {
+                e.preventDefault();
+            });
+
+            wordPool.addEventListener('drop', (e) => {
+                e.preventDefault();
+                if (draggedWord && draggedWord.classList.contains('in-zone')) {
+                    draggedWord.classList.remove('in-zone');
+                    wordPool.appendChild(draggedWord);
+
+                    const dropZone = document.getElementById('dropZone');
+                    if (dropZone.querySelectorAll('.word').length === 0) {
+                        dropZone.innerHTML = '<span style="color: #9ca3af; font-style: italic;">将单词拖到这里...</span>';
+                    }
+                }
+            });
+
+            // 点击交互（移动端支持）
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('word')) {
+                    const word = e.target;
+                    const dropZone = document.getElementById('dropZone');
+                    const wordPool = document.getElementById('wordPool');
+
+                    if (word.classList.contains('in-zone')) {
+                        word.classList.remove('in-zone');
+                        wordPool.appendChild(word);
+
+                        if (dropZone.querySelectorAll('.word').length === 0) {
+                            dropZone.innerHTML = '<span style="color: #9ca3af; font-style: italic;">将单词拖到这里...</span>';
+                        }
+                    } else {
+                        const placeholder = dropZone.querySelector('span[style*="italic"]');
+                        if (placeholder) placeholder.remove();
+
+                        word.classList.add('in-zone');
+                        dropZone.appendChild(word);
+                    }
+                }
+            });
+        }
+
+        // 检查答案
+        function checkAnswer() {
+            const dropZone = document.getElementById('dropZone');
+            const words = dropZone.querySelectorAll('.word');
+            const userTokens = Array.from(words).map(w => w.dataset.word);
+            const correctTokens = tokenizeSentence(sentences[currentIndex].english);
+
+            const resultMessage = document.getElementById('resultMessage');
+
+            const isCorrect = userTokens.length === correctTokens.length &&
+                userTokens.every((token, i) => token === correctTokens[i]);
+
+            if (isCorrect) {
+                dropZone.classList.add('correct');
+                dropZone.classList.remove('wrong');
+                resultMessage.className = 'result-message correct';
+                resultMessage.textContent = '✓ 正确！太棒了！';
+                score++;
+                document.getElementById('score').textContent = score;
+                document.getElementById('btnNext').style.display = 'inline-block';
+
+                // 显示语法和词组讲解
+                showExplanation();
+            } else {
+                dropZone.classList.add('wrong');
+                dropZone.classList.remove('correct');
+                resultMessage.className = 'result-message wrong';
+                resultMessage.textContent = '✗ 再试一次！正确答案: ' + correctTokens.join(' ');
+            }
+        }
+
+        // 重置当前练习
+        function resetCurrentExercise() {
+            loadExercise(currentIndex);
+        }
+
+        // 显示语法和词组讲解
+        function showExplanation() {
+            const sentence = sentences[currentIndex];
+            const explanationArea = document.getElementById('explanationArea');
+            const grammarContent = document.getElementById('grammarContent');
+            const phrasesContent = document.getElementById('phrasesContent');
+
+            // 检查是否有讲解内容
+            if (sentence.grammar || sentence.phrases) {
+                explanationArea.style.display = 'block';
+
+                // 语法讲解
+                if (sentence.grammar) {
+                    grammarContent.innerHTML = sentence.grammar;
+                    grammarContent.parentElement.style.display = 'block';
+                } else {
+                    grammarContent.parentElement.style.display = 'none';
+                }
+
+                // 词组讲解
+                if (sentence.phrases && sentence.phrases.length > 0) {
+                    let phrasesHtml = '';
+                    sentence.phrases.forEach(phrase => {
+                        phrasesHtml += `
+                            <div class="phrase-item">
+                                <div class="phrase-en">
+                                    <span class="speak-icon" onclick="speakPhrase('${phrase.en.replace(/'/g, "\\'")}')"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></span>
+                                    ${phrase.en}
+                                </div>
+                                <div class="phrase-cn">${phrase.cn}</div>
+                            </div>
+                        `;
+                    });
+                    phrasesContent.innerHTML = phrasesHtml;
+                    phrasesContent.parentElement.style.display = 'block';
+                } else {
+                    phrasesContent.parentElement.style.display = 'none';
+                }
+            } else {
+                explanationArea.style.display = 'none';
+            }
+        }
+
+        // 隐藏讲解区域
+        function hideExplanation() {
+            document.getElementById('explanationArea').style.display = 'none';
+        }
+
+        // 播放当前句子
+        function speakCurrentSentence() {
+            const sentence = sentences[currentIndex].english;
+            speakPhrase(sentence);
+        }
+
+        // 切换中文提示显示/隐藏
+        let chineseHidden = false;
+        function toggleChineseHint() {
+            const hint = document.getElementById('chineseHint');
+            const btn = document.getElementById('toggleChinese');
+            chineseHidden = !chineseHidden;
+
+            if (chineseHidden) {
+                hint.classList.add('hidden');
+                btn.classList.add('hidden-mode');
+                btn.innerHTML = '👁️ 显示中文';
+            } else {
+                hint.classList.remove('hidden');
+                btn.classList.remove('hidden-mode');
+                btn.innerHTML = '👁️ 隐藏中文';
+            }
+        }
+
+        // 播放语法讲解
+        function speakGrammar(text) {
+            // 移除HTML标签
+            const cleanText = text.replace(/<[^>]*>/g, '');
+            speakPhrase(cleanText);
+        }
+
+        // 答对后下一题
+        function goToNextAfterCorrect() {
+            currentIndex++;
+            if (currentIndex >= sentences.length) {
+                showCompletion();
+            } else {
+                loadExercise(currentIndex);
+                updateNavButtons();
+            }
+        }
+
+        // 上一句
+        function prevExercise() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                loadExercise(currentIndex);
+                updateNavButtons();
+            }
+        }
+
+        // 下一句（导航用）
+        function navNextExercise() {
+            if (currentIndex < sentences.length - 1) {
+                currentIndex++;
+                loadExercise(currentIndex);
+                updateNavButtons();
+            }
+        }
+
+        // 更新导航按钮状态
+        function updateNavButtons() {
+            document.getElementById('btnPrev').disabled = currentIndex === 0;
+            document.getElementById('btnNavNext').disabled = currentIndex === sentences.length - 1;
+        }
+
+        // 显示完成界面
+        function showCompletion() {
+            document.getElementById('exerciseArea').style.display = 'none';
+            document.getElementById('completionScreen').style.display = 'block';
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('progressFill').style.width = '100%';
+            updateLessonNavButtons();
+            showLessonGrammar(); // 显示语法总结
+        }
+
+        // 显示本课语法总结
+        function showLessonGrammar() {
+            const lesson = lessonsData[currentLesson];
+            const container = document.getElementById('grammarPointsContainer');
+
+            // 优先检查新的 coreGrammar 格式
+            if (lesson.coreGrammar && lesson.coreGrammar.length > 0) {
+                let html = '';
+                lesson.coreGrammar.forEach(grammar => {
+                    // 构建例句HTML
+                    let examplesHtml = '';
+                    if (grammar.examples && grammar.examples.length > 0) {
+                        grammar.examples.forEach(ex => {
+                            examplesHtml += `
+                                <div class="grammar-example">
+                                    <span class="example-en">${ex.en}</span>
+                                    <span class="example-cn">${ex.cn}</span>
+                                    ${ex.answer ? `<span class="example-answer">→ ${ex.answer}</span>` : ''}
+                                </div>
+                            `;
+                        });
+                    }
+
+                    html += `
+                        <div class="grammar-point">
+                            <div class="grammar-point-title">
+                                <button class="btn-speak-grammar" onclick="speakGrammar('${grammar.topic.replace(/'/g, "\\'").replace(/"/g, '&quot;')}')"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                📖 ${grammar.topic}
+                            </div>
+                            <div class="grammar-point-content">
+                                <div class="grammar-explanation">${grammar.explanation}</div>
+                                <div class="grammar-examples">${examplesHtml}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                container.innerHTML = html;
+                document.getElementById('grammarSummary').style.display = 'block';
+            } else if (lesson.lessonGrammar && lesson.lessonGrammar.points) {
+                // 兼容旧的 lessonGrammar 格式
+                let html = '';
+                lesson.lessonGrammar.points.forEach(point => {
+                    html += `
+                        <div class="grammar-point">
+                            <div class="grammar-point-title">
+                                <button class="btn-speak-grammar" onclick="speakGrammar('${point.content.replace(/'/g, "\\'").replace(/"/g, '&quot;')}')"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                ${point.name}
+                            </div>
+                            <div class="grammar-point-content">${point.content}</div>
+                        </div>
+                    `;
+                });
+                container.innerHTML = html;
+                document.getElementById('grammarSummary').style.display = 'block';
+            } else {
+                // 从句子中提取语法点
+                const grammarPoints = [];
+                sentences.forEach((s, idx) => {
+                    if (s.grammar) {
+                        grammarPoints.push({
+                            name: `第${idx + 1}句`,
+                            content: s.grammar
+                        });
+                    }
+                });
+
+                if (grammarPoints.length > 0) {
+                    let html = '';
+                    grammarPoints.forEach(point => {
+                        html += `
+                            <div class="grammar-point">
+                                <div class="grammar-point-title">
+                                    <button class="btn-speak-grammar" onclick="speakGrammar('${point.content.replace(/'/g, "\\'").replace(/"/g, '&quot;').replace(/<[^>]*>/g, '')}')"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+                                    ${point.name}
+                                </div>
+                                <div class="grammar-point-content">${point.content}</div>
+                            </div>
+                        `;
+                    });
+                    container.innerHTML = html;
+                    document.getElementById('grammarSummary').style.display = 'block';
+                } else {
+                    document.getElementById('grammarSummary').style.display = 'none';
+                }
+            }
+        }
+
+        // 重新开始
+        function restartExercise() {
+            loadLesson(currentLesson);
+        }
+
+        // 上一课
+        function goToPrevLesson() {
+            const currentIdx = availableLessons.indexOf(currentLesson);
+            if (currentIdx > 0) {
+                currentLesson = availableLessons[currentIdx - 1];
+                document.getElementById('lessonSelect').value = currentLesson;
+                loadLesson(currentLesson);
+            }
+        }
+
+        // 下一课
+        function goToNextLesson() {
+            const currentIdx = availableLessons.indexOf(currentLesson);
+            if (currentIdx < availableLessons.length - 1) {
+                currentLesson = availableLessons[currentIdx + 1];
+                document.getElementById('lessonSelect').value = currentLesson;
+                loadLesson(currentLesson);
+            }
+        }
+
+        // 更新课程导航按钮状态
+        function updateLessonNavButtons() {
+            const currentIdx = availableLessons.indexOf(currentLesson);
+            const btnPrev = document.getElementById('btnLessonPrev');
+            const btnNext = document.getElementById('btnLessonNext');
+
+            if (btnPrev) {
+                btnPrev.disabled = currentIdx === 0;
+                if (currentIdx > 0) {
+                    const prevLesson = availableLessons[currentIdx - 1];
+                    const prevLessonData = lessonsData[prevLesson];
+                    btnPrev.innerHTML = `⬅️ Lesson ${prevLesson}: ${prevLessonData.titleCn}`;
+                } else {
+                    btnPrev.innerHTML = '⬅️ 上一课';
+                }
+            }
+
+            if (btnNext) {
+                btnNext.disabled = currentIdx === availableLessons.length - 1;
+                if (currentIdx < availableLessons.length - 1) {
+                    const nextLesson = availableLessons[currentIdx + 1];
+                    const nextLessonData = lessonsData[nextLesson];
+                    btnNext.innerHTML = `Lesson ${nextLesson}: ${nextLessonData.titleCn} ➡️`;
+                } else {
+                    btnNext.innerHTML = '下一课 ➡️';
+                }
+            }
+        }
+
+        // 启动
+        init();
+    </script>
+</body>
+
+</html>
