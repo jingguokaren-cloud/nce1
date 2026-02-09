@@ -125,6 +125,26 @@ const lessonsData = {
                 phrases: [{ en: "Thank you very much", cn: "非常感谢" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "否定句 This is not...",
+                explanation: "🙅 想说\"这不是某个东西\"？在 **is** 后面加 **not**！is not 可以缩写成 **isn't**，说起来又快又酷！",
+                examples: [
+                    { en: "This is not my book.", cn: "这不是我的书。" },
+                    { en: "This is not a cat.", cn: "这不是一只猫。" },
+                    { en: "It is not your pen.", cn: "这不是你的笔。" }
+                ]
+            },
+            {
+                topic: "指示代词 this/it",
+                explanation: "👆 **this** 是\"这个\"（指近处的东西），**it** 是\"它\"（代替刚才说过的东西）。问话用 this，回答用 it！",
+                examples: [
+                    { en: " — Is this your coat?", cn: "这是你的大衣吗？— 是的。", answer: "Is this your coat?" },
+                    { en: " — Is this your umbrella?", cn: "这是你的雨伞吗？— 不是。", answer: "Is this your umbrella?" },
+                    { en: "Is this it?", cn: "是这个吗？" }
+                ]
+            }
         ]
     },
     5: {
@@ -231,6 +251,35 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "介绍他人 This is...",
+                explanation: "🤝 把朋友介绍给别人用 **This is + 名字**！就像在说\"看！这位就是...\"，记得面带微笑😊！",
+                examples: [
+                    { en: "This is Tom. He is my friend.", cn: "这是汤姆。他是我的朋友。" },
+                    { en: "This is Miss Li. She is our teacher.", cn: "这是李老师。她是我们的老师。" },
+                    { en: "This is my mom.", cn: "这是我妈妈。" }
+                ]
+            },
+            {
+                topic: "人称代词 he/she",
+                explanation: "👦👧 说到男生用 **he**（他），说到女生用 **she**（她）！记忆窍门：she 里有个 he，女士优先！",
+                examples: [
+                    { en: "He is Tom.", cn: "他是汤姆。" },
+                    { en: "She is Sophie.", cn: "她是索菲娅。" },
+                    { en: "He is my friend.", cn: "他是我的朋友。" }
+                ]
+            },
+            {
+                topic: "表示国籍",
+                explanation: "🌍 怎么说\"我是中国人\"？直接用国籍形容词！Chinese（中国的）、French（法国的）、German（德国的）。说 **I am Chinese.**，不用加\"人\"字！",
+                examples: [
+                    { en: "She is French.", cn: "她是法国人。" },
+                    { en: "He is German.", cn: "他是德国人。" },
+                    { en: "I am Chinese.", cn: "我是中国人。" }
+                ]
+            }
         ]
     },
     7: {
@@ -317,6 +366,35 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "询问身份 Are you...?",
+                explanation: "🕵️ 想知道别人是谁？把 **Are** 派到句子最前面！回答\"是\"说 **Yes, I am**，\"不是\"说 **No, I'm not**。",
+                examples: [
+                    { en: " — Are you a student?", cn: "你是学生吗？— 是的。", answer: "Are you a student?" },
+                    { en: " — Are you a teacher?", cn: "你是老师吗？— 不是。", answer: "Are you a teacher?" },
+                    { en: " — Are you Tom?", cn: "你是汤姆吗？— 是的。", answer: "Are you Tom?" }
+                ]
+            },
+            {
+                topic: "询问职业 What's your job?",
+                explanation: "💼 想知道别人做什么工作？问 **What's your job?** 回答用 **I'm a/an + 职业**。",
+                examples: [
+                    { en: " — What's your job?", cn: "你做什么工作？— 我是老师。", answer: "What's your job?" },
+                    { en: " — What's your job?", cn: "你做什么工作？— 我是工程师。", answer: "What's your job?" },
+                    { en: " — What's her job?", cn: "她做什么工作？— 她是医生。", answer: "What's her job?" }
+                ]
+            },
+            {
+                topic: "冠词 a/an",
+                explanation: "📝 名词前面要加\"小帽子\"！普通辅音开头用 **a**，元音开头（a/e/i/o/u）用 **an**：an apple🍎、an engineer。",
+                examples: [
+                    { en: "I am a student.", cn: "我是一名学生。" },
+                    { en: "He is an engineer.", cn: "他是一名工程师。" },
+                    { en: "This is an apple.", cn: "这是一个苹果。" }
+                ]
+            }
         ]
     },
     9: {
@@ -392,6 +470,26 @@ const lessonsData = {
                 speaker: "HELEN", speakerClass: "speaker-penny", english: "Goodbye.", chinese: "再见。",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "问候 How are you?",
+                explanation: "👋 见到朋友说 **How are you?** 这是\"关心小礼包\"！对方回复 **Fine, thank you.** 问其他人用 **How is + 名字?**",
+                examples: [
+                    { en: " — How are you?", cn: "你好吗？— 我很好，谢谢。", answer: "How are you?" },
+                    { en: " — How are you today?", cn: "你今天好吗？— 我非常好。", answer: "How are you today?" },
+                    { en: " — How is Steven?", cn: "史蒂文好吗？— 他很好。", answer: "How is Steven?" }
+                ]
+            },
+            {
+                topic: "Nice to see you vs Nice to meet you",
+                explanation: "🤝 **Nice to meet you** 是第一次见面说的。**Nice to see you** 是再次见面说的。meet = 认识，see = 看见！",
+                examples: [
+                    { en: "Nice to meet you!", cn: "很高兴认识你！（第一次见面）" },
+                    { en: "Nice to see you!", cn: "很高兴见到你！（再次见面）" },
+                    { en: "Nice to see you, too!", cn: "我也很高兴见到你！" }
+                ]
             }
         ]
     },
@@ -474,6 +572,26 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "询问所有权 Whose...?",
+                explanation: "🔍 不知道是谁的东西？用 **Whose**（谁的）来问！就像小侦探在破案！",
+                examples: [
+                    { en: " — Whose book is this?", cn: "这是谁的书？— 是我的书。", answer: "Whose book is this?" },
+                    { en: " — Whose pen is that?", cn: "那是谁的笔？— 是汤姆的笔。", answer: "Whose pen is that?" },
+                    { en: " — Whose bag is this?", cn: "这是谁的包？— 是她的包。", answer: "Whose bag is this?" }
+                ]
+            },
+            {
+                topic: "名词所有格 's",
+                explanation: "👑 想说\"某人的东西\"？在名字后面加 **'s**！Tim's shirt（蒂姆的衬衫）、Tom's book（汤姆的书）。",
+                examples: [
+                    { en: "This is Tim's shirt.", cn: "这是蒂姆的衬衫。" },
+                    { en: "That is Tom's book.", cn: "那是汤姆的书。" },
+                    { en: "This is my sister's bag.", cn: "这是我姐姐的包。" }
+                ]
+            }
         ]
     },
     13: {
@@ -539,6 +657,26 @@ const lessonsData = {
                 speaker: "LOUISE", speakerClass: "speaker-penny", english: "That is a lovely hat!", chinese: "那真是一顶可爱的帽子！",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "询问颜色 What colour...?",
+                explanation: "🌈 想知道什么颜色？问 **What colour is it?** 回答 **It's + 颜色**。red🔴、blue🔵、green🟢、yellow🟡！",
+                examples: [
+                    { en: " — What colour is it?", cn: "它是什么颜色？— 蓝色的。", answer: "What colour is it?" },
+                    { en: " — What colour is your bag?", cn: "你的包什么颜色？— 绿色的。", answer: "What colour is your bag?" },
+                    { en: " — What colour is your shirt?", cn: "你的衬衫什么颜色？— 白色的。", answer: "What colour is your shirt?" }
+                ]
+            },
+            {
+                topic: "形容词放在名词前",
+                explanation: "🎨 形容词放在名词前面！**a new dress**（一件新裙子），**a big dog**（一只大狗）。顺序：a/an + 形容词 + 名词。",
+                examples: [
+                    { en: "a new dress", cn: "一件新连衣裙" },
+                    { en: "a lovely hat", cn: "一顶可爱的帽子" },
+                    { en: "a nice day", cn: "美好的一天" }
+                ]
             }
         ]
     },
@@ -636,6 +774,35 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "复数疑问句 Are these/those...?",
+                explanation: "👀 多个东西用 **Are these...?**（这些）或 **Are those...?**（那些）。回答用 **they**！",
+                examples: [
+                    { en: " — Are these your books?", cn: "这些是你的书吗？— 是的。", answer: "Are these your books?" },
+                    { en: " — Are those your pens?", cn: "那些是你的笔吗？— 不是。", answer: "Are those your pens?" },
+                    { en: " — Are these your passports?", cn: "这些是你们的护照吗？— 是的。", answer: "Are these your passports?" }
+                ]
+            },
+            {
+                topic: "人称代词 we/they",
+                explanation: "👥 \"我们\"用 **we**，\"他们/她们/它们\"用 **they**！we 包括自己，they 不包括自己。",
+                examples: [
+                    { en: "We are students.", cn: "我们是学生。" },
+                    { en: "They are teachers.", cn: "他们是老师。" },
+                    { en: "We are Chinese.", cn: "我们是中国人。" }
+                ]
+            },
+            {
+                topic: "名词复数加 s",
+                explanation: "🔢 多个东西要加 **s** 变复数！book → books📚，pen → pens🖊️。就像给名词\"生宝宝\"！",
+                examples: [
+                    { en: "two books", cn: "两本书" },
+                    { en: "three pens", cn: "三支笔" },
+                    { en: "your passports", cn: "你们的护照" }
+                ]
+            }
         ]
     },
     17: {
@@ -722,6 +889,26 @@ const lessonsData = {
                 phrases: [{ en: "office assistant", cn: "办公室助理" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "正式问候 How do you do?",
+                explanation: "🎩👔 超级正式的问候语！第一次见面说 **How do you do?** 对方也回答一样的话！",
+                examples: [
+                    { en: " — How do you do?", cn: "您好！— 您好！", answer: "How do you do?" },
+                    { en: " — Nice to meet you.", cn: "很高兴见到你。— 我也是。", answer: "Nice to meet you." },
+                    { en: " — How do you do, Mr. Wang?", cn: "王先生，您好！— 您好！", answer: "How do you do, Mr. Wang?" }
+                ]
+            },
+            {
+                topic: "询问身份 Who is...?",
+                explanation: "🕵️ 不知道某人是谁？问 **Who is this?** 或 **Who is that man?**",
+                examples: [
+                    { en: " — Who is this?", cn: "这是谁？— 这是汤姆。", answer: "Who is this?" },
+                    { en: " — Who is that man?", cn: "那个男人是谁？— 他是我们的老师。", answer: "Who is that man?" },
+                    { en: " — Who are they?", cn: "他们是谁？— 他们是我的朋友。", answer: "Who are they?" }
+                ]
+            }
         ]
     },
     19: {
@@ -788,6 +975,26 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "There is/are 存在句",
+                explanation: "🏠 \"某地有什么\"用 **There is**（一个）或 **There are**（多个）！一个用 is，多个用 are！",
+                examples: [
+                    { en: "There is a book on the table.", cn: "桌上有一本书。" },
+                    { en: "There is a cat in the room.", cn: "房间里有一只猫。" },
+                    { en: "There are two pens in the bag.", cn: "包里有两支笔。" }
+                ]
+            },
+            {
+                topic: "形容词作表语",
+                explanation: "😊 描述状态用 **主语 + be + 形容词**！**I am tired.**（我很累。）形容词放在 be 动词后面！",
+                examples: [
+                    { en: "I am tired.", cn: "我很累。" },
+                    { en: "We are thirsty.", cn: "我们很渴。" },
+                    { en: "She is happy.", cn: "她很开心。" }
+                ]
+            }
         ]
     },
     21: {
@@ -839,6 +1046,35 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "选择疑问词 Which...?",
+                explanation: "🤔 有好几个东西不知道要哪个？用 **Which**（哪个）来问！就像在商店挑东西！",
+                examples: [
+                    { en: " — Which book do you want?", cn: "你要哪本书？— 红色的。", answer: "Which book do you want?" },
+                    { en: " — Which one is yours?", cn: "哪个是你的？— 这个。", answer: "Which one is yours?" },
+                    { en: " — Which pen do you like?", cn: "你喜欢哪支笔？— 蓝色的。", answer: "Which pen do you like?" }
+                ]
+            },
+            {
+                topic: "祈使句 Give me...",
+                explanation: "🎁 想让别人给你东西？动词开头！**Give me a book, please.** 记得加 **please** 更礼貌！",
+                examples: [
+                    { en: "Give me a book, please.", cn: "请给我一本书。" },
+                    { en: "Give me that pen, please.", cn: "请给我那支笔。" },
+                    { en: "Give me a cup of tea, please.", cn: "请给我一杯茶。" }
+                ]
+            },
+            {
+                topic: "代词 one",
+                explanation: "1️⃣ 不想重复说名词？用 **one** 代替！**The red one** = The red book。省得说两遍！",
+                examples: [
+                    { en: "The red one.", cn: "红色的那个。" },
+                    { en: "This one?", cn: "这个吗？" },
+                    { en: "Not that one.", cn: "不是那个。" }
+                ]
+            }
         ]
     },
     23: {
@@ -889,6 +1125,26 @@ const lessonsData = {
                 speaker: "MAN", speakerClass: "speaker-sam", english: "Thanks.", chinese: "谢谢。",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "复数选择 these/those ones",
+                explanation: "👆👉 选好几个东西？近处说 **these ones**（这些），远处说 **those ones**（那些）！",
+                examples: [
+                    { en: " — Which glasses?", cn: "哪些杯子？— 这些。", answer: "Which glasses?" },
+                    { en: " — Which books do you want?", cn: "你要哪些书？— 那些。", answer: "Which books do you want?" },
+                    { en: " — Which ones are yours?", cn: "哪些是你的？— 这些。", answer: "Which ones are yours?" }
+                ]
+            },
+            {
+                topic: "方位介词 on",
+                explanation: "📍 **on** 表示\"在...上面\"。**on the shelf**（在架子上）、**on the table**（在桌子上）！",
+                examples: [
+                    { en: "The books are on the shelf.", cn: "书在架子上。" },
+                    { en: "The glasses are on the table.", cn: "杯子在桌子上。" },
+                    { en: "The cup is on the desk.", cn: "杯子在书桌上。" }
+                ]
             }
         ]
     },
@@ -955,6 +1211,26 @@ const lessonsData = {
                 speaker: "TEXT", speakerClass: "speaker-sam", english: "The cup is clean.", chinese: "杯子是干净的。",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "There is + 单数名词",
+                explanation: "🍳 描述有什么用 **There is a + 东西**！想象你是小导游，一个一个介绍！",
+                examples: [
+                    { en: "There is a table in the room.", cn: "房间里有一张桌子。" },
+                    { en: "There is a cup on the table.", cn: "桌上有一个杯子。" },
+                    { en: "There is a book in my bag.", cn: "我包里有一本书。" }
+                ]
+            },
+            {
+                topic: "方位介词短语",
+                explanation: "🧭 描述位置：**on the right**（在右边➡️）、**on the left**（在左边⬅️）、**in the middle**（在中间⭕）！",
+                examples: [
+                    { en: "The fridge is on the right.", cn: "冰箱在右边。" },
+                    { en: "The cooker is on the left.", cn: "炉子在左边。" },
+                    { en: "The table is in the middle.", cn: "桌子在中间。" }
+                ]
             }
         ]
     },
@@ -1027,6 +1303,26 @@ const lessonsData = {
                 phrases: [{ en: "on the wall", cn: "在墙上" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "There are + 复数名词",
+                explanation: "🛋️ 多个东西用 **There are + 数字 + 名词s**！注意名词要加 **s**！",
+                examples: [
+                    { en: "There are two chairs in the room.", cn: "房间里有两把椅子。" },
+                    { en: "There are three books on the desk.", cn: "桌上有三本书。" },
+                    { en: "There are some pictures on the wall.", cn: "墙上有几幅画。" }
+                ]
+            },
+            {
+                topic: "介词 near",
+                explanation: "📍 **near** 表示\"在...附近/旁边\"。**near the window**（在窗户旁边）！",
+                examples: [
+                    { en: "The TV is near the window.", cn: "电视在窗户旁边。" },
+                    { en: "The chairs are near the table.", cn: "椅子在桌子旁边。" },
+                    { en: "My school is near my home.", cn: "我的学校在我家附近。" }
+                ]
+            }
         ]
     },
     29: {
@@ -1077,6 +1373,35 @@ const lessonsData = {
                 speaker: "MRS JONES", speakerClass: "speaker-penny", english: "Then sweep the floor.", chinese: "然后扫地。",
                 phrases: [{ en: "sweep the floor", cn: "扫地" }],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "祈使句（命令/请求）",
+                explanation: "📢 让别人做事用动词开头！**Come in!**（进来！）**Sit down!**（坐下！）加 **please** 更礼貌✨！",
+                examples: [
+                    { en: "Come in, please!", cn: "请进来！" },
+                    { en: "Sit down, please.", cn: "请坐下。" },
+                    { en: "Open the door, please.", cn: "请开门。" }
+                ]
+            },
+            {
+                topic: "情态动词 must",
+                explanation: "💪 **must** 表示\"必须\"，语气很强！就像妈妈严肃地说\"你必须...\"！",
+                examples: [
+                    { en: "What must I do?", cn: "我必须做什么？" },
+                    { en: "You must open the window.", cn: "你必须开窗户。" },
+                    { en: "I must go now.", cn: "我现在必须走了。" }
+                ]
+            },
+            {
+                topic: "连接词 then",
+                explanation: "➡️ **then** 表示\"然后\"，用来连接动作顺序。先做这个，**then**（然后）做那个！",
+                examples: [
+                    { en: "Open the window, then air the room.", cn: "开窗，然后通风。" },
+                    { en: "Make the bed, then sweep the floor.", cn: "整理床铺，然后扫地。" },
+                    { en: "Eat breakfast, then go to school.", cn: "吃早餐，然后上学。" }
+                ]
             }
         ]
     },
@@ -1154,6 +1479,35 @@ const lessonsData = {
                 phrases: [{ en: "run after", cn: "追逐" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在进行时 is + doing",
+                explanation: "🏃 说\"正在做什么\"用 **is/am/are + 动词ing**！动词穿上 **ing** 尾巴，表示正在进行！",
+                examples: [
+                    { en: " — What is she doing?", cn: "她在做什么？— 她正在看书。", answer: "What is she doing?" },
+                    { en: " — What is he doing?", cn: "他在做什么？— 他正在跑步。", answer: "What is he doing?" },
+                    { en: " — What are you doing?", cn: "你在做什么？— 我正在吃东西。", answer: "What are you doing?" }
+                ]
+            },
+            {
+                topic: "询问位置 Where is...?",
+                explanation: "🗺️ 想知道在哪里？问 **Where is...?** 回答用介词短语！就像玩捉迷藏！",
+                examples: [
+                    { en: " — Where is Sally?", cn: "萨莉在哪里？— 在花园里。", answer: "Where is Sally?" },
+                    { en: " — Where is the cat?", cn: "猫在哪里？— 在树下。", answer: "Where is the cat?" },
+                    { en: " — Where is my book?", cn: "我的书在哪里？— 在桌子上。", answer: "Where is my book?" }
+                ]
+            },
+            {
+                topic: "动词短语 run after/run across",
+                explanation: "🏃 **run after** = 追赶，**run across** = 跑过。动词+介词组成新意思！",
+                examples: [
+                    { en: "The dog is running after a cat.", cn: "狗在追猫。" },
+                    { en: "It's running across the grass.", cn: "它正跑过草地。" },
+                    { en: "Don't run after cars!", cn: "不要追车！" }
+                ]
+            }
         ]
     },
     33: {
@@ -1209,6 +1563,26 @@ const lessonsData = {
                 speaker: "TEXT", speakerClass: "speaker-sam", english: "The aeroplane is flying over the river.", chinese: "飞机正飞越河流。",
                 phrases: [{ en: "fly over", cn: "飞越" }],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在进行时描述场景",
+                explanation: "🌞 描述正在发生的画面！用现在进行时\"拍照\"！像在描述动画片！",
+                examples: [
+                    { en: "The sun is shining.", cn: "太阳正在照耀。" },
+                    { en: "The birds are flying.", cn: "鸟儿们正在飞。" },
+                    { en: "The children are playing.", cn: "孩子们正在玩。" }
+                ]
+            },
+            {
+                topic: "介词 over/under",
+                explanation: "⬆️⬇️ **over** = 在上方/越过，**under** = 在下方/从下穿过。一个在上一个在下！",
+                examples: [
+                    { en: "The plane is flying over the river.", cn: "飞机正飞越河流。" },
+                    { en: "The ship is going under the bridge.", cn: "船正从桥下驶过。" },
+                    { en: "The ball is under the table.", cn: "球在桌子下面。" }
+                ]
             }
         ]
     },
@@ -1290,6 +1664,35 @@ const lessonsData = {
                 speaker: "TEXT", speakerClass: "speaker-sam", english: "Some of them are going into the park.", chinese: "他们中的一些正走进公园。",
                 phrases: [{ en: "some of them", cn: "他们中的一些" }, { en: "go into", cn: "走进" }],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "方位介词 in/on/under/near",
+                explanation: "🗺️ **in**（里面）、**on**（上面）、**under**（下面）、**near**（附近）——四个方位小精灵！",
+                examples: [
+                    { en: "The cat is on the chair.", cn: "猫在椅子上。" },
+                    { en: "The ball is under the table.", cn: "球在桌子下面。" },
+                    { en: "The school is near my home.", cn: "学校在我家附近。" }
+                ]
+            },
+            {
+                topic: "between...and...",
+                explanation: "↔️ \"在两者之间\"用 **between A and B**！就像夹心饼干中间那层！",
+                examples: [
+                    { en: "The park is between the school and the shop.", cn: "公园在学校和商店之间。" },
+                    { en: "I sit between Tom and Mary.", cn: "我坐在汤姆和玛丽之间。" },
+                    { en: "The river is between the two villages.", cn: "河在两个村庄之间。" }
+                ]
+            },
+            {
+                topic: "along 沿着",
+                explanation: "➡️ **along** 表示\"沿着\"。**along the river**（沿着河）、**along the road**（沿着路）！",
+                examples: [
+                    { en: "We walk along the river.", cn: "我们沿着河走。" },
+                    { en: "There are trees along the road.", cn: "路边有树。" },
+                    { en: "Walk along this street.", cn: "沿着这条街走。" }
+                ]
             }
         ]
     },
@@ -1387,6 +1790,26 @@ const lessonsData = {
                 phrases: [{ en: "favourite + 名词", cn: "最喜欢的..." }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "将来时 be going to",
+                explanation: "🔮 说\"打算做什么\"用 **be going to + 动词**！这是你已经想好要做的事！",
+                examples: [
+                    { en: "I'm going to read a book.", cn: "我打算看书。" },
+                    { en: "She's going to eat an apple.", cn: "她打算吃苹果。" },
+                    { en: "We're going to play games.", cn: "我们打算玩游戏。" }
+                ]
+            },
+            {
+                topic: "询问将来 What are you going to do?",
+                explanation: "❓ 问别人打算做什么？**What are you going to do?** 回答用 **I'm going to...**",
+                examples: [
+                    { en: " — What are you going to do?", cn: "你打算做什么？— 我打算刷漆。", answer: "What are you going to do?" },
+                    { en: " — What is she going to do?", cn: "她打算做什么？— 她打算做饭。", answer: "What is she going to do?" },
+                    { en: " — What are they going to do?", cn: "他们打算做什么？— 他们打算帮忙。", answer: "What are they going to do?" }
+                ]
+            }
         ]
     },
     39: {
@@ -1438,6 +1861,26 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "否定祈使句 Don't...",
+                explanation: "🚫 让别人\"不要做某事\"？在动词前面加 **Don't**！就像一个红色禁止标志！",
+                examples: [
+                    { en: "Don't run!", cn: "不要跑！" },
+                    { en: "Don't talk in class!", cn: "不要在课堂上说话！" },
+                    { en: "Don't drop it!", cn: "不要摔了！" }
+                ]
+            },
+            {
+                topic: "代词宾格 me/him/her/it/them",
+                explanation: "👋 动词后面的\"我/他/她/它/他们\"要用宾格！I→me, he→him, she→her, they→them！",
+                examples: [
+                    { en: "Give it to me.", cn: "把它给我。" },
+                    { en: "Don't drop it!", cn: "不要摔了它！" },
+                    { en: "Show them to me.", cn: "把它们给我看看。" }
+                ]
+            }
         ]
     },
     41: {
@@ -1488,6 +1931,26 @@ const lessonsData = {
                 speaker: "PENNY", speakerClass: "speaker-penny", english: "Well, it's certainly not for me!", chinese: "噢，当然不是给我的！",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "量词 a piece of / a bottle of",
+                explanation: "🍞🥛 有些东西不能直接数，要用量词！a piece of bread（一片面包）、a bottle of water（一瓶水）、a cup of tea（一杯茶）！",
+                examples: [
+                    { en: "a piece of bread", cn: "一片面包" },
+                    { en: "a bottle of water", cn: "一瓶水" },
+                    { en: "a cup of tea", cn: "一杯茶" }
+                ]
+            },
+            {
+                topic: "不可数名词",
+                explanation: "💧 有些东西不能一个一个数，叫不可数名词！water（水）、bread（面包）、cheese（奶酪）。不能说 two waters ❌，要说 two bottles of water ✓！",
+                examples: [
+                    { en: "I want some water.", cn: "我想要一些水。" },
+                    { en: "Give me some bread, please.", cn: "请给我一些面包。" },
+                    { en: "There is some cheese on the table.", cn: "桌上有一些奶酪。" }
+                ]
             }
         ]
     },
@@ -1570,6 +2033,35 @@ const lessonsData = {
                 phrases: [{ en: "Hurry up!", cn: "快点！" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "Is there / Are there 疑问句",
+                explanation: "❓ 问\"有没有\"？把 There is/are 变问句！单数 **Is there...?**，复数 **Are there...?**",
+                examples: [
+                    { en: " — Is there any tea?", cn: "有茶吗？— 有。", answer: "Is there any tea?" },
+                    { en: " — Are there any apples?", cn: "有苹果吗？— 没有。", answer: "Are there any apples?" },
+                    { en: " — Is there any milk?", cn: "有牛奶吗？— 有。", answer: "Is there any milk?" }
+                ]
+            },
+            {
+                topic: "some 和 any",
+                explanation: "🔢 **some** 用在肯定句，**any** 用在疑问句和否定句！记住：肯定 some，疑问/否定 any！",
+                examples: [
+                    { en: "There is some tea.", cn: "有一些茶。（肯定）" },
+                    { en: "Is there any tea?", cn: "有茶吗？（疑问）" },
+                    { en: "There isn't any tea.", cn: "没有茶。（否定）" }
+                ]
+            },
+            {
+                topic: "祈使句 Hurry up!",
+                explanation: "⏰ **Hurry up!** = 快点！这是常用的催促语。类似的还有 **Come on!**（加油！来吧！）",
+                examples: [
+                    { en: "Hurry up! We're late!", cn: "快点！我们迟到了！" },
+                    { en: "Come on! Let's go!", cn: "来吧！我们走！" },
+                    { en: "Hurry up and eat!", cn: "快点吃！" }
+                ]
+            }
         ]
     },
     45: {
@@ -1646,6 +2138,26 @@ const lessonsData = {
                 phrases: [],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "情态动词 can",
+                explanation: "💪 说\"会做某事\"用 **can + 动词**！问会不会？把 can 放前面：**Can you swim?**",
+                examples: [
+                    { en: " — Can you read?", cn: "你会阅读吗？— 会。", answer: "Can you read?" },
+                    { en: " — Can she sing?", cn: "她会唱歌吗？— 不会。", answer: "Can she sing?" },
+                    { en: " — Can you help me?", cn: "你能帮我吗？— 能。", answer: "Can you help me?" }
+                ]
+            },
+            {
+                topic: "can't 否定",
+                explanation: "🚫 说\"不会/不能\"用 **can't**（= cannot）！**I can't swim.**（我不会游泳。）",
+                examples: [
+                    { en: "I can't swim.", cn: "我不会游泳。" },
+                    { en: "She can't come today.", cn: "她今天不能来。" },
+                    { en: "He can't find his book.", cn: "他找不到他的书。" }
+                ]
+            }
         ]
     },
     47: {
@@ -1711,6 +2223,26 @@ const lessonsData = {
                 speaker: "MRS PRICE", speakerClass: "speaker-sam", english: "Yes, please.", chinese: "好的，谢谢。",
                 phrases: [],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "Do you like...? 询问喜好",
+                explanation: "❤️ 问别人喜欢什么？**Do you like...?** 喜欢说 **Yes, I do!**，不喜欢说 **No, I don't.**",
+                examples: [
+                    { en: " — Do you like tea?", cn: "你喜欢茶吗？— 喜欢。", answer: "Do you like tea?" },
+                    { en: " — Do you like coffee?", cn: "你喜欢咖啡吗？— 不喜欢。", answer: "Do you like coffee?" },
+                    { en: " — Do you like milk?", cn: "你喜欢牛奶吗？— 喜欢。", answer: "Do you like milk?" }
+                ]
+            },
+            {
+                topic: "一般现在时第三人称",
+                explanation: "👤 he/she/it 做主语时，动词要加 **s** 或 **es**！like → likes，go → goes！",
+                examples: [
+                    { en: "She likes tea.", cn: "她喜欢茶。" },
+                    { en: "He wants coffee.", cn: "他想要咖啡。" },
+                    { en: "Tom goes to school.", cn: "汤姆去上学。" }
+                ]
             }
         ]
     },
@@ -1783,6 +2315,26 @@ const lessonsData = {
                 phrases: [{ en: "To tell you the truth", cn: "说实话" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "Do you want...? 询问需要",
+                explanation: "🛒 问\"要不要\"？**Do you want...?** 想要说 **Yes, please!**，不要说 **No, thank you.**",
+                examples: [
+                    { en: " — Do you want some tea?", cn: "你要茶吗？— 好的。", answer: "Do you want some tea?" },
+                    { en: " — Do you want an apple?", cn: "你要苹果吗？— 不了，谢谢。", answer: "Do you want an apple?" },
+                    { en: " — Do you want some meat?", cn: "你要肉吗？— 好的。", answer: "Do you want some meat?" }
+                ]
+            },
+            {
+                topic: "地点的表达 at the + 店名's",
+                explanation: "🏪 \"在某某店\"用 **at the + 店主's**！at the butcher's（在肉店）、at the baker's（在面包店）！",
+                examples: [
+                    { en: "I'm at the butcher's.", cn: "我在肉店。" },
+                    { en: "She's at the baker's.", cn: "她在面包店。" },
+                    { en: "He's at the doctor's.", cn: "他在诊所。" }
+                ]
+            }
         ]
     },
     51: {
@@ -1848,6 +2400,26 @@ const lessonsData = {
                 speaker: "DIMITRI", speakerClass: "speaker-penny", english: "It's often cold in December, January and February. It snows sometimes.", chinese: "十二月、一月和二月常常很冷。有时下雪。",
                 phrases: [{ en: "it snows", cn: "下雪" }],
                 grammar: ""
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "频率副词 always/often/sometimes",
+                explanation: "📅 多久做一次？**always**（总是100%）、**often**（经常80%）、**sometimes**（有时50%）、**never**（从不0%）！",
+                examples: [
+                    { en: "I always eat breakfast.", cn: "我总是吃早餐。" },
+                    { en: "She often reads books.", cn: "她经常看书。" },
+                    { en: "It sometimes rains here.", cn: "这里有时下雨。" }
+                ]
+            },
+            {
+                topic: "一般现在时表示习惯",
+                explanation: "🔄 经常做的事、习惯、规律用一般现在时！**I go to school every day.**（我每天上学。）",
+                examples: [
+                    { en: "I go to school every day.", cn: "我每天上学。" },
+                    { en: "She reads books every night.", cn: "她每晚看书。" },
+                    { en: "The sun rises in the east.", cn: "太阳从东方升起。" }
+                ]
             }
         ]
     },
@@ -1915,6 +2487,26 @@ const lessonsData = {
                 phrases: [{ en: "subject of conversation", cn: "谈话话题" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "询问天气 What's the weather like?",
+                explanation: "🌤️ 问天气用 **What's the weather like?** 回答：**It's sunny/rainy/hot/cold.**",
+                examples: [
+                    { en: " — What's the weather like in spring?", cn: "春天天气怎么样？— 很暖和。", answer: "What's the weather like in spring?" },
+                    { en: " — What's the weather like in summer?", cn: "夏天天气怎么样？— 很热。", answer: "What's the weather like in summer?" },
+                    { en: " — What's the weather like in winter?", cn: "冬天天气怎么样？— 很冷。", answer: "What's the weather like in winter?" }
+                ]
+            },
+            {
+                topic: "季节表达",
+                explanation: "🌸🌻🍂❄️ 四季：**spring**（春）、**summer**（夏）、**autumn**（秋）、**winter**（冬）。用 **in + 季节**！",
+                examples: [
+                    { en: "It's warm in spring.", cn: "春天很暖和。" },
+                    { en: "It's hot in summer.", cn: "夏天很热。" },
+                    { en: "It's cold in winter.", cn: "冬天很冷。" }
+                ]
+            }
         ]
     },
     55: {
@@ -1971,6 +2563,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "read the newspaper", cn: "看报纸" }, { en: "watch television", cn: "看电视" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "日常活动 go to work/school/bed",
+                explanation: "🏫🏢😴 固定搭配！**go to school**（上学）、**go to work**（上班）、**go to bed**（睡觉）。注意不加 the！",
+                examples: [
+                    { en: "I go to school at 8.", cn: "我8点去上学。" },
+                    { en: "Dad goes to work at 7.", cn: "爸爸7点去上班。" },
+                    { en: "I go to bed at 9.", cn: "我9点去睡觉。" }
+                ]
+            },
+            {
+                topic: "时间介词 at/in",
+                explanation: "⏰ 具体时间点用 **at**：at 7 o'clock。上午/下午/晚上用 **in**：in the morning！",
+                examples: [
+                    { en: "I get up at 7.", cn: "我7点起床。" },
+                    { en: "I eat lunch at 12.", cn: "我12点吃午餐。" },
+                    { en: "I study in the morning.", cn: "我在上午学习。" }
+                ]
+            }
         ]
     },
     57: {
@@ -2011,6 +2623,26 @@ const lessonsData = {
                 speaker: "TEXT", speakerClass: "speaker-sam", english: "At the moment, he's reading an interesting book.", chinese: "此刻，他在读一本有趣的书。",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "时间表达 at + 时间点",
+                explanation: "⏰ 说\"在几点\"用 **at + 时间**！**at 7 o'clock**、**at noon**、**at night**！",
+                examples: [
+                    { en: "I get up at 7.", cn: "我7点起床。" },
+                    { en: "I eat lunch at 12.", cn: "我12点吃午餐。" },
+                    { en: "I go to bed at 9.", cn: "我9点睡觉。" }
+                ]
+            },
+            {
+                topic: "usually 通常",
+                explanation: "📅 **usually** 表示\"通常\"，放在动词前面。**I usually get up at 7.**（我通常7点起床。）",
+                examples: [
+                    { en: "I usually get up at 7.", cn: "我通常7点起床。" },
+                    { en: "She usually eats breakfast at 8.", cn: "她通常8点吃早餐。" },
+                    { en: "He usually goes to bed at 10.", cn: "他通常10点睡觉。" }
+                ]
             }
         ]
     },
@@ -2093,6 +2725,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "购物用语 How much...?",
+                explanation: "💰 买东西问价格！**How much is it?**（多少钱？）店员回答 **It's + 价格**。",
+                examples: [
+                    { en: " — How much is it?", cn: "这个多少钱？— 10元。", answer: "How much is it?" },
+                    { en: " — How much is this book?", cn: "这本书多少钱？— 5元。", answer: "How much is this book?" },
+                    { en: " — How much are these?", cn: "这些多少钱？— 20元。", answer: "How much are these?" }
+                ]
+            },
+            {
+                topic: "Is that all? / That's all.",
+                explanation: "🛒 店员问 **Is that all?**（就这些吗？）你可以说 **Yes, that's all.**（是的，就这些。）或继续选购！",
+                examples: [
+                    { en: " — Is that all?", cn: "就这些吗？— 是的，就这些。", answer: "Is that all?" },
+                    { en: " — Is that all?", cn: "就这些吗？— 不，我还要苹果。", answer: "Is that all?" },
+                    { en: "That's all, thank you.", cn: "就这些，谢谢。" }
+                ]
+            }
         ]
     },
     61: {
@@ -2174,6 +2826,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "情态动词 must",
+                explanation: "⚠️ **must** 表示\"必须\"，语气很强！就像医生严肃地说\"你必须吃药！\"",
+                examples: [
+                    { en: "You must stay in bed.", cn: "你必须卧床休息。" },
+                    { en: "You mustn't get up.", cn: "你不准起床。" },
+                    { en: "You must take medicine.", cn: "你必须吃药。" }
+                ]
+            },
+            {
+                topic: "have a cold / headache",
+                explanation: "🤒 生病用 **have + 病症**！have a cold（感冒）、have a headache（头疼）、have a fever（发烧）。",
+                examples: [
+                    { en: "I have a cold.", cn: "我感冒了。" },
+                    { en: "She has a headache.", cn: "她头疼。" },
+                    { en: "He has a fever.", cn: "他发烧了。" }
+                ]
+            }
         ]
     },
     63: {
@@ -2250,6 +2922,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "What's the matter?",
+                explanation: "❓ 问\"怎么了\"用 **What's the matter?** 或 **What's wrong?** 回答说症状！",
+                examples: [
+                    { en: " — What's the matter?", cn: "怎么了？— 我感冒了。", answer: "What's the matter?" },
+                    { en: " — What's wrong?", cn: "怎么了？— 我头痛。", answer: "What's wrong?" },
+                    { en: " — What's the matter with him?", cn: "他怎么了？— 他发烧了。", answer: "What's the matter with him?" }
+                ]
+            },
+            {
+                topic: "mustn't 禁止",
+                explanation: "🚫 **mustn't** 表示\"禁止、不准\"，比\"不要\"更严厉！医生说的要听！",
+                examples: [
+                    { en: "You mustn't get up.", cn: "你不准起床。" },
+                    { en: "You mustn't eat ice cream.", cn: "你不准吃冰淇淋。" },
+                    { en: "You mustn't go out.", cn: "你不准出门。" }
+                ]
+            }
         ]
     },
     65: {
@@ -2321,6 +3013,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "enjoy oneself", cn: "玩得开心" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "询问时间 What time is it?",
+                explanation: "⏰ 问几点用 **What time is it?** 回答 **It's + 时间**。半点用 **half past**！",
+                examples: [
+                    { en: " — What time is it?", cn: "几点了？— 7点半。", answer: "What time is it?" },
+                    { en: " — What time is it?", cn: "几点了？— 8点15分。", answer: "What time is it?" },
+                    { en: " — What time is it?", cn: "几点了？— 6点。", answer: "What time is it?" }
+                ]
+            },
+            {
+                topic: "时间表达 half past / a quarter past",
+                explanation: "⏱️ **half past 7** = 7点半，**a quarter past 7** = 7点15分，**a quarter to 8** = 7点45分（差15分8点）！",
+                examples: [
+                    { en: "It's half past 7.", cn: "7点半。" },
+                    { en: "It's a quarter past 8.", cn: "8点15分。" },
+                    { en: "It's a quarter to 9.", cn: "8点45分。" }
+                ]
+            }
         ]
     },
     67: {
@@ -2377,6 +3089,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "一般过去时 was/were",
+                explanation: "⏮️ 说过去\"是什么样\"用 **was/were**！I/He/She/It 用 **was**，You/We/They 用 **were**。",
+                examples: [
+                    { en: "I was happy yesterday.", cn: "我昨天很开心。" },
+                    { en: "She was tired.", cn: "她那时很累。" },
+                    { en: "They were at home.", cn: "他们那时在家。" }
+                ]
+            },
+            {
+                topic: "过去时间词",
+                explanation: "📅 表示过去的时间词：**yesterday**（昨天）、**last week**（上周）、**last night**（昨晚）！",
+                examples: [
+                    { en: "I was at home yesterday.", cn: "我昨天在家。" },
+                    { en: "She was busy last week.", cn: "她上周很忙。" },
+                    { en: "We were happy last night.", cn: "我们昨晚很开心。" }
+                ]
+            }
         ]
     },
     69: {
@@ -2432,6 +3164,26 @@ const lessonsData = {
                 speaker: "TEXT", speakerClass: "speaker-sam", english: "On the way home, my wife said to me, \"Don't drive so quickly! You're not Billy Stewart!\"", chinese: "在回家的路上，我妻子对我说：\"别开得这么快！你不是比利·斯图尔特！\"",
                 grammar: "",
                 phrases: [{ en: "on the way home", cn: "在回家的路上" }]
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "一般过去时 动词过去式",
+                explanation: "⏮️ 过去做的事，动词要变过去式！大多数加 **ed**：play → played。不规则的要记：go → went！",
+                examples: [
+                    { en: "I played games yesterday.", cn: "我昨天玩了游戏。" },
+                    { en: "She watched TV.", cn: "她看了电视。" },
+                    { en: "He went home.", cn: "他回家了。" }
+                ]
+            },
+            {
+                topic: "规则动词过去式 +ed",
+                explanation: "📝 规则动词加 **ed**：work → worked，watch → watched，play → played！",
+                examples: [
+                    { en: "I worked yesterday.", cn: "我昨天工作了。" },
+                    { en: "She cooked dinner.", cn: "她做了晚餐。" },
+                    { en: "They cleaned the room.", cn: "他们打扫了房间。" }
+                ]
             }
         ]
     },
@@ -2499,6 +3251,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "过去时疑问句 Did you...?",
+                explanation: "❓ 问过去\"做了没有\"用 **Did you + 动词原形**！注意动词恢复原形！",
+                examples: [
+                    { en: " — Did you eat breakfast?", cn: "你吃早餐了吗？— 吃了。", answer: "Did you eat breakfast?" },
+                    { en: " — Did you sleep well?", cn: "你睡得好吗？— 没睡好。", answer: "Did you sleep well?" },
+                    { en: " — Did she call you?", cn: "她给你打电话了吗？— 打了。", answer: "Did she call you?" }
+                ]
+            },
+            {
+                topic: "过去时否定句 didn't",
+                explanation: "🚫 过去\"没做\"用 **didn't + 动词原形**！I didn't go. 我没去。",
+                examples: [
+                    { en: "I didn't eat breakfast.", cn: "我没吃早餐。" },
+                    { en: "She didn't call me.", cn: "她没给我打电话。" },
+                    { en: "They didn't come.", cn: "他们没来。" }
+                ]
+            }
         ]
     },
     73: {
@@ -2554,6 +3326,26 @@ const lessonsData = {
                 speaker: "THE MAN", speakerClass: "speaker-sam", english: "I am sorry. I do not speak English.", chinese: "对不起，我不会讲英语。",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "问路 How do I get to...?",
+                explanation: "🗺️ 问路用 **How do I get to + 地点?** 回答指方向：直走、左转、右转！",
+                examples: [
+                    { en: " — How do I get to the park?", cn: "我怎么去公园？— 直走。", answer: "How do I get to the park?" },
+                    { en: " — How do I get to the school?", cn: "我怎么去学校？— 左转。", answer: "How do I get to the school?" },
+                    { en: " — How do I get to the station?", cn: "我怎么去车站？— 右转。", answer: "How do I get to the station?" }
+                ]
+            },
+            {
+                topic: "方向词 straight/left/right",
+                explanation: "🧭 **Go straight**（直走⬆️）、**Turn left**（左转⬅️）、**Turn right**（右转➡️）！",
+                examples: [
+                    { en: "Go straight ahead.", cn: "一直往前走。" },
+                    { en: "Turn left at the corner.", cn: "在拐角左转。" },
+                    { en: "Turn right here.", cn: "在这里右转。" }
+                ]
             }
         ]
     },
@@ -2641,6 +3433,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "形容词比较级 -er / more",
+                explanation: "📏 比较两个东西谁更...？短词加 **er**：tall → taller。长词加 **more**！",
+                examples: [
+                    { en: "I am taller than Tom.", cn: "我比汤姆高。" },
+                    { en: "This book is bigger.", cn: "这本书更大。" },
+                    { en: "She is older than me.", cn: "她比我大。" }
+                ]
+            },
+            {
+                topic: "than 比较",
+                explanation: "⚖️ 比较用 **than**（比）！**A is taller than B.** A 比 B 高。",
+                examples: [
+                    { en: "I am taller than Tom.", cn: "我比汤姆高。" },
+                    { en: "She is older than me.", cn: "她比我年纪大。" },
+                    { en: "This is better than that.", cn: "这个比那个好。" }
+                ]
+            }
         ]
     },
     77: {
@@ -2706,6 +3518,26 @@ const lessonsData = {
                 speaker: "MR CROFT", speakerClass: "speaker-sam", english: "I can wait, but my toothache can't!", chinese: "我能等，但我的牙痛等不了！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "have to 不得不",
+                explanation: "😫 **have to** 表示\"不得不\"，是外在原因逼迫的！和 must 不同！",
+                examples: [
+                    { en: "I have to go now.", cn: "我现在不得不走了。" },
+                    { en: "She has to work today.", cn: "她今天不得不工作。" },
+                    { en: "We have to wait.", cn: "我们必须等待。" }
+                ]
+            },
+            {
+                topic: "have to vs must",
+                explanation: "🤔 **must** 是自己觉得必须💪，**have to** 是被迫的😫。否定也不同！",
+                examples: [
+                    { en: "I must study hard.", cn: "我必须努力学习。（自己想的）" },
+                    { en: "I have to go now.", cn: "我现在不得不走了。（有事情）" },
+                    { en: "You don't have to wait.", cn: "你不必等。（可以不等）" }
+                ]
             }
         ]
     },
@@ -2777,6 +3609,26 @@ const lessonsData = {
                 speaker: "TOM", speakerClass: "speaker-sam", english: "Well, I haven't got much either!", chinese: "嗯，我也没多少钱！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "How many / How much 询问数量",
+                explanation: "🔢 能数的用 **How many**（苹果🍎），不能数的用 **How much**（水💧）！",
+                examples: [
+                    { en: " — How many apples do you want?", cn: "你要几个苹果？— 两个。", answer: "How many apples do you want?" },
+                    { en: " — How much water do you want?", cn: "你要多少水？— 一点点。", answer: "How much water do you want?" },
+                    { en: " — How many books do you have?", cn: "你有几本书？— 三本。", answer: "How many books do you have?" }
+                ]
+            },
+            {
+                topic: "need 需要",
+                explanation: "📝 说\"需要\"用 **need**！**I need some apples.** 我需要一些苹果。",
+                examples: [
+                    { en: "I need some apples.", cn: "我需要一些苹果。" },
+                    { en: "She needs a pen.", cn: "她需要一支笔。" },
+                    { en: "We need more time.", cn: "我们需要更多时间。" }
+                ]
             }
         ]
     },
@@ -2874,6 +3726,26 @@ const lessonsData = {
                 phrases: [{ en: "be going to", cn: "将要...；打算...（表示将来）" }],
                 grammar: ""
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "have 表示\"吃/喝\"",
+                explanation: "🍽️ **have** 还可以表示\"吃/喝\"！have breakfast（吃早餐）、have lunch（吃午餐）、have tea（喝茶）！",
+                examples: [
+                    { en: "I have breakfast at 7.", cn: "我7点吃早餐。" },
+                    { en: "She has lunch at 12.", cn: "她12点吃午餐。" },
+                    { en: "We have dinner at 6.", cn: "我们6点吃晚餐。" }
+                ]
+            },
+            {
+                topic: "副词 yet/already",
+                explanation: "⏰ **already** = 已经（肯定句），**yet** = 还（没）（疑问句/否定句）！",
+                examples: [
+                    { en: "I have already eaten.", cn: "我已经吃过了。" },
+                    { en: "Have you eaten yet?", cn: "你吃了吗？" },
+                    { en: "I haven't eaten yet.", cn: "我还没吃。" }
+                ]
+            }
         ]
     },
     83: {
@@ -2939,6 +3811,26 @@ const lessonsData = {
                 speaker: "SAM", speakerClass: "speaker-sam", english: "I stayed at home!", chinese: "我待在家里！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在完成时 have/has + done",
+                explanation: "✅ 说\"已经做完了\"用 **have/has + 动词过去分词**！表示到现在为止的成果！",
+                examples: [
+                    { en: "I have finished my homework.", cn: "我已经完成作业了。" },
+                    { en: "She has eaten lunch.", cn: "她已经吃过午餐了。" },
+                    { en: "They have left.", cn: "他们已经走了。" }
+                ]
+            },
+            {
+                topic: "过去分词",
+                explanation: "📝 过去分词通常和过去式相同：work → worked → worked。不规则要记：go → went → gone！",
+                examples: [
+                    { en: "I have finished. 我已经完成了。（finish → finished）", cn: "" },
+                    { en: "She has gone. 她已经走了。（go → went → gone）", cn: "" },
+                    { en: "He has seen it. 他已经看过了。（see → saw → seen）", cn: "" }
+                ]
             }
         ]
     },
@@ -3011,6 +3903,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在完成时疑问句 Have you ever...?",
+                explanation: "🌍 问\"有没有经历过\"用 **Have you ever + 动词过去分词?** ever = 曾经！",
+                examples: [
+                    { en: " — Have you ever been to Beijing?", cn: "你去过北京吗？— 去过。", answer: "Have you ever been to Beijing?" },
+                    { en: " — Have you ever eaten pizza?", cn: "你吃过披萨吗？— 没吃过。", answer: "Have you ever eaten pizza?" },
+                    { en: " — Has she ever seen a lion?", cn: "她见过狮子吗？— 没见过。", answer: "Has she ever seen a lion?" }
+                ]
+            },
+            {
+                topic: "been to vs gone to",
+                explanation: "🗺️ **been to** = 去过（已经回来了）。**gone to** = 去了（还没回来）！",
+                examples: [
+                    { en: "I have been to Beijing.", cn: "我去过北京。（已回来）" },
+                    { en: "He has gone to Beijing.", cn: "他去北京了。（还没回来）" },
+                    { en: "She has been to many countries.", cn: "她去过很多国家。" }
+                ]
+            }
         ]
     },
     87: {
@@ -3081,6 +3993,26 @@ const lessonsData = {
                 speaker: "ATTENDANT", speakerClass: "speaker-penny", english: "Well, they're trying to repair it, sir. But to tell you the truth, you need a new car.", chinese: "嗯，他们正在设法修它，先生。但说实话，您需要一辆新车。",
                 grammar: "",
                 phrases: [{ en: "to tell you the truth", cn: "老实说" }]
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "过去进行时 was/were + doing",
+                explanation: "📸 描述过去某时刻\"正在做什么\"用 **was/were + 动词ing**！像老照片定格瞬间！",
+                examples: [
+                    { en: "I was reading a book at 8.", cn: "8点时我正在看书。" },
+                    { en: "She was sleeping at that time.", cn: "那时她正在睡觉。" },
+                    { en: "They were playing in the park.", cn: "他们那时正在公园玩。" }
+                ]
+            },
+            {
+                topic: "when 连接两个动作",
+                explanation: "⚡ **when** 连接两个动作：一个正在进行，一个突然发生！",
+                examples: [
+                    { en: "I was reading when he came.", cn: "他来时我正在看书。" },
+                    { en: "She was cooking when the phone rang.", cn: "电话响时她正在做饭。" },
+                    { en: "They were playing when it rained.", cn: "下雨时他们正在玩。" }
+                ]
             }
         ]
     },
@@ -3168,6 +4100,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "have the last word", cn: "有最后的决定权" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在完成时 for/since",
+                explanation: "⏱️ **for + 一段时间**（持续多久），**since + 时间点**（从什么时候开始）！",
+                examples: [
+                    { en: "I have lived here for 5 years.", cn: "我在这住了5年。" },
+                    { en: "She has been here since Monday.", cn: "她从周一就在这了。" },
+                    { en: "We have waited for 2 hours.", cn: "我们等了2小时。" }
+                ]
+            },
+            {
+                topic: "for vs since",
+                explanation: "📅 **for** 后面接\"多长时间\"：for 3 days。**since** 后面接\"从什么时候\"：since 2020！",
+                examples: [
+                    { en: "I have studied English for 3 years.", cn: "我学英语3年了。" },
+                    { en: "She has lived here since 2020.", cn: "她从2020年就住这了。" },
+                    { en: "We have known each other for 10 years.", cn: "我们认识10年了。" }
+                ]
+            }
         ]
     },
     91: {
@@ -3244,6 +4196,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "be going to 将来时（计划）",
+                explanation: "📋 有计划要做的事用 **be going to + 动词**！这是已经想好的计划！",
+                examples: [
+                    { en: "I'm going to move next week.", cn: "我打算下周搬家。" },
+                    { en: "She's going to leave tomorrow.", cn: "她打算明天离开。" },
+                    { en: "They're going to visit us.", cn: "他们打算拜访我们。" }
+                ]
+            },
+            {
+                topic: "将来时否定",
+                explanation: "🚫 将来\"不打算\"用 **be not going to**！I'm not going to do it. 我不打算做。",
+                examples: [
+                    { en: "I'm not going to go.", cn: "我不打算去。" },
+                    { en: "She isn't going to come.", cn: "她不打算来。" },
+                    { en: "They aren't going to help.", cn: "他们不打算帮忙。" }
+                ]
+            }
         ]
     },
     93: {
@@ -3299,6 +4271,26 @@ const lessonsData = {
                 speaker: "Narrator", speakerClass: "speaker-sam", english: "She usually stays at home!", chinese: "她总是待在家里！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "will 将来时（预测）",
+                explanation: "🔮 预测未来用 **will + 动词**！就像占卜水晶球！",
+                examples: [
+                    { en: "It will rain tomorrow.", cn: "明天会下雨。" },
+                    { en: "She will come soon.", cn: "她很快就会来。" },
+                    { en: "They will help us.", cn: "他们会帮我们。" }
+                ]
+            },
+            {
+                topic: "will vs be going to",
+                explanation: "🤔 **be going to** = 已计划好的。**will** = 临时决定或预测！",
+                examples: [
+                    { en: "I'm going to study tonight.", cn: "我打算今晚学习。（已计划）" },
+                    { en: "I will help you.", cn: "我会帮你。（临时决定）" },
+                    { en: "It will rain tomorrow.", cn: "明天会下雨。（预测）" }
+                ]
             }
         ]
     },
@@ -3391,6 +4383,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "had better 最好",
+                explanation: "💡 建议\"最好怎么做\"用 **had better + 动词**！可缩写成 **'d better**！",
+                examples: [
+                    { en: "You'd better go now.", cn: "你最好现在走。" },
+                    { en: "You'd better eat something.", cn: "你最好吃点东西。" },
+                    { en: "We'd better run.", cn: "我们最好跑。" }
+                ]
+            },
+            {
+                topic: "had better not 最好不要",
+                explanation: "⚠️ 建议\"最好不要\"用 **had better not**！You'd better not be late. 你最好别迟到。",
+                examples: [
+                    { en: "You'd better not be late.", cn: "你最好别迟到。" },
+                    { en: "You'd better not eat that.", cn: "你最好别吃那个。" },
+                    { en: "We'd better not go out.", cn: "我们最好别出门。" }
+                ]
+            }
         ]
     },
     97: {
@@ -3477,6 +4489,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "belong to", cn: "属于" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "形容词顺序",
+                explanation: "🎨 多个形容词要按顺序：**大小 → 颜色 → 名词**！a small blue bag（一个蓝色的小包）！",
+                examples: [
+                    { en: "a small blue bag", cn: "一个蓝色的小包" },
+                    { en: "a big red apple", cn: "一个红色的大苹果" },
+                    { en: "a little black cat", cn: "一只黑色的小猫" }
+                ]
+            },
+            {
+                topic: "belong to 属于",
+                explanation: "👤 说\"属于某人\"用 **belong to + 人**！This book belongs to me. 这本书属于我。",
+                examples: [
+                    { en: "This book belongs to me.", cn: "这本书属于我。" },
+                    { en: "That bag belongs to her.", cn: "那个包属于她。" },
+                    { en: "These pens belong to Tom.", cn: "这些笔属于汤姆。" }
+                ]
+            }
         ]
     },
     99: {
@@ -3527,6 +4559,26 @@ const lessonsData = {
                 speaker: "PAT", speakerClass: "speaker-penny", english: "The doctor says that he will come at once. I'm sure that you need an X-ray, Andy.", chinese: "医生说他马上就来。我确信你需要照X光，安迪。",
                 grammar: "",
                 phrases: [{ en: "at once", cn: "立刻" }]
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "反身代词 myself/yourself/himself",
+                explanation: "🪞 表示\"自己\"用反身代词！myself（我自己）、yourself（你自己）、himself（他自己）！",
+                examples: [
+                    { en: "I can do it myself.", cn: "我自己能做。" },
+                    { en: "He hurt himself.", cn: "他伤到自己了。" },
+                    { en: "She made it herself.", cn: "她自己做的。" }
+                ]
+            },
+            {
+                topic: "By oneself 独自",
+                explanation: "👤 **by oneself** = 独自一人。I did it by myself. 我独自做的。",
+                examples: [
+                    { en: "I did it by myself.", cn: "我独自做的。" },
+                    { en: "She lives by herself.", cn: "她独自生活。" },
+                    { en: "He finished it by himself.", cn: "他独自完成的。" }
+                ]
             }
         ]
     },
@@ -3594,6 +4646,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在完成时 just/already",
+                explanation: "⏰ **just** = 刚刚（才发生），**already** = 已经（比预期早）！都放在 have/has 后面！",
+                examples: [
+                    { en: "I have just eaten.", cn: "我刚吃完。" },
+                    { en: "She has already left.", cn: "她已经离开了。" },
+                    { en: "They have just arrived.", cn: "他们刚到。" }
+                ]
+            },
+            {
+                topic: "not...yet 还没",
+                explanation: "⏳ \"还没\"用 **haven't/hasn't + 动词 + yet**！**yet** 放句末！",
+                examples: [
+                    { en: "I haven't finished yet.", cn: "我还没完成。" },
+                    { en: "She hasn't eaten yet.", cn: "她还没吃。" },
+                    { en: "They haven't arrived yet.", cn: "他们还没到。" }
+                ]
+            }
         ]
     },
     103: {
@@ -3629,6 +4701,26 @@ const lessonsData = {
                 speaker: "RICHARD", speakerClass: "speaker-sam", english: "I hate them. I'm sure I've got a low mark.", chinese: "我讨厌它们。我肯定得了低分。",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "enough 足够",
+                explanation: "✅ **enough** 放在形容词后面：old enough（够大）。放在名词前面：enough money（足够的钱）！",
+                examples: [
+                    { en: "I'm old enough.", cn: "我够大了。" },
+                    { en: "It's big enough.", cn: "它够大了。" },
+                    { en: "I have enough money.", cn: "我有足够的钱。" }
+                ]
+            },
+            {
+                topic: "not...enough 不够",
+                explanation: "❌ \"不够\"用 **not + 形容词 + enough**！He's not old enough. 他不够大。",
+                examples: [
+                    { en: "He's not old enough.", cn: "他不够大。" },
+                    { en: "It's not big enough.", cn: "它不够大。" },
+                    { en: "I don't have enough time.", cn: "我没有足够的时间。" }
+                ]
             }
         ]
     },
@@ -3691,6 +4783,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "too 太...",
+                explanation: "😵 **too** 表示\"太...了\"，超过合适的程度！通常暗示\"不好\"！",
+                examples: [
+                    { en: "It's too hot.", cn: "太热了。" },
+                    { en: "It's too big.", cn: "太大了。" },
+                    { en: "It's too cold.", cn: "太冷了。" }
+                ]
+            },
+            {
+                topic: "形容词同级比较 as...as",
+                explanation: "⚖️ 说\"和...一样\"用 **as + 形容词 + as**！I am as tall as Tom. 我和汤姆一样高。",
+                examples: [
+                    { en: "I am as tall as Tom.", cn: "我和汤姆一样高。" },
+                    { en: "She is as old as me.", cn: "她和我一样大。" },
+                    { en: "This is as big as that.", cn: "这个和那个一样大。" }
+                ]
+            }
         ]
     },
     107: {
@@ -3736,6 +4848,26 @@ const lessonsData = {
                 speaker: "ASSISTANT", speakerClass: "speaker-penny", english: "I'm afraid I haven't got a larger dress. This is the largest dress in the shop.", chinese: "恐怕我没有更大的了。这是店里最大的连衣裙了。",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "too...to... 太...以至于不能...",
+                explanation: "🚫 **too + 形容词 + to + 动词** = 太...以至于不能做某事！",
+                examples: [
+                    { en: "I'm too tired to walk.", cn: "我太累了走不动。" },
+                    { en: "It's too big to carry.", cn: "它太大了搬不动。" },
+                    { en: "She's too young to go.", cn: "她太小了不能去。" }
+                ]
+            },
+            {
+                topic: "enough to 足够...可以",
+                explanation: "✅ **形容词 + enough + to + 动词** = 足够...可以做某事！",
+                examples: [
+                    { en: "I'm old enough to drive.", cn: "我够大了可以开车。" },
+                    { en: "It's big enough to hold it.", cn: "它够大可以装下。" },
+                    { en: "She's tall enough to reach it.", cn: "她够高可以够到。" }
+                ]
             }
         ]
     },
@@ -3823,6 +4955,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "a little / a few 一点点/几个",
+                explanation: "📏 不可数用 **a little**（a little water 一点水），可数用 **a few**（a few books 几本书）！",
+                examples: [
+                    { en: "I have a little water.", cn: "我有一点水。" },
+                    { en: "I have a few books.", cn: "我有几本书。" },
+                    { en: "She has a little time.", cn: "她有一点时间。" }
+                ]
+            },
+            {
+                topic: "little / few 几乎没有",
+                explanation: "❌ 不加 a 表示\"几乎没有\"！**little water**（几乎没水）、**few books**（几乎没书）！",
+                examples: [
+                    { en: "I have little water.", cn: "我几乎没水了。" },
+                    { en: "He has few friends.", cn: "他几乎没有朋友。" },
+                    { en: "There is little time left.", cn: "几乎没时间了。" }
+                ]
+            }
         ]
     },
     111: {
@@ -3878,6 +5030,26 @@ const lessonsData = {
                 speaker: "MR FRITH", speakerClass: "speaker-sam", english: "Millionaires don't buy things on instalments!", chinese: "百万富翁可不用分期付款买东西！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "形容词最高级 the + -est / most",
+                explanation: "🏆 三个或更多比较谁最...？短词加 **est**，长词加 **the most**！别忘了 **the**！",
+                examples: [
+                    { en: "He is the tallest in class.", cn: "他是班里最高的。" },
+                    { en: "This is the biggest apple.", cn: "这是最大的苹果。" },
+                    { en: "This is the best book.", cn: "这是最好的书。" }
+                ]
+            },
+            {
+                topic: "不规则最高级",
+                explanation: "⚠️ 有些词最高级不规则：good → best，bad → worst，many/much → most！",
+                examples: [
+                    { en: "This is the best book.", cn: "这是最好的书。" },
+                    { en: "That was the worst day.", cn: "那是最糟糕的一天。" },
+                    { en: "She has the most books.", cn: "她有最多的书。" }
+                ]
             }
         ]
     },
@@ -3960,6 +5132,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "So have I.", cn: "我也有。" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "neither/either 也（不）",
+                explanation: "👯 别人说什么你也一样！肯定用 **So do I**，否定用 **Neither can I**！",
+                examples: [
+                    { en: " — I can't swim.", cn: "我不会游泳。— 我也不会。", answer: "I can't swim." },
+                    { en: " — I can sing.", cn: "我会唱歌。— 我也会。", answer: "I can sing." },
+                    { en: " — I like apples.", cn: "我喜欢苹果。— 我也喜欢。", answer: "I like apples." }
+                ]
+            },
+            {
+                topic: "So do I / Neither do I",
+                explanation: "✅ 注意结构：**So + 助动词 + 主语**（肯定），**Neither + 助动词 + 主语**（否定）！",
+                examples: [
+                    { en: "So do I.", cn: "我也是。（同意肯定句）" },
+                    { en: "Neither do I.", cn: "我也不。（同意否定句）" },
+                    { en: "So can she.", cn: "她也能。" }
+                ]
+            }
         ]
     },
     115: {
@@ -4011,6 +5203,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "不定代词 someone/anyone/no one",
+                explanation: "👤 **someone**（某人）用在肯定句，**anyone**（任何人）用在疑问句/否定句，**no one**（没有人）！",
+                examples: [
+                    { en: "Someone is at the door.", cn: "有人在门口。" },
+                    { en: "Is anyone there?", cn: "有人在吗？" },
+                    { en: "No one is at home.", cn: "没人在家。" }
+                ]
+            },
+            {
+                topic: "复合不定代词",
+                explanation: "📦 **someone/something/somewhere** 某人/某物/某地，**anyone/anything/anywhere** 任何人/物/地！",
+                examples: [
+                    { en: "I saw someone.", cn: "我看到某人了。" },
+                    { en: "Is there anything?", cn: "有什么东西吗？" },
+                    { en: "He went somewhere.", cn: "他去了某个地方。" }
+                ]
+            }
         ]
     },
     117: {
@@ -4051,6 +5263,26 @@ const lessonsData = {
                 speaker: "WIFE", speakerClass: "speaker-penny", english: "I don't know. Tommy's been to the lavatory three times this morning, but I haven't had any change yet!", chinese: "我不知道。汤米今天上午已经上了三次厕所了，但我还没得到任何零钱！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "不定代词 something/anything/nothing",
+                explanation: "📦 **something**（某物）肯定句，**anything**（任何东西）疑问/否定句，**nothing**（什么都没有）！",
+                examples: [
+                    { en: "I want something to eat.", cn: "我想吃点东西。" },
+                    { en: "Do you have anything?", cn: "你有什么东西吗？" },
+                    { en: "There is nothing in the box.", cn: "盒子里什么都没有。" }
+                ]
+            },
+            {
+                topic: "形容词修饰不定代词",
+                explanation: "🎨 形容词放在不定代词后面！**something new**（新的东西），**nothing important**（没什么重要的）！",
+                examples: [
+                    { en: "I want something cold.", cn: "我想要冷的东西。" },
+                    { en: "Is there anything new?", cn: "有什么新的吗？" },
+                    { en: "There is nothing wrong.", cn: "没什么问题。" }
+                ]
             }
         ]
     },
@@ -4102,6 +5334,26 @@ const lessonsData = {
                 speaker: "GEORGE", speakerClass: "speaker-sam", english: "\"Nothing, Henry,\" George said and smiled. \"Go back to sleep.\"", chinese: "\"没什么，亨利，\"乔治笑着说。\"回去睡觉吧。\"",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "过去进行时 + when",
+                explanation: "⚡ 描述\"当...时正在做...\"用 **was/were doing + when**！when 后面的动作打断前面的！",
+                examples: [
+                    { en: "I was sleeping when he came.", cn: "他来时我正在睡觉。" },
+                    { en: "She was eating when I called.", cn: "我打电话时她正在吃东西。" },
+                    { en: "They were playing when it rained.", cn: "下雨时他们正在玩。" }
+                ]
+            },
+            {
+                topic: "while 当...的时候",
+                explanation: "⏱️ **while** 后面跟持续的动作。**While I was reading, he came.** 我正在看书时他来了。",
+                examples: [
+                    { en: "While I was reading, he came.", cn: "我正在看书时他来了。" },
+                    { en: "While she was cooking, I helped.", cn: "她做饭时我帮忙了。" },
+                    { en: "While they were sleeping, I left.", cn: "他们睡觉时我离开了。" }
+                ]
             }
         ]
     },
@@ -4168,6 +5420,26 @@ const lessonsData = {
                 speaker: "CUSTOMER", speakerClass: "speaker-penny", english: "Thank you. What a rude man!", chinese: "谢谢。这人真粗鲁！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "定语从句 who/which",
+                explanation: "🎯 想描述\"哪一个人/东西\"？用 **who**（指人👤）或 **which**（指物📦）来连接！",
+                examples: [
+                    { en: "The boy who is running is Tom.", cn: "跑步的那个男孩是汤姆。" },
+                    { en: "The book which is on the desk is mine.", cn: "桌上的那本书是我的。" },
+                    { en: "The girl who is singing is my sister.", cn: "唱歌的女孩是我姐姐。" }
+                ]
+            },
+            {
+                topic: "定语从句 that",
+                explanation: "📝 **that** 可以代替 who 和 which！The book that is on the desk = The book which is on the desk！",
+                examples: [
+                    { en: "The boy that is running is Tom.", cn: "跑步的男孩是汤姆。" },
+                    { en: "The book that I bought is good.", cn: "我买的书很好。" },
+                    { en: "The dog that is sleeping is mine.", cn: "正在睡觉的狗是我的。" }
+                ]
             }
         ]
     },
@@ -4250,6 +5522,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "现在完成时 yet/already",
+                explanation: "⏰ **yet** 放句末，用在疑问句和否定句。**already** 放中间，用在肯定句！",
+                examples: [
+                    { en: " — Have you finished yet?", cn: "你完成了吗？— 还没有。", answer: "Have you finished yet?" },
+                    { en: " — Has she left yet?", cn: "她走了吗？— 是的，她已经走了。", answer: "Has she left yet?" },
+                    { en: "I haven't eaten yet.", cn: "我还没吃。" }
+                ]
+            },
+            {
+                topic: "询问经历 Have you ever...?",
+                explanation: "🌍 问\"你有没有经历过\"用 **Have you ever + 动词过去分词?**",
+                examples: [
+                    { en: " — Have you ever been to Australia?", cn: "你去过澳大利亚吗？— 没有，从来没有。", answer: "Have you ever been to Australia?" },
+                    { en: " — Have you ever seen snow?", cn: "你见过雪吗？— 见过。", answer: "Have you ever seen snow?" },
+                    { en: " — Has she ever flown?", cn: "她坐过飞机吗？— 没有。", answer: "Has she ever flown?" }
+                ]
+            }
         ]
     },
     125: {
@@ -4331,6 +5623,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "have to vs must",
+                explanation: "🤔 **must** 是自己觉得必须，**have to** 是外在原因。否定不同：mustn't（禁止）vs don't have to（不必）！",
+                examples: [
+                    { en: "I must study hard.", cn: "我必须努力学习。（自己想的）" },
+                    { en: "I have to go now.", cn: "我现在不得不走了。（有事情）" },
+                    { en: "You don't have to wait.", cn: "你不必等。" }
+                ]
+            },
+            {
+                topic: "don't have to 不必",
+                explanation: "✅ **don't have to** = 不必、可以不做。和 mustn't（禁止）不同！",
+                examples: [
+                    { en: "You don't have to come.", cn: "你不必来。（可以不来）" },
+                    { en: "You mustn't go.", cn: "你不准去。（禁止去）" },
+                    { en: "She doesn't have to work today.", cn: "她今天不必工作。" }
+                ]
+            }
         ]
     },
     127: {
@@ -4397,6 +5709,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "被动语态 is/was + done",
+                explanation: "🎬 强调\"被做\"用被动语态！**The book was written by Tom.** 重点在书📖，不在汤姆！",
+                examples: [
+                    { en: "The book was written by Tom.", cn: "这本书是汤姆写的。" },
+                    { en: "The door was opened.", cn: "门被打开了。" },
+                    { en: "Dinner is ready.", cn: "晚餐准备好了。" }
+                ]
+            },
+            {
+                topic: "by + 执行者",
+                explanation: "👤 说\"被谁做的\"用 **by + 人**！The cake was made by mom. 蛋糕是妈妈做的。",
+                examples: [
+                    { en: "The cake was made by mom.", cn: "蛋糕是妈妈做的。" },
+                    { en: "The letter was written by Tom.", cn: "信是汤姆写的。" },
+                    { en: "The picture was painted by her.", cn: "这幅画是她画的。" }
+                ]
+            }
         ]
     },
     129: {
@@ -4442,6 +5774,26 @@ const lessonsData = {
                 speaker: "DRIVER", speakerClass: "speaker-sam", english: "I was only doing eighty!", chinese: "我只开了80英里！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "过去进行时描述当时状态",
+                explanation: "🚗 描述过去某时刻\"正在做什么\"用 **was/were + doing**！像回放视频📹！",
+                examples: [
+                    { en: "I was driving at that time.", cn: "那时我正在开车。" },
+                    { en: "She was running very fast.", cn: "她那时跑得很快。" },
+                    { en: "They were talking loudly.", cn: "他们那时说话很大声。" }
+                ]
+            },
+            {
+                topic: "速度表达 miles an hour",
+                explanation: "🏎️ 说速度用 **数字 + miles an/per hour**！70 miles an hour = 时速70英里！",
+                examples: [
+                    { en: "He was driving at 70 miles an hour.", cn: "他以时速70英里行驶。" },
+                    { en: "The speed limit is 60 miles per hour.", cn: "限速是时速60英里。" },
+                    { en: "The car was going too fast.", cn: "那辆车开得太快了。" }
+                ]
             }
         ]
     },
@@ -4539,6 +5891,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "may/might 可能",
+                explanation: "🤷 不确定会不会发生用 **may** 或 **might**！might 比 may 更不确定！",
+                examples: [
+                    { en: "He may come tomorrow.", cn: "他明天可能来。" },
+                    { en: "It might rain later.", cn: "待会可能下雨。" },
+                    { en: "She may be right.", cn: "她可能是对的。" }
+                ]
+            },
+            {
+                topic: "may not / might not",
+                explanation: "❓ \"可能不\"用 **may not / might not**！He may not come. 他可能不来。",
+                examples: [
+                    { en: "He may not come.", cn: "他可能不来。" },
+                    { en: "It might not rain.", cn: "可能不下雨。" },
+                    { en: "She may not know.", cn: "她可能不知道。" }
+                ]
+            }
         ]
     },
     133: {
@@ -4595,6 +5967,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: [{ en: "I wonder", cn: "我想知道" }]
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "将来完成时 will have done",
+                explanation: "📅 说\"到将来某时将已经完成\"用 **will have + 动词过去分词**！",
+                examples: [
+                    { en: "I will have finished by 5.", cn: "我5点前会完成。" },
+                    { en: "She will have left by then.", cn: "到那时她会已经走了。" },
+                    { en: "They will have arrived by noon.", cn: "中午前他们会到。" }
+                ]
+            },
+            {
+                topic: "by + 时间 到...时候",
+                explanation: "⏰ **by + 时间** = 到...时候为止。By 5 o'clock = 到5点为止！",
+                examples: [
+                    { en: "I will finish by 5.", cn: "我会在5点前完成。" },
+                    { en: "She will be here by noon.", cn: "她中午前会到。" },
+                    { en: "They will have left by then.", cn: "到那时他们会已经走了。" }
+                ]
+            }
         ]
     },
     135: {
@@ -4645,6 +6037,26 @@ const lessonsData = {
                 speaker: "KATE", speakerClass: "speaker-penny", english: "So now you know! That was sensational news!", chinese: "所以现在你知道了！那真是爆炸性新闻！",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "shall 用于提议",
+                explanation: "💬 提议\"我们做...好吗\"用 **Shall we + 动词?** 很有礼貌！",
+                examples: [
+                    { en: " — Shall we go?", cn: "我们走吧？— 好，走吧。", answer: "Shall we go?" },
+                    { en: " — Shall we eat now?", cn: "我们现在吃吧？— 好，吃吧。", answer: "Shall we eat now?" },
+                    { en: " — Shall I help you?", cn: "要我帮你吗？— 好的，谢谢。", answer: "Shall I help you?" }
+                ]
+            },
+            {
+                topic: "Shall I...? 要我...吗",
+                explanation: "🙋 主动提出帮忙用 **Shall I + 动词?** 可以吗？",
+                examples: [
+                    { en: "Shall I open the door?", cn: "要我开门吗？" },
+                    { en: "Shall I help you?", cn: "要我帮你吗？" },
+                    { en: "Shall I carry that for you?", cn: "要我帮你拿吗？" }
+                ]
             }
         ]
     },
@@ -4701,6 +6113,26 @@ const lessonsData = {
                 speaker: "BRIAN", speakerClass: "speaker-sam", english: "Yes. But I never win. So it's no use dreaming.", chinese: "是的。但我从没赢过。所以做梦也没用。",
                 grammar: "",
                 phrases: [{ en: "it's no use", cn: "没有用" }]
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "条件句 if...will...",
+                explanation: "🔗 说\"如果...就会...\"用 **If + 现在时, will + 动词**！注意 if 后不用 will！",
+                examples: [
+                    { en: "If it rains, I will stay home.", cn: "如果下雨，我就待在家。" },
+                    { en: "If you come, I will be happy.", cn: "如果你来，我会很开心。" },
+                    { en: "If she calls, I will answer.", cn: "如果她打电话，我会接。" }
+                ]
+            },
+            {
+                topic: "条件句否定",
+                explanation: "🚫 条件句否定：**If + 否定, will...** 或 **If..., won't...**",
+                examples: [
+                    { en: "If it doesn't rain, we will go out.", cn: "如果不下雨，我们就出去。" },
+                    { en: "If you come, I won't be angry.", cn: "如果你来，我不会生气。" },
+                    { en: "If she doesn't call, I will go.", cn: "如果她不打电话，我就走。" }
+                ]
             }
         ]
     },
@@ -4762,6 +6194,26 @@ const lessonsData = {
                 speaker: "JOHN", speakerClass: "speaker-sam", english: "I suppose I'll have to.", chinese: "我想我得问问了。",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "be about to 即将",
+                explanation: "⏰ 马上就要做某事用 **be about to + 动词**！比 be going to 更紧迫！",
+                examples: [
+                    { en: "I am about to go out.", cn: "我正要出门。" },
+                    { en: "She is about to eat lunch.", cn: "她正要吃午餐。" },
+                    { en: "The train is about to leave.", cn: "火车即将开走。" }
+                ]
+            },
+            {
+                topic: "was about to 正要...的时候",
+                explanation: "⏮️ \"正要做...的时候\"用 **was/were about to + 动词 + when...**",
+                examples: [
+                    { en: "I was about to leave when he came.", cn: "我正要走时他来了。" },
+                    { en: "She was about to eat when the phone rang.", cn: "她正要吃时电话响了。" },
+                    { en: "We were about to go when it rained.", cn: "我们正要走时下雨了。" }
+                ]
             }
         ]
     },
@@ -4834,6 +6286,26 @@ const lessonsData = {
                 grammar: "",
                 phrases: []
             }
+        ],
+        coreGrammar: [
+            {
+                topic: "used to 过去常常",
+                explanation: "⏮️ 说\"过去常常做（现在不做了）\"用 **used to + 动词**！",
+                examples: [
+                    { en: "I used to run every day.", cn: "我过去每天跑步。" },
+                    { en: "She used to sing a lot.", cn: "她过去常唱歌。" },
+                    { en: "We used to live here.", cn: "我们过去住这儿。" }
+                ]
+            },
+            {
+                topic: "didn't use to 过去不常",
+                explanation: "🚫 \"过去不常做\"用 **didn't use to**！I didn't use to like milk. 我过去不喜欢牛奶。",
+                examples: [
+                    { en: "I didn't use to like milk.", cn: "我过去不喜欢牛奶。" },
+                    { en: "She didn't use to be shy.", cn: "她过去不害羞。" },
+                    { en: "They didn't use to live here.", cn: "他们过去不住这儿。" }
+                ]
+            }
         ]
     },
     143: {
@@ -4889,6 +6361,26 @@ const lessonsData = {
                 speaker: "Narrator", speakerClass: "speaker-sam", english: "Among the rubbish, I found a sign which said, \"Anyone who leaves litter in these woods will be prosecuted!\"", chinese: "在垃圾中间，我发现了一块牌子，上面写着：\"凡在此树林丢弃垃圾者，将被起诉！\"",
                 grammar: "",
                 phrases: []
+            }
+        ],
+        coreGrammar: [
+            {
+                topic: "被动语态 be covered with",
+                explanation: "❄️ 描述\"被...覆盖\"用 **be covered with + 名词**！",
+                examples: [
+                    { en: "The ground is covered with snow.", cn: "地上覆盖着雪。" },
+                    { en: "The table is covered with books.", cn: "桌上堆满了书。" },
+                    { en: "The sky is filled with stars.", cn: "天空布满了星星。" }
+                ]
+            },
+            {
+                topic: "be filled with / be made of",
+                explanation: "📦 **be filled with** = 充满，**be made of** = 由...制成！",
+                examples: [
+                    { en: "The box is filled with toys.", cn: "盒子里装满了玩具。" },
+                    { en: "The desk is made of wood.", cn: "桌子是木头做的。" },
+                    { en: "The room is filled with people.", cn: "房间里挤满了人。" }
+                ]
             }
         ]
     }
