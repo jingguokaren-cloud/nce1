@@ -603,6 +603,78 @@
             box-shadow: 0 5px 20px rgba(107, 114, 128, 0.4);
         }
 
+        .btn-grammar {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        .btn-grammar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
+        }
+
+        /* 语法弹窗样式 */
+        .grammar-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .grammar-modal-content {
+            background: white;
+            border-radius: 20px;
+            max-width: 700px;
+            max-height: 80vh;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .grammar-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        .grammar-modal-header h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        .btn-close-modal {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-close-modal:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .grammar-modal-body {
+            padding: 25px;
+            overflow-y: auto;
+            max-height: 60vh;
+        }
+
         .btn-next {
             background: linear-gradient(135deg, #3b82f6, #1d4ed8);
             color: white;
@@ -830,6 +902,7 @@
 
                 <div class="buttons">
                     <button class="btn btn-reset" onclick="resetCurrentExercise()">🔄 重置</button>
+                    <button class="btn btn-grammar" onclick="showGrammarModal()">📖 本课语法</button>
                     <button class="btn btn-check" onclick="checkAnswer()">✓ 检查答案</button>
                     <button class="btn btn-next" onclick="goToNextAfterCorrect()" id="btnNext" style="display:none;">下一题
                         →</button>
@@ -860,6 +933,19 @@
                 <div class="nav-buttons">
                     <button class="btn btn-prev" onclick="prevExercise()" id="btnPrev">← 上一句</button>
                     <button class="btn btn-nav-next" onclick="navNextExercise()" id="btnNavNext">下一句 →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 语法弹窗 -->
+        <div class="grammar-modal" id="grammarModal" style="display:none;">
+            <div class="grammar-modal-content">
+                <div class="grammar-modal-header">
+                    <h3>📖 本课语法小课堂</h3>
+                    <button class="btn-close-modal" onclick="closeGrammarModal()">✕</button>
+                </div>
+                <div class="grammar-modal-body" id="grammarModalBody">
+                    <!-- 语法内容将由JS填充 -->
                 </div>
             </div>
         </div>
@@ -1328,6 +1414,49 @@
             document.getElementById('progressFill').style.width = '100%';
             updateLessonNavButtons();
             showLessonGrammar(); // 显示语法总结
+        }
+
+        // 显示语法弹窗
+        function showGrammarModal() {
+            const lesson = lessonsData[currentLesson];
+            const modalBody = document.getElementById('grammarModalBody');
+
+            if (lesson.coreGrammar && lesson.coreGrammar.length > 0) {
+                let html = '';
+                lesson.coreGrammar.forEach(grammar => {
+                    let examplesHtml = '';
+                    if (grammar.examples && grammar.examples.length > 0) {
+                        grammar.examples.forEach(ex => {
+                            examplesHtml += `
+                                <div class="grammar-example">
+                                    <span class="example-en">${ex.en}</span>
+                                    <span class="example-cn">${ex.cn}</span>
+                                    ${ex.answer ? `<span class="example-answer">→ ${ex.answer}</span>` : ''}
+                                </div>
+                            `;
+                        });
+                    }
+                    html += `
+                        <div class="grammar-point">
+                            <div class="grammar-point-title">📖 ${grammar.topic}</div>
+                            <div class="grammar-point-content">
+                                <div class="grammar-explanation">${grammar.explanation}</div>
+                                <div class="grammar-examples">${examplesHtml}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                modalBody.innerHTML = html;
+            } else {
+                modalBody.innerHTML = '<p style="text-align:center;color:#6b7280;">本课暂无语法讲解</p>';
+            }
+
+            document.getElementById('grammarModal').style.display = 'flex';
+        }
+
+        // 关闭语法弹窗
+        function closeGrammarModal() {
+            document.getElementById('grammarModal').style.display = 'none';
         }
 
         // 显示本课语法总结
