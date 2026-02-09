@@ -1157,7 +1157,6 @@
 
         // 发音按钮点击
         function speakPhrase(text) {
-            // 对于短语，逐词发音或发整句
             const cleanText = text.trim();
             if (!cleanText) return;
 
@@ -1166,9 +1165,45 @@
                 window.currentAudio = null;
             }
 
+            // 清除之前的播放队列
+            if (window.audioQueue) {
+                window.audioQueue = [];
+            }
+
+            // 如果句子较长（超过60字符），按句号/问号分段朗读
+            if (cleanText.length > 60) {
+                const segments = cleanText.split(/(?<=[.?!])\s+/).filter(s => s.trim());
+                if (segments.length > 1) {
+                    playAudioQueue(segments);
+                    return;
+                }
+            }
+
+            // 短句直接播放
             const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
             const audio = new Audio(audioUrl);
             window.currentAudio = audio;
+            audio.play().catch(err => console.log('发音加载失败:', err));
+        }
+
+        // 队列播放多段音频
+        function playAudioQueue(segments) {
+            window.audioQueue = segments.slice();
+            playNextInQueue();
+        }
+
+        function playNextInQueue() {
+            if (!window.audioQueue || window.audioQueue.length === 0) return;
+
+            const segment = window.audioQueue.shift();
+            const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(segment)}&type=1`;
+            const audio = new Audio(audioUrl);
+            window.currentAudio = audio;
+
+            audio.onended = () => {
+                setTimeout(playNextInQueue, 300); // 段落间短暂停顿
+            };
+
             audio.play().catch(err => console.log('发音加载失败:', err));
         }
 
