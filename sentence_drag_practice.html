@@ -1164,27 +1164,42 @@
                 window.currentAudio.pause();
                 window.currentAudio = null;
             }
+            if (window.audioTimeout) {
+                clearTimeout(window.audioTimeout);
+            }
 
-            // 优先使用有道API
+            const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
             const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
+
             const audio = new Audio(youdaoUrl);
             window.currentAudio = audio;
+            let hasPlayed = false;
 
-            // 有道失败时回退到Google TTS
+            // 音频开始播放时，标记成功
+            audio.onplaying = () => { hasPlayed = true; };
+
+            // 加载失败时切换到Google
             audio.onerror = () => {
-                const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
-                const fallbackAudio = new Audio(googleUrl);
-                window.currentAudio = fallbackAudio;
-                fallbackAudio.play().catch(err => console.log('备选发音也失败:', err));
+                if (!hasPlayed) playGoogleTTS(googleUrl);
             };
 
-            audio.play().catch(err => {
-                // 播放失败，尝试Google TTS
-                const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
-                const fallbackAudio = new Audio(googleUrl);
-                window.currentAudio = fallbackAudio;
-                fallbackAudio.play().catch(e => console.log('发音加载失败:', e));
+            // 超时检测：2秒内没播放就切换
+            window.audioTimeout = setTimeout(() => {
+                if (!hasPlayed && audio.paused) {
+                    audio.pause();
+                    playGoogleTTS(googleUrl);
+                }
+            }, 2000);
+
+            audio.play().catch(() => {
+                if (!hasPlayed) playGoogleTTS(googleUrl);
             });
+        }
+
+        function playGoogleTTS(url) {
+            const audio = new Audio(url);
+            window.currentAudio = audio;
+            audio.play().catch(e => console.log('TTS失败:', e));
         }
 
         // 设置拖拽事件
