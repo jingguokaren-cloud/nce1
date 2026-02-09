@@ -1168,8 +1168,9 @@
                 clearTimeout(window.audioTimeout);
             }
 
-            const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
+            // 有道API优先，百度作为备选（中国可用）
             const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
+            const baiduUrl = `https://fanyi.baidu.com/gettts?lan=en&text=${encodeURIComponent(cleanText)}&spd=5&source=web`;
 
             const audio = new Audio();
             window.currentAudio = audio;
@@ -1179,7 +1180,7 @@
                 if (fallbackTriggered) return;
                 fallbackTriggered = true;
                 if (window.audioTimeout) clearTimeout(window.audioTimeout);
-                playGoogleTTS(googleUrl);
+                playFallbackTTS(baiduUrl);
             };
 
             // 各种失败情况都触发回退
@@ -1198,13 +1199,13 @@
             audio.play().catch(triggerFallback);
         }
 
-        function playGoogleTTS(url) {
+        function playFallbackTTS(url) {
             if (window.currentAudio) {
                 window.currentAudio.pause();
             }
             const audio = new Audio(url);
             window.currentAudio = audio;
-            audio.play().catch(e => console.log('Google TTS也失败:', e));
+            audio.play().catch(e => console.log('备选TTS也失败:', e));
         }
 
         // 设置拖拽事件
