@@ -1165,46 +1165,26 @@
                 window.currentAudio = null;
             }
 
-            // 清除之前的播放队列
-            if (window.audioQueue) {
-                window.audioQueue = [];
-            }
-
-            // 如果句子较长（超过60字符），按句号/问号分段朗读
-            if (cleanText.length > 60) {
-                const segments = cleanText.split(/(?<=[.?!])\s+/).filter(s => s.trim());
-                if (segments.length > 1) {
-                    playAudioQueue(segments);
-                    return;
-                }
-            }
-
-            // 短句直接播放
-            const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
-            const audio = new Audio(audioUrl);
-            window.currentAudio = audio;
-            audio.play().catch(err => console.log('发音加载失败:', err));
-        }
-
-        // 队列播放多段音频
-        function playAudioQueue(segments) {
-            window.audioQueue = segments.slice();
-            playNextInQueue();
-        }
-
-        function playNextInQueue() {
-            if (!window.audioQueue || window.audioQueue.length === 0) return;
-
-            const segment = window.audioQueue.shift();
-            const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(segment)}&type=1`;
-            const audio = new Audio(audioUrl);
+            // 优先使用有道API
+            const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
+            const audio = new Audio(youdaoUrl);
             window.currentAudio = audio;
 
-            audio.onended = () => {
-                setTimeout(playNextInQueue, 300); // 段落间短暂停顿
+            // 有道失败时回退到Google TTS
+            audio.onerror = () => {
+                const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
+                const fallbackAudio = new Audio(googleUrl);
+                window.currentAudio = fallbackAudio;
+                fallbackAudio.play().catch(err => console.log('备选发音也失败:', err));
             };
 
-            audio.play().catch(err => console.log('发音加载失败:', err));
+            audio.play().catch(err => {
+                // 播放失败，尝试Google TTS
+                const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
+                const fallbackAudio = new Audio(googleUrl);
+                window.currentAudio = fallbackAudio;
+                fallbackAudio.play().catch(e => console.log('发音加载失败:', e));
+            });
         }
 
         // 设置拖拽事件
