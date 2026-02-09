@@ -1171,35 +1171,40 @@
             const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
             const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
 
-            const audio = new Audio(youdaoUrl);
+            const audio = new Audio();
             window.currentAudio = audio;
-            let hasPlayed = false;
+            let fallbackTriggered = false;
 
-            // 音频开始播放时，标记成功
-            audio.onplaying = () => { hasPlayed = true; };
-
-            // 加载失败时切换到Google
-            audio.onerror = () => {
-                if (!hasPlayed) playGoogleTTS(googleUrl);
+            const triggerFallback = () => {
+                if (fallbackTriggered) return;
+                fallbackTriggered = true;
+                if (window.audioTimeout) clearTimeout(window.audioTimeout);
+                playGoogleTTS(googleUrl);
             };
 
-            // 超时检测：2秒内没播放就切换
-            window.audioTimeout = setTimeout(() => {
-                if (!hasPlayed && audio.paused) {
-                    audio.pause();
-                    playGoogleTTS(googleUrl);
-                }
-            }, 2000);
+            // 各种失败情况都触发回退
+            audio.onerror = triggerFallback;
+            audio.onstalled = triggerFallback;
 
-            audio.play().catch(() => {
-                if (!hasPlayed) playGoogleTTS(googleUrl);
-            });
+            // 1.5秒超时回退
+            window.audioTimeout = setTimeout(triggerFallback, 1500);
+
+            // 成功加载时清除超时
+            audio.oncanplaythrough = () => {
+                if (window.audioTimeout) clearTimeout(window.audioTimeout);
+            };
+
+            audio.src = youdaoUrl;
+            audio.play().catch(triggerFallback);
         }
 
         function playGoogleTTS(url) {
+            if (window.currentAudio) {
+                window.currentAudio.pause();
+            }
             const audio = new Audio(url);
             window.currentAudio = audio;
-            audio.play().catch(e => console.log('TTS失败:', e));
+            audio.play().catch(e => console.log('Google TTS也失败:', e));
         }
 
         // 设置拖拽事件
