@@ -129,7 +129,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "否定句 This is not...",
-                explanation: "🙅 想说\"这不是某个东西\"？在 **is** 后面加 **not**！is not 可以缩写成 **isn't**，说起来又快又酷！",
+                explanation: "🙅 想说\"这不是某个东西\"？在 <strong>is</strong> 后面加 <strong>not</strong>！is not 可以缩写成 <strong>isn't</strong>，说起来又快又酷！",
                 examples: [
                     { en: "This is not my book.", cn: "这不是我的书。" },
                     { en: "This is not a cat.", cn: "这不是一只猫。" },
@@ -138,7 +138,7 @@ const lessonsData = {
             },
             {
                 topic: "指示代词 this/it",
-                explanation: "👆 **this** 是\"这个\"（指近处的东西），**it** 是\"它\"（代替刚才说过的东西）。问话用 this，回答用 it！",
+                explanation: "👆 <strong>this</strong> 是\"这个\"（指近处的东西），<strong>it</strong> 是\"它\"（代替刚才说过的东西）。问话用 this，回答用 it！",
                 examples: [
                     { en: " — Is this your coat?", cn: "这是你的大衣吗？— 是的。", answer: "Is this your coat?" },
                     { en: " — Is this your umbrella?", cn: "这是你的雨伞吗？— 不是。", answer: "Is this your umbrella?" },
@@ -255,7 +255,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "介绍他人 This is...",
-                explanation: "🤝 把朋友介绍给别人用 **This is + 名字**！就像在说\"看！这位就是...\"，记得面带微笑😊！",
+                explanation: "🤝 把朋友介绍给别人用 <strong>This is + 名字</strong>！就像在说\"看！这位就是...\"，记得面带微笑😊！",
                 examples: [
                     { en: "This is Tom. He is my friend.", cn: "这是汤姆。他是我的朋友。" },
                     { en: "This is Miss Li. She is our teacher.", cn: "这是李老师。她是我们的老师。" },
@@ -264,7 +264,7 @@ const lessonsData = {
             },
             {
                 topic: "人称代词 he/she",
-                explanation: "👦👧 说到男生用 **he**（他），说到女生用 **she**（她）！记忆窍门：she 里有个 he，女士优先！",
+                explanation: "👦👧 说到男生用 <strong>he</strong>（他），说到女生用 <strong>she</strong>（她）！记忆窍门：she 里有个 he，女士优先！",
                 examples: [
                     { en: "He is Tom.", cn: "他是汤姆。" },
                     { en: "She is Sophie.", cn: "她是索菲娅。" },
@@ -273,7 +273,7 @@ const lessonsData = {
             },
             {
                 topic: "表示国籍",
-                explanation: "🌍 怎么说\"我是中国人\"？直接用国籍形容词！Chinese（中国的）、French（法国的）、German（德国的）。说 **I am Chinese.**，不用加\"人\"字！",
+                explanation: "🌍 怎么说\"我是中国人\"？直接用国籍形容词！Chinese（中国的）、French（法国的）、German（德国的）。说 <strong>I am Chinese.</strong>，不用加\"人\"字！",
                 examples: [
                     { en: "She is French.", cn: "她是法国人。" },
                     { en: "He is German.", cn: "他是德国人。" },
@@ -370,7 +370,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "询问身份 Are you...?",
-                explanation: "🕵️ 想知道别人是谁？把 **Are** 派到句子最前面！回答\"是\"说 **Yes, I am**，\"不是\"说 **No, I'm not**。",
+                explanation: "🕵️ 想知道别人是谁？把 <strong>Are</strong> 派到句子最前面！回答\"是\"说 <strong>Yes, I am</strong>，\"不是\"说 <strong>No, I'm not</strong>。",
                 examples: [
                     { en: " — Are you a student?", cn: "你是学生吗？— 是的。", answer: "Are you a student?" },
                     { en: " — Are you a teacher?", cn: "你是老师吗？— 不是。", answer: "Are you a teacher?" },
@@ -379,7 +379,7 @@ const lessonsData = {
             },
             {
                 topic: "询问职业 What's your job?",
-                explanation: "💼 想知道别人做什么工作？问 **What's your job?** 回答用 **I'm a/an + 职业**。",
+                explanation: "💼 想知道别人做什么工作？问 <strong>What's your job?</strong> 回答用 <strong>I'm a/an + 职业</strong>。",
                 examples: [
                     { en: " — What's your job?", cn: "你做什么工作？— 我是老师。", answer: "What's your job?" },
                     { en: " — What's your job?", cn: "你做什么工作？— 我是工程师。", answer: "What's your job?" },
@@ -388,7 +388,7 @@ const lessonsData = {
             },
             {
                 topic: "冠词 a/an",
-                explanation: "📝 名词前面要加\"小帽子\"！普通辅音开头用 **a**，元音开头（a/e/i/o/u）用 **an**：an apple🍎、an engineer。",
+                explanation: "📝 名词前面要加\"小帽子\"！普通辅音开头用 <strong>a</strong>，元音开头（a/e/i/o/u）用 <strong>an</strong>：an apple🍎、an engineer。",
                 examples: [
                     { en: "I am a student.", cn: "我是一名学生。" },
                     { en: "He is an engineer.", cn: "他是一名工程师。" },
@@ -475,7 +475,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "问候 How are you?",
-                explanation: "👋 见到朋友说 **How are you?** 这是\"关心小礼包\"！对方回复 **Fine, thank you.** 问其他人用 **How is + 名字?**",
+                explanation: "👋 见到朋友说 <strong>How are you?</strong> 这是\"关心小礼包\"！对方回复 <strong>Fine, thank you.</strong> 问其他人用 <strong>How is + 名字?</strong>",
                 examples: [
                     { en: " — How are you?", cn: "你好吗？— 我很好，谢谢。", answer: "How are you?" },
                     { en: " — How are you today?", cn: "你今天好吗？— 我非常好。", answer: "How are you today?" },
@@ -484,7 +484,7 @@ const lessonsData = {
             },
             {
                 topic: "Nice to see you vs Nice to meet you",
-                explanation: "🤝 **Nice to meet you** 是第一次见面说的。**Nice to see you** 是再次见面说的。meet = 认识，see = 看见！",
+                explanation: "🤝 <strong>Nice to meet you</strong> 是第一次见面说的。<strong>Nice to see you</strong> 是再次见面说的。meet = 认识，see = 看见！",
                 examples: [
                     { en: "Nice to meet you!", cn: "很高兴认识你！（第一次见面）" },
                     { en: "Nice to see you!", cn: "很高兴见到你！（再次见面）" },
@@ -576,7 +576,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "询问所有权 Whose...?",
-                explanation: "🔍 不知道是谁的东西？用 **Whose**（谁的）来问！就像小侦探在破案！",
+                explanation: "🔍 不知道是谁的东西？用 <strong>Whose</strong>（谁的）来问！就像小侦探在破案！",
                 examples: [
                     { en: " — Whose book is this?", cn: "这是谁的书？— 是我的书。", answer: "Whose book is this?" },
                     { en: " — Whose pen is that?", cn: "那是谁的笔？— 是汤姆的笔。", answer: "Whose pen is that?" },
@@ -585,7 +585,7 @@ const lessonsData = {
             },
             {
                 topic: "名词所有格 's",
-                explanation: "👑 想说\"某人的东西\"？在名字后面加 **'s**！Tim's shirt（蒂姆的衬衫）、Tom's book（汤姆的书）。",
+                explanation: "👑 想说\"某人的东西\"？在名字后面加 <strong>'s</strong>！Tim's shirt（蒂姆的衬衫）、Tom's book（汤姆的书）。",
                 examples: [
                     { en: "This is Tim's shirt.", cn: "这是蒂姆的衬衫。" },
                     { en: "That is Tom's book.", cn: "那是汤姆的书。" },
@@ -662,7 +662,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "询问颜色 What colour...?",
-                explanation: "🌈 想知道什么颜色？问 **What colour is it?** 回答 **It's + 颜色**。red🔴、blue🔵、green🟢、yellow🟡！",
+                explanation: "🌈 想知道什么颜色？问 <strong>What colour is it?</strong> 回答 <strong>It's + 颜色</strong>。red🔴、blue🔵、green🟢、yellow🟡！",
                 examples: [
                     { en: " — What colour is it?", cn: "它是什么颜色？— 蓝色的。", answer: "What colour is it?" },
                     { en: " — What colour is your bag?", cn: "你的包什么颜色？— 绿色的。", answer: "What colour is your bag?" },
@@ -671,7 +671,7 @@ const lessonsData = {
             },
             {
                 topic: "形容词放在名词前",
-                explanation: "🎨 形容词放在名词前面！**a new dress**（一件新裙子），**a big dog**（一只大狗）。顺序：a/an + 形容词 + 名词。",
+                explanation: "🎨 形容词放在名词前面！<strong>a new dress</strong>（一件新裙子），<strong>a big dog</strong>（一只大狗）。顺序：a/an + 形容词 + 名词。",
                 examples: [
                     { en: "a new dress", cn: "一件新连衣裙" },
                     { en: "a lovely hat", cn: "一顶可爱的帽子" },
@@ -778,7 +778,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "复数疑问句 Are these/those...?",
-                explanation: "👀 多个东西用 **Are these...?**（这些）或 **Are those...?**（那些）。回答用 **they**！",
+                explanation: "👀 多个东西用 <strong>Are these...?</strong>（这些）或 <strong>Are those...?</strong>（那些）。回答用 <strong>they</strong>！",
                 examples: [
                     { en: " — Are these your books?", cn: "这些是你的书吗？— 是的。", answer: "Are these your books?" },
                     { en: " — Are those your pens?", cn: "那些是你的笔吗？— 不是。", answer: "Are those your pens?" },
@@ -787,7 +787,7 @@ const lessonsData = {
             },
             {
                 topic: "人称代词 we/they",
-                explanation: "👥 \"我们\"用 **we**，\"他们/她们/它们\"用 **they**！we 包括自己，they 不包括自己。",
+                explanation: "👥 \"我们\"用 <strong>we</strong>，\"他们/她们/它们\"用 <strong>they</strong>！we 包括自己，they 不包括自己。",
                 examples: [
                     { en: "We are students.", cn: "我们是学生。" },
                     { en: "They are teachers.", cn: "他们是老师。" },
@@ -796,7 +796,7 @@ const lessonsData = {
             },
             {
                 topic: "名词复数加 s",
-                explanation: "🔢 多个东西要加 **s** 变复数！book → books📚，pen → pens🖊️。就像给名词\"生宝宝\"！",
+                explanation: "🔢 多个东西要加 <strong>s</strong> 变复数！book → books📚，pen → pens🖊️。就像给名词\"生宝宝\"！",
                 examples: [
                     { en: "two books", cn: "两本书" },
                     { en: "three pens", cn: "三支笔" },
@@ -893,7 +893,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "正式问候 How do you do?",
-                explanation: "🎩👔 超级正式的问候语！第一次见面说 **How do you do?** 对方也回答一样的话！",
+                explanation: "🎩👔 超级正式的问候语！第一次见面说 <strong>How do you do?</strong> 对方也回答一样的话！",
                 examples: [
                     { en: " — How do you do?", cn: "您好！— 您好！", answer: "How do you do?" },
                     { en: " — Nice to meet you.", cn: "很高兴见到你。— 我也是。", answer: "Nice to meet you." },
@@ -902,7 +902,7 @@ const lessonsData = {
             },
             {
                 topic: "询问身份 Who is...?",
-                explanation: "🕵️ 不知道某人是谁？问 **Who is this?** 或 **Who is that man?**",
+                explanation: "🕵️ 不知道某人是谁？问 <strong>Who is this?</strong> 或 <strong>Who is that man?</strong>",
                 examples: [
                     { en: " — Who is this?", cn: "这是谁？— 这是汤姆。", answer: "Who is this?" },
                     { en: " — Who is that man?", cn: "那个男人是谁？— 他是我们的老师。", answer: "Who is that man?" },
@@ -979,7 +979,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "There is/are 存在句",
-                explanation: "🏠 \"某地有什么\"用 **There is**（一个）或 **There are**（多个）！一个用 is，多个用 are！",
+                explanation: "🏠 \"某地有什么\"用 <strong>There is</strong>（一个）或 <strong>There are</strong>（多个）！一个用 is，多个用 are！",
                 examples: [
                     { en: "There is a book on the table.", cn: "桌上有一本书。" },
                     { en: "There is a cat in the room.", cn: "房间里有一只猫。" },
@@ -988,7 +988,7 @@ const lessonsData = {
             },
             {
                 topic: "形容词作表语",
-                explanation: "😊 描述状态用 **主语 + be + 形容词**！**I am tired.**（我很累。）形容词放在 be 动词后面！",
+                explanation: "😊 描述状态用 <strong>主语 + be + 形容词</strong>！<strong>I am tired.</strong>（我很累。）形容词放在 be 动词后面！",
                 examples: [
                     { en: "I am tired.", cn: "我很累。" },
                     { en: "We are thirsty.", cn: "我们很渴。" },
@@ -1050,7 +1050,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "选择疑问词 Which...?",
-                explanation: "🤔 有好几个东西不知道要哪个？用 **Which**（哪个）来问！就像在商店挑东西！",
+                explanation: "🤔 有好几个东西不知道要哪个？用 <strong>Which</strong>（哪个）来问！就像在商店挑东西！",
                 examples: [
                     { en: " — Which book do you want?", cn: "你要哪本书？— 红色的。", answer: "Which book do you want?" },
                     { en: " — Which one is yours?", cn: "哪个是你的？— 这个。", answer: "Which one is yours?" },
@@ -1059,7 +1059,7 @@ const lessonsData = {
             },
             {
                 topic: "祈使句 Give me...",
-                explanation: "🎁 想让别人给你东西？动词开头！**Give me a book, please.** 记得加 **please** 更礼貌！",
+                explanation: "🎁 想让别人给你东西？动词开头！<strong>Give me a book, please.</strong> 记得加 <strong>please</strong> 更礼貌！",
                 examples: [
                     { en: "Give me a book, please.", cn: "请给我一本书。" },
                     { en: "Give me that pen, please.", cn: "请给我那支笔。" },
@@ -1068,7 +1068,7 @@ const lessonsData = {
             },
             {
                 topic: "代词 one",
-                explanation: "1️⃣ 不想重复说名词？用 **one** 代替！**The red one** = The red book。省得说两遍！",
+                explanation: "1️⃣ 不想重复说名词？用 <strong>one</strong> 代替！<strong>The red one</strong> = The red book。省得说两遍！",
                 examples: [
                     { en: "The red one.", cn: "红色的那个。" },
                     { en: "This one?", cn: "这个吗？" },
@@ -1130,7 +1130,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "复数选择 these/those ones",
-                explanation: "👆👉 选好几个东西？近处说 **these ones**（这些），远处说 **those ones**（那些）！",
+                explanation: "👆👉 选好几个东西？近处说 <strong>these ones</strong>（这些），远处说 <strong>those ones</strong>（那些）！",
                 examples: [
                     { en: " — Which glasses?", cn: "哪些杯子？— 这些。", answer: "Which glasses?" },
                     { en: " — Which books do you want?", cn: "你要哪些书？— 那些。", answer: "Which books do you want?" },
@@ -1139,7 +1139,7 @@ const lessonsData = {
             },
             {
                 topic: "方位介词 on",
-                explanation: "📍 **on** 表示\"在...上面\"。**on the shelf**（在架子上）、**on the table**（在桌子上）！",
+                explanation: "📍 <strong>on</strong> 表示\"在...上面\"。<strong>on the shelf</strong>（在架子上）、<strong>on the table</strong>（在桌子上）！",
                 examples: [
                     { en: "The books are on the shelf.", cn: "书在架子上。" },
                     { en: "The glasses are on the table.", cn: "杯子在桌子上。" },
@@ -1216,7 +1216,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "There is + 单数名词",
-                explanation: "🍳 描述有什么用 **There is a + 东西**！想象你是小导游，一个一个介绍！",
+                explanation: "🍳 描述有什么用 <strong>There is a + 东西</strong>！想象你是小导游，一个一个介绍！",
                 examples: [
                     { en: "There is a table in the room.", cn: "房间里有一张桌子。" },
                     { en: "There is a cup on the table.", cn: "桌上有一个杯子。" },
@@ -1225,7 +1225,7 @@ const lessonsData = {
             },
             {
                 topic: "方位介词短语",
-                explanation: "🧭 描述位置：**on the right**（在右边➡️）、**on the left**（在左边⬅️）、**in the middle**（在中间⭕）！",
+                explanation: "🧭 描述位置：<strong>on the right</strong>（在右边➡️）、<strong>on the left</strong>（在左边⬅️）、<strong>in the middle</strong>（在中间⭕）！",
                 examples: [
                     { en: "The fridge is on the right.", cn: "冰箱在右边。" },
                     { en: "The cooker is on the left.", cn: "炉子在左边。" },
@@ -1307,7 +1307,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "There are + 复数名词",
-                explanation: "🛋️ 多个东西用 **There are + 数字 + 名词s**！注意名词要加 **s**！",
+                explanation: "🛋️ 多个东西用 <strong>There are + 数字 + 名词s</strong>！注意名词要加 <strong>s</strong>！",
                 examples: [
                     { en: "There are two chairs in the room.", cn: "房间里有两把椅子。" },
                     { en: "There are three books on the desk.", cn: "桌上有三本书。" },
@@ -1316,7 +1316,7 @@ const lessonsData = {
             },
             {
                 topic: "介词 near",
-                explanation: "📍 **near** 表示\"在...附近/旁边\"。**near the window**（在窗户旁边）！",
+                explanation: "📍 <strong>near</strong> 表示\"在...附近/旁边\"。<strong>near the window</strong>（在窗户旁边）！",
                 examples: [
                     { en: "The TV is near the window.", cn: "电视在窗户旁边。" },
                     { en: "The chairs are near the table.", cn: "椅子在桌子旁边。" },
@@ -1378,7 +1378,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "祈使句（命令/请求）",
-                explanation: "📢 让别人做事用动词开头！**Come in!**（进来！）**Sit down!**（坐下！）加 **please** 更礼貌✨！",
+                explanation: "📢 让别人做事用动词开头！<strong>Come in!</strong>（进来！）<strong>Sit down!</strong>（坐下！）加 <strong>please</strong> 更礼貌✨！",
                 examples: [
                     { en: "Come in, please!", cn: "请进来！" },
                     { en: "Sit down, please.", cn: "请坐下。" },
@@ -1387,7 +1387,7 @@ const lessonsData = {
             },
             {
                 topic: "情态动词 must",
-                explanation: "💪 **must** 表示\"必须\"，语气很强！就像妈妈严肃地说\"你必须...\"！",
+                explanation: "💪 <strong>must</strong> 表示\"必须\"，语气很强！就像妈妈严肃地说\"你必须...\"！",
                 examples: [
                     { en: "What must I do?", cn: "我必须做什么？" },
                     { en: "You must open the window.", cn: "你必须开窗户。" },
@@ -1396,7 +1396,7 @@ const lessonsData = {
             },
             {
                 topic: "连接词 then",
-                explanation: "➡️ **then** 表示\"然后\"，用来连接动作顺序。先做这个，**then**（然后）做那个！",
+                explanation: "➡️ <strong>then</strong> 表示\"然后\"，用来连接动作顺序。先做这个，<strong>then</strong>（然后）做那个！",
                 examples: [
                     { en: "Open the window, then air the room.", cn: "开窗，然后通风。" },
                     { en: "Make the bed, then sweep the floor.", cn: "整理床铺，然后扫地。" },
@@ -1483,7 +1483,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在进行时 is + doing",
-                explanation: "🏃 说\"正在做什么\"用 **is/am/are + 动词ing**！动词穿上 **ing** 尾巴，表示正在进行！",
+                explanation: "🏃 说\"正在做什么\"用 <strong>is/am/are + 动词ing</strong>！动词穿上 <strong>ing</strong> 尾巴，表示正在进行！",
                 examples: [
                     { en: " — What is she doing?", cn: "她在做什么？— 她正在看书。", answer: "What is she doing?" },
                     { en: " — What is he doing?", cn: "他在做什么？— 他正在跑步。", answer: "What is he doing?" },
@@ -1492,7 +1492,7 @@ const lessonsData = {
             },
             {
                 topic: "询问位置 Where is...?",
-                explanation: "🗺️ 想知道在哪里？问 **Where is...?** 回答用介词短语！就像玩捉迷藏！",
+                explanation: "🗺️ 想知道在哪里？问 <strong>Where is...?</strong> 回答用介词短语！就像玩捉迷藏！",
                 examples: [
                     { en: " — Where is Sally?", cn: "萨莉在哪里？— 在花园里。", answer: "Where is Sally?" },
                     { en: " — Where is the cat?", cn: "猫在哪里？— 在树下。", answer: "Where is the cat?" },
@@ -1501,7 +1501,7 @@ const lessonsData = {
             },
             {
                 topic: "动词短语 run after/run across",
-                explanation: "🏃 **run after** = 追赶，**run across** = 跑过。动词+介词组成新意思！",
+                explanation: "🏃 <strong>run after</strong> = 追赶，<strong>run across</strong> = 跑过。动词+介词组成新意思！",
                 examples: [
                     { en: "The dog is running after a cat.", cn: "狗在追猫。" },
                     { en: "It's running across the grass.", cn: "它正跑过草地。" },
@@ -1577,7 +1577,7 @@ const lessonsData = {
             },
             {
                 topic: "介词 over/under",
-                explanation: "⬆️⬇️ **over** = 在上方/越过，**under** = 在下方/从下穿过。一个在上一个在下！",
+                explanation: "⬆️⬇️ <strong>over</strong> = 在上方/越过，<strong>under</strong> = 在下方/从下穿过。一个在上一个在下！",
                 examples: [
                     { en: "The plane is flying over the river.", cn: "飞机正飞越河流。" },
                     { en: "The ship is going under the bridge.", cn: "船正从桥下驶过。" },
@@ -1669,7 +1669,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "方位介词 in/on/under/near",
-                explanation: "🗺️ **in**（里面）、**on**（上面）、**under**（下面）、**near**（附近）——四个方位小精灵！",
+                explanation: "🗺️ <strong>in</strong>（里面）、<strong>on</strong>（上面）、<strong>under</strong>（下面）、<strong>near</strong>（附近）——四个方位小精灵！",
                 examples: [
                     { en: "The cat is on the chair.", cn: "猫在椅子上。" },
                     { en: "The ball is under the table.", cn: "球在桌子下面。" },
@@ -1678,7 +1678,7 @@ const lessonsData = {
             },
             {
                 topic: "between...and...",
-                explanation: "↔️ \"在两者之间\"用 **between A and B**！就像夹心饼干中间那层！",
+                explanation: "↔️ \"在两者之间\"用 <strong>between A and B</strong>！就像夹心饼干中间那层！",
                 examples: [
                     { en: "The park is between the school and the shop.", cn: "公园在学校和商店之间。" },
                     { en: "I sit between Tom and Mary.", cn: "我坐在汤姆和玛丽之间。" },
@@ -1687,7 +1687,7 @@ const lessonsData = {
             },
             {
                 topic: "along 沿着",
-                explanation: "➡️ **along** 表示\"沿着\"。**along the river**（沿着河）、**along the road**（沿着路）！",
+                explanation: "➡️ <strong>along</strong> 表示\"沿着\"。<strong>along the river</strong>（沿着河）、<strong>along the road</strong>（沿着路）！",
                 examples: [
                     { en: "We walk along the river.", cn: "我们沿着河走。" },
                     { en: "There are trees along the road.", cn: "路边有树。" },
@@ -1794,7 +1794,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "将来时 be going to",
-                explanation: "🔮 说\"打算做什么\"用 **be going to + 动词**！这是你已经想好要做的事！",
+                explanation: "🔮 说\"打算做什么\"用 <strong>be going to + 动词</strong>！这是你已经想好要做的事！",
                 examples: [
                     { en: "I'm going to read a book.", cn: "我打算看书。" },
                     { en: "She's going to eat an apple.", cn: "她打算吃苹果。" },
@@ -1803,7 +1803,7 @@ const lessonsData = {
             },
             {
                 topic: "询问将来 What are you going to do?",
-                explanation: "❓ 问别人打算做什么？**What are you going to do?** 回答用 **I'm going to...**",
+                explanation: "❓ 问别人打算做什么？<strong>What are you going to do?</strong> 回答用 <strong>I'm going to...</strong>",
                 examples: [
                     { en: " — What are you going to do?", cn: "你打算做什么？— 我打算刷漆。", answer: "What are you going to do?" },
                     { en: " — What is she going to do?", cn: "她打算做什么？— 她打算做饭。", answer: "What is she going to do?" },
@@ -1865,7 +1865,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "否定祈使句 Don't...",
-                explanation: "🚫 让别人\"不要做某事\"？在动词前面加 **Don't**！就像一个红色禁止标志！",
+                explanation: "🚫 让别人\"不要做某事\"？在动词前面加 <strong>Don't</strong>！就像一个红色禁止标志！",
                 examples: [
                     { en: "Don't run!", cn: "不要跑！" },
                     { en: "Don't talk in class!", cn: "不要在课堂上说话！" },
@@ -2037,7 +2037,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "Is there / Are there 疑问句",
-                explanation: "❓ 问\"有没有\"？把 There is/are 变问句！单数 **Is there...?**，复数 **Are there...?**",
+                explanation: "❓ 问\"有没有\"？把 There is/are 变问句！单数 <strong>Is there...?</strong>，复数 <strong>Are there...?</strong>",
                 examples: [
                     { en: " — Is there any tea?", cn: "有茶吗？— 有。", answer: "Is there any tea?" },
                     { en: " — Are there any apples?", cn: "有苹果吗？— 没有。", answer: "Are there any apples?" },
@@ -2046,7 +2046,7 @@ const lessonsData = {
             },
             {
                 topic: "some 和 any",
-                explanation: "🔢 **some** 用在肯定句，**any** 用在疑问句和否定句！记住：肯定 some，疑问/否定 any！",
+                explanation: "🔢 <strong>some</strong> 用在肯定句，<strong>any</strong> 用在疑问句和否定句！记住：肯定 some，疑问/否定 any！",
                 examples: [
                     { en: "There is some tea.", cn: "有一些茶。（肯定）" },
                     { en: "Is there any tea?", cn: "有茶吗？（疑问）" },
@@ -2055,7 +2055,7 @@ const lessonsData = {
             },
             {
                 topic: "祈使句 Hurry up!",
-                explanation: "⏰ **Hurry up!** = 快点！这是常用的催促语。类似的还有 **Come on!**（加油！来吧！）",
+                explanation: "⏰ <strong>Hurry up!</strong> = 快点！这是常用的催促语。类似的还有 <strong>Come on!</strong>（加油！来吧！）",
                 examples: [
                     { en: "Hurry up! We're late!", cn: "快点！我们迟到了！" },
                     { en: "Come on! Let's go!", cn: "来吧！我们走！" },
@@ -2142,7 +2142,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "情态动词 can",
-                explanation: "💪 说\"会做某事\"用 **can + 动词**！问会不会？把 can 放前面：**Can you swim?**",
+                explanation: "💪 说\"会做某事\"用 <strong>can + 动词</strong>！问会不会？把 can 放前面：<strong>Can you swim?</strong>",
                 examples: [
                     { en: " — Can you read?", cn: "你会阅读吗？— 会。", answer: "Can you read?" },
                     { en: " — Can she sing?", cn: "她会唱歌吗？— 不会。", answer: "Can she sing?" },
@@ -2151,7 +2151,7 @@ const lessonsData = {
             },
             {
                 topic: "can't 否定",
-                explanation: "🚫 说\"不会/不能\"用 **can't**（= cannot）！**I can't swim.**（我不会游泳。）",
+                explanation: "🚫 说\"不会/不能\"用 <strong>can't</strong>（= cannot）！<strong>I can't swim.</strong>（我不会游泳。）",
                 examples: [
                     { en: "I can't swim.", cn: "我不会游泳。" },
                     { en: "She can't come today.", cn: "她今天不能来。" },
@@ -2228,7 +2228,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "Do you like...? 询问喜好",
-                explanation: "❤️ 问别人喜欢什么？**Do you like...?** 喜欢说 **Yes, I do!**，不喜欢说 **No, I don't.**",
+                explanation: "❤️ 问别人喜欢什么？<strong>Do you like...?</strong> 喜欢说 <strong>Yes, I do!</strong>，不喜欢说 <strong>No, I don't.</strong>",
                 examples: [
                     { en: " — Do you like tea?", cn: "你喜欢茶吗？— 喜欢。", answer: "Do you like tea?" },
                     { en: " — Do you like coffee?", cn: "你喜欢咖啡吗？— 不喜欢。", answer: "Do you like coffee?" },
@@ -2237,7 +2237,7 @@ const lessonsData = {
             },
             {
                 topic: "一般现在时第三人称",
-                explanation: "👤 he/she/it 做主语时，动词要加 **s** 或 **es**！like → likes，go → goes！",
+                explanation: "👤 he/she/it 做主语时，动词要加 <strong>s</strong> 或 <strong>es</strong>！like → likes，go → goes！",
                 examples: [
                     { en: "She likes tea.", cn: "她喜欢茶。" },
                     { en: "He wants coffee.", cn: "他想要咖啡。" },
@@ -2319,7 +2319,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "Do you want...? 询问需要",
-                explanation: "🛒 问\"要不要\"？**Do you want...?** 想要说 **Yes, please!**，不要说 **No, thank you.**",
+                explanation: "🛒 问\"要不要\"？<strong>Do you want...?</strong> 想要说 <strong>Yes, please!</strong>，不要说 <strong>No, thank you.</strong>",
                 examples: [
                     { en: " — Do you want some tea?", cn: "你要茶吗？— 好的。", answer: "Do you want some tea?" },
                     { en: " — Do you want an apple?", cn: "你要苹果吗？— 不了，谢谢。", answer: "Do you want an apple?" },
@@ -2328,7 +2328,7 @@ const lessonsData = {
             },
             {
                 topic: "地点的表达 at the + 店名's",
-                explanation: "🏪 \"在某某店\"用 **at the + 店主's**！at the butcher's（在肉店）、at the baker's（在面包店）！",
+                explanation: "🏪 \"在某某店\"用 <strong>at the + 店主's</strong>！at the butcher's（在肉店）、at the baker's（在面包店）！",
                 examples: [
                     { en: "I'm at the butcher's.", cn: "我在肉店。" },
                     { en: "She's at the baker's.", cn: "她在面包店。" },
@@ -2405,7 +2405,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "频率副词 always/often/sometimes",
-                explanation: "📅 多久做一次？**always**（总是100%）、**often**（经常80%）、**sometimes**（有时50%）、**never**（从不0%）！",
+                explanation: "📅 多久做一次？<strong>always</strong>（总是100%）、<strong>often</strong>（经常80%）、<strong>sometimes</strong>（有时50%）、<strong>never</strong>（从不0%）！",
                 examples: [
                     { en: "I always eat breakfast.", cn: "我总是吃早餐。" },
                     { en: "She often reads books.", cn: "她经常看书。" },
@@ -2414,7 +2414,7 @@ const lessonsData = {
             },
             {
                 topic: "一般现在时表示习惯",
-                explanation: "🔄 经常做的事、习惯、规律用一般现在时！**I go to school every day.**（我每天上学。）",
+                explanation: "🔄 经常做的事、习惯、规律用一般现在时！<strong>I go to school every day.</strong>（我每天上学。）",
                 examples: [
                     { en: "I go to school every day.", cn: "我每天上学。" },
                     { en: "She reads books every night.", cn: "她每晚看书。" },
@@ -2491,7 +2491,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "询问天气 What's the weather like?",
-                explanation: "🌤️ 问天气用 **What's the weather like?** 回答：**It's sunny/rainy/hot/cold.**",
+                explanation: "🌤️ 问天气用 <strong>What's the weather like?</strong> 回答：<strong>It's sunny/rainy/hot/cold.</strong>",
                 examples: [
                     { en: " — What's the weather like in spring?", cn: "春天天气怎么样？— 很暖和。", answer: "What's the weather like in spring?" },
                     { en: " — What's the weather like in summer?", cn: "夏天天气怎么样？— 很热。", answer: "What's the weather like in summer?" },
@@ -2500,7 +2500,7 @@ const lessonsData = {
             },
             {
                 topic: "季节表达",
-                explanation: "🌸🌻🍂❄️ 四季：**spring**（春）、**summer**（夏）、**autumn**（秋）、**winter**（冬）。用 **in + 季节**！",
+                explanation: "🌸🌻🍂❄️ 四季：<strong>spring</strong>（春）、<strong>summer</strong>（夏）、<strong>autumn</strong>（秋）、<strong>winter</strong>（冬）。用 <strong>in + 季节</strong>！",
                 examples: [
                     { en: "It's warm in spring.", cn: "春天很暖和。" },
                     { en: "It's hot in summer.", cn: "夏天很热。" },
@@ -2567,7 +2567,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "日常活动 go to work/school/bed",
-                explanation: "🏫🏢😴 固定搭配！**go to school**（上学）、**go to work**（上班）、**go to bed**（睡觉）。注意不加 the！",
+                explanation: "🏫🏢😴 固定搭配！<strong>go to school</strong>（上学）、<strong>go to work</strong>（上班）、<strong>go to bed</strong>（睡觉）。注意不加 the！",
                 examples: [
                     { en: "I go to school at 8.", cn: "我8点去上学。" },
                     { en: "Dad goes to work at 7.", cn: "爸爸7点去上班。" },
@@ -2576,7 +2576,7 @@ const lessonsData = {
             },
             {
                 topic: "时间介词 at/in",
-                explanation: "⏰ 具体时间点用 **at**：at 7 o'clock。上午/下午/晚上用 **in**：in the morning！",
+                explanation: "⏰ 具体时间点用 <strong>at</strong>：at 7 o'clock。上午/下午/晚上用 <strong>in</strong>：in the morning！",
                 examples: [
                     { en: "I get up at 7.", cn: "我7点起床。" },
                     { en: "I eat lunch at 12.", cn: "我12点吃午餐。" },
@@ -2628,7 +2628,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "时间表达 at + 时间点",
-                explanation: "⏰ 说\"在几点\"用 **at + 时间**！**at 7 o'clock**、**at noon**、**at night**！",
+                explanation: "⏰ 说\"在几点\"用 <strong>at + 时间</strong>！<strong>at 7 o'clock</strong>、<strong>at noon</strong>、<strong>at night</strong>！",
                 examples: [
                     { en: "I get up at 7.", cn: "我7点起床。" },
                     { en: "I eat lunch at 12.", cn: "我12点吃午餐。" },
@@ -2637,7 +2637,7 @@ const lessonsData = {
             },
             {
                 topic: "usually 通常",
-                explanation: "📅 **usually** 表示\"通常\"，放在动词前面。**I usually get up at 7.**（我通常7点起床。）",
+                explanation: "📅 <strong>usually</strong> 表示\"通常\"，放在动词前面。<strong>I usually get up at 7.</strong>（我通常7点起床。）",
                 examples: [
                     { en: "I usually get up at 7.", cn: "我通常7点起床。" },
                     { en: "She usually eats breakfast at 8.", cn: "她通常8点吃早餐。" },
@@ -2729,7 +2729,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "购物用语 How much...?",
-                explanation: "💰 买东西问价格！**How much is it?**（多少钱？）店员回答 **It's + 价格**。",
+                explanation: "💰 买东西问价格！<strong>How much is it?</strong>（多少钱？）店员回答 <strong>It's + 价格</strong>。",
                 examples: [
                     { en: " — How much is it?", cn: "这个多少钱？— 10元。", answer: "How much is it?" },
                     { en: " — How much is this book?", cn: "这本书多少钱？— 5元。", answer: "How much is this book?" },
@@ -2738,7 +2738,7 @@ const lessonsData = {
             },
             {
                 topic: "Is that all? / That's all.",
-                explanation: "🛒 店员问 **Is that all?**（就这些吗？）你可以说 **Yes, that's all.**（是的，就这些。）或继续选购！",
+                explanation: "🛒 店员问 <strong>Is that all?</strong>（就这些吗？）你可以说 <strong>Yes, that's all.</strong>（是的，就这些。）或继续选购！",
                 examples: [
                     { en: " — Is that all?", cn: "就这些吗？— 是的，就这些。", answer: "Is that all?" },
                     { en: " — Is that all?", cn: "就这些吗？— 不，我还要苹果。", answer: "Is that all?" },
@@ -2830,7 +2830,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "情态动词 must",
-                explanation: "⚠️ **must** 表示\"必须\"，语气很强！就像医生严肃地说\"你必须吃药！\"",
+                explanation: "⚠️ <strong>must</strong> 表示\"必须\"，语气很强！就像医生严肃地说\"你必须吃药！\"",
                 examples: [
                     { en: "You must stay in bed.", cn: "你必须卧床休息。" },
                     { en: "You mustn't get up.", cn: "你不准起床。" },
@@ -2839,7 +2839,7 @@ const lessonsData = {
             },
             {
                 topic: "have a cold / headache",
-                explanation: "🤒 生病用 **have + 病症**！have a cold（感冒）、have a headache（头疼）、have a fever（发烧）。",
+                explanation: "🤒 生病用 <strong>have + 病症</strong>！have a cold（感冒）、have a headache（头疼）、have a fever（发烧）。",
                 examples: [
                     { en: "I have a cold.", cn: "我感冒了。" },
                     { en: "She has a headache.", cn: "她头疼。" },
@@ -2926,7 +2926,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "What's the matter?",
-                explanation: "❓ 问\"怎么了\"用 **What's the matter?** 或 **What's wrong?** 回答说症状！",
+                explanation: "❓ 问\"怎么了\"用 <strong>What's the matter?</strong> 或 <strong>What's wrong?</strong> 回答说症状！",
                 examples: [
                     { en: " — What's the matter?", cn: "怎么了？— 我感冒了。", answer: "What's the matter?" },
                     { en: " — What's wrong?", cn: "怎么了？— 我头痛。", answer: "What's wrong?" },
@@ -2935,7 +2935,7 @@ const lessonsData = {
             },
             {
                 topic: "mustn't 禁止",
-                explanation: "🚫 **mustn't** 表示\"禁止、不准\"，比\"不要\"更严厉！医生说的要听！",
+                explanation: "🚫 <strong>mustn't</strong> 表示\"禁止、不准\"，比\"不要\"更严厉！医生说的要听！",
                 examples: [
                     { en: "You mustn't get up.", cn: "你不准起床。" },
                     { en: "You mustn't eat ice cream.", cn: "你不准吃冰淇淋。" },
@@ -3017,7 +3017,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "询问时间 What time is it?",
-                explanation: "⏰ 问几点用 **What time is it?** 回答 **It's + 时间**。半点用 **half past**！",
+                explanation: "⏰ 问几点用 <strong>What time is it?</strong> 回答 <strong>It's + 时间</strong>。半点用 <strong>half past</strong>！",
                 examples: [
                     { en: " — What time is it?", cn: "几点了？— 7点半。", answer: "What time is it?" },
                     { en: " — What time is it?", cn: "几点了？— 8点15分。", answer: "What time is it?" },
@@ -3026,7 +3026,7 @@ const lessonsData = {
             },
             {
                 topic: "时间表达 half past / a quarter past",
-                explanation: "⏱️ **half past 7** = 7点半，**a quarter past 7** = 7点15分，**a quarter to 8** = 7点45分（差15分8点）！",
+                explanation: "⏱️ <strong>half past 7</strong> = 7点半，<strong>a quarter past 7</strong> = 7点15分，<strong>a quarter to 8</strong> = 7点45分（差15分8点）！",
                 examples: [
                     { en: "It's half past 7.", cn: "7点半。" },
                     { en: "It's a quarter past 8.", cn: "8点15分。" },
@@ -3093,7 +3093,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "一般过去时 was/were",
-                explanation: "⏮️ 说过去\"是什么样\"用 **was/were**！I/He/She/It 用 **was**，You/We/They 用 **were**。",
+                explanation: "⏮️ 说过去\"是什么样\"用 <strong>was/were</strong>！I/He/She/It 用 <strong>was</strong>，You/We/They 用 <strong>were</strong>。",
                 examples: [
                     { en: "I was happy yesterday.", cn: "我昨天很开心。" },
                     { en: "She was tired.", cn: "她那时很累。" },
@@ -3102,7 +3102,7 @@ const lessonsData = {
             },
             {
                 topic: "过去时间词",
-                explanation: "📅 表示过去的时间词：**yesterday**（昨天）、**last week**（上周）、**last night**（昨晚）！",
+                explanation: "📅 表示过去的时间词：<strong>yesterday</strong>（昨天）、<strong>last week</strong>（上周）、<strong>last night</strong>（昨晚）！",
                 examples: [
                     { en: "I was at home yesterday.", cn: "我昨天在家。" },
                     { en: "She was busy last week.", cn: "她上周很忙。" },
@@ -3169,7 +3169,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "一般过去时 动词过去式",
-                explanation: "⏮️ 过去做的事，动词要变过去式！大多数加 **ed**：play → played。不规则的要记：go → went！",
+                explanation: "⏮️ 过去做的事，动词要变过去式！大多数加 <strong>ed</strong>：play → played。不规则的要记：go → went！",
                 examples: [
                     { en: "I played games yesterday.", cn: "我昨天玩了游戏。" },
                     { en: "She watched TV.", cn: "她看了电视。" },
@@ -3178,7 +3178,7 @@ const lessonsData = {
             },
             {
                 topic: "规则动词过去式 +ed",
-                explanation: "📝 规则动词加 **ed**：work → worked，watch → watched，play → played！",
+                explanation: "📝 规则动词加 <strong>ed</strong>：work → worked，watch → watched，play → played！",
                 examples: [
                     { en: "I worked yesterday.", cn: "我昨天工作了。" },
                     { en: "She cooked dinner.", cn: "她做了晚餐。" },
@@ -3255,7 +3255,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "过去时疑问句 Did you...?",
-                explanation: "❓ 问过去\"做了没有\"用 **Did you + 动词原形**！注意动词恢复原形！",
+                explanation: "❓ 问过去\"做了没有\"用 <strong>Did you + 动词原形</strong>！注意动词恢复原形！",
                 examples: [
                     { en: " — Did you eat breakfast?", cn: "你吃早餐了吗？— 吃了。", answer: "Did you eat breakfast?" },
                     { en: " — Did you sleep well?", cn: "你睡得好吗？— 没睡好。", answer: "Did you sleep well?" },
@@ -3264,7 +3264,7 @@ const lessonsData = {
             },
             {
                 topic: "过去时否定句 didn't",
-                explanation: "🚫 过去\"没做\"用 **didn't + 动词原形**！I didn't go. 我没去。",
+                explanation: "🚫 过去\"没做\"用 <strong>didn't + 动词原形</strong>！I didn't go. 我没去。",
                 examples: [
                     { en: "I didn't eat breakfast.", cn: "我没吃早餐。" },
                     { en: "She didn't call me.", cn: "她没给我打电话。" },
@@ -3331,7 +3331,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "问路 How do I get to...?",
-                explanation: "🗺️ 问路用 **How do I get to + 地点?** 回答指方向：直走、左转、右转！",
+                explanation: "🗺️ 问路用 <strong>How do I get to + 地点?</strong> 回答指方向：直走、左转、右转！",
                 examples: [
                     { en: " — How do I get to the park?", cn: "我怎么去公园？— 直走。", answer: "How do I get to the park?" },
                     { en: " — How do I get to the school?", cn: "我怎么去学校？— 左转。", answer: "How do I get to the school?" },
@@ -3340,7 +3340,7 @@ const lessonsData = {
             },
             {
                 topic: "方向词 straight/left/right",
-                explanation: "🧭 **Go straight**（直走⬆️）、**Turn left**（左转⬅️）、**Turn right**（右转➡️）！",
+                explanation: "🧭 <strong>Go straight</strong>（直走⬆️）、<strong>Turn left</strong>（左转⬅️）、<strong>Turn right</strong>（右转➡️）！",
                 examples: [
                     { en: "Go straight ahead.", cn: "一直往前走。" },
                     { en: "Turn left at the corner.", cn: "在拐角左转。" },
@@ -3437,7 +3437,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "形容词比较级 -er / more",
-                explanation: "📏 比较两个东西谁更...？短词加 **er**：tall → taller。长词加 **more**！",
+                explanation: "📏 比较两个东西谁更...？短词加 <strong>er</strong>：tall → taller。长词加 <strong>more</strong>！",
                 examples: [
                     { en: "I am taller than Tom.", cn: "我比汤姆高。" },
                     { en: "This book is bigger.", cn: "这本书更大。" },
@@ -3446,7 +3446,7 @@ const lessonsData = {
             },
             {
                 topic: "than 比较",
-                explanation: "⚖️ 比较用 **than**（比）！**A is taller than B.** A 比 B 高。",
+                explanation: "⚖️ 比较用 <strong>than</strong>（比）！<strong>A is taller than B.</strong> A 比 B 高。",
                 examples: [
                     { en: "I am taller than Tom.", cn: "我比汤姆高。" },
                     { en: "She is older than me.", cn: "她比我年纪大。" },
@@ -3523,7 +3523,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "have to 不得不",
-                explanation: "😫 **have to** 表示\"不得不\"，是外在原因逼迫的！和 must 不同！",
+                explanation: "😫 <strong>have to</strong> 表示\"不得不\"，是外在原因逼迫的！和 must 不同！",
                 examples: [
                     { en: "I have to go now.", cn: "我现在不得不走了。" },
                     { en: "She has to work today.", cn: "她今天不得不工作。" },
@@ -3532,7 +3532,7 @@ const lessonsData = {
             },
             {
                 topic: "have to vs must",
-                explanation: "🤔 **must** 是自己觉得必须💪，**have to** 是被迫的😫。否定也不同！",
+                explanation: "🤔 <strong>must</strong> 是自己觉得必须💪，<strong>have to</strong> 是被迫的😫。否定也不同！",
                 examples: [
                     { en: "I must study hard.", cn: "我必须努力学习。（自己想的）" },
                     { en: "I have to go now.", cn: "我现在不得不走了。（有事情）" },
@@ -3614,7 +3614,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "How many / How much 询问数量",
-                explanation: "🔢 能数的用 **How many**（苹果🍎），不能数的用 **How much**（水💧）！",
+                explanation: "🔢 能数的用 <strong>How many</strong>（苹果🍎），不能数的用 <strong>How much</strong>（水💧）！",
                 examples: [
                     { en: " — How many apples do you want?", cn: "你要几个苹果？— 两个。", answer: "How many apples do you want?" },
                     { en: " — How much water do you want?", cn: "你要多少水？— 一点点。", answer: "How much water do you want?" },
@@ -3623,7 +3623,7 @@ const lessonsData = {
             },
             {
                 topic: "need 需要",
-                explanation: "📝 说\"需要\"用 **need**！**I need some apples.** 我需要一些苹果。",
+                explanation: "📝 说\"需要\"用 <strong>need</strong>！<strong>I need some apples.</strong> 我需要一些苹果。",
                 examples: [
                     { en: "I need some apples.", cn: "我需要一些苹果。" },
                     { en: "She needs a pen.", cn: "她需要一支笔。" },
@@ -3730,7 +3730,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "have 表示\"吃/喝\"",
-                explanation: "🍽️ **have** 还可以表示\"吃/喝\"！have breakfast（吃早餐）、have lunch（吃午餐）、have tea（喝茶）！",
+                explanation: "🍽️ <strong>have</strong> 还可以表示\"吃/喝\"！have breakfast（吃早餐）、have lunch（吃午餐）、have tea（喝茶）！",
                 examples: [
                     { en: "I have breakfast at 7.", cn: "我7点吃早餐。" },
                     { en: "She has lunch at 12.", cn: "她12点吃午餐。" },
@@ -3739,7 +3739,7 @@ const lessonsData = {
             },
             {
                 topic: "副词 yet/already",
-                explanation: "⏰ **already** = 已经（肯定句），**yet** = 还（没）（疑问句/否定句）！",
+                explanation: "⏰ <strong>already</strong> = 已经（肯定句），<strong>yet</strong> = 还（没）（疑问句/否定句）！",
                 examples: [
                     { en: "I have already eaten.", cn: "我已经吃过了。" },
                     { en: "Have you eaten yet?", cn: "你吃了吗？" },
@@ -3816,7 +3816,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在完成时 have/has + done",
-                explanation: "✅ 说\"已经做完了\"用 **have/has + 动词过去分词**！表示到现在为止的成果！",
+                explanation: "✅ 说\"已经做完了\"用 <strong>have/has + 动词过去分词</strong>！表示到现在为止的成果！",
                 examples: [
                     { en: "I have finished my homework.", cn: "我已经完成作业了。" },
                     { en: "She has eaten lunch.", cn: "她已经吃过午餐了。" },
@@ -3907,7 +3907,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在完成时疑问句 Have you ever...?",
-                explanation: "🌍 问\"有没有经历过\"用 **Have you ever + 动词过去分词?** ever = 曾经！",
+                explanation: "🌍 问\"有没有经历过\"用 <strong>Have you ever + 动词过去分词?</strong> ever = 曾经！",
                 examples: [
                     { en: " — Have you ever been to Beijing?", cn: "你去过北京吗？— 去过。", answer: "Have you ever been to Beijing?" },
                     { en: " — Have you ever eaten pizza?", cn: "你吃过披萨吗？— 没吃过。", answer: "Have you ever eaten pizza?" },
@@ -3916,7 +3916,7 @@ const lessonsData = {
             },
             {
                 topic: "been to vs gone to",
-                explanation: "🗺️ **been to** = 去过（已经回来了）。**gone to** = 去了（还没回来）！",
+                explanation: "🗺️ <strong>been to</strong> = 去过（已经回来了）。<strong>gone to</strong> = 去了（还没回来）！",
                 examples: [
                     { en: "I have been to Beijing.", cn: "我去过北京。（已回来）" },
                     { en: "He has gone to Beijing.", cn: "他去北京了。（还没回来）" },
@@ -3998,7 +3998,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "过去进行时 was/were + doing",
-                explanation: "📸 描述过去某时刻\"正在做什么\"用 **was/were + 动词ing**！像老照片定格瞬间！",
+                explanation: "📸 描述过去某时刻\"正在做什么\"用 <strong>was/were + 动词ing</strong>！像老照片定格瞬间！",
                 examples: [
                     { en: "I was reading a book at 8.", cn: "8点时我正在看书。" },
                     { en: "She was sleeping at that time.", cn: "那时她正在睡觉。" },
@@ -4007,7 +4007,7 @@ const lessonsData = {
             },
             {
                 topic: "when 连接两个动作",
-                explanation: "⚡ **when** 连接两个动作：一个正在进行，一个突然发生！",
+                explanation: "⚡ <strong>when</strong> 连接两个动作：一个正在进行，一个突然发生！",
                 examples: [
                     { en: "I was reading when he came.", cn: "他来时我正在看书。" },
                     { en: "She was cooking when the phone rang.", cn: "电话响时她正在做饭。" },
@@ -4104,7 +4104,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在完成时 for/since",
-                explanation: "⏱️ **for + 一段时间**（持续多久），**since + 时间点**（从什么时候开始）！",
+                explanation: "⏱️ <strong>for + 一段时间</strong>（持续多久），<strong>since + 时间点</strong>（从什么时候开始）！",
                 examples: [
                     { en: "I have lived here for 5 years.", cn: "我在这住了5年。" },
                     { en: "She has been here since Monday.", cn: "她从周一就在这了。" },
@@ -4113,7 +4113,7 @@ const lessonsData = {
             },
             {
                 topic: "for vs since",
-                explanation: "📅 **for** 后面接\"多长时间\"：for 3 days。**since** 后面接\"从什么时候\"：since 2020！",
+                explanation: "📅 <strong>for</strong> 后面接\"多长时间\"：for 3 days。<strong>since</strong> 后面接\"从什么时候\"：since 2020！",
                 examples: [
                     { en: "I have studied English for 3 years.", cn: "我学英语3年了。" },
                     { en: "She has lived here since 2020.", cn: "她从2020年就住这了。" },
@@ -4200,7 +4200,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "be going to 将来时（计划）",
-                explanation: "📋 有计划要做的事用 **be going to + 动词**！这是已经想好的计划！",
+                explanation: "📋 有计划要做的事用 <strong>be going to + 动词</strong>！这是已经想好的计划！",
                 examples: [
                     { en: "I'm going to move next week.", cn: "我打算下周搬家。" },
                     { en: "She's going to leave tomorrow.", cn: "她打算明天离开。" },
@@ -4209,7 +4209,7 @@ const lessonsData = {
             },
             {
                 topic: "将来时否定",
-                explanation: "🚫 将来\"不打算\"用 **be not going to**！I'm not going to do it. 我不打算做。",
+                explanation: "🚫 将来\"不打算\"用 <strong>be not going to</strong>！I'm not going to do it. 我不打算做。",
                 examples: [
                     { en: "I'm not going to go.", cn: "我不打算去。" },
                     { en: "She isn't going to come.", cn: "她不打算来。" },
@@ -4276,7 +4276,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "will 将来时（预测）",
-                explanation: "🔮 预测未来用 **will + 动词**！就像占卜水晶球！",
+                explanation: "🔮 预测未来用 <strong>will + 动词</strong>！就像占卜水晶球！",
                 examples: [
                     { en: "It will rain tomorrow.", cn: "明天会下雨。" },
                     { en: "She will come soon.", cn: "她很快就会来。" },
@@ -4285,7 +4285,7 @@ const lessonsData = {
             },
             {
                 topic: "will vs be going to",
-                explanation: "🤔 **be going to** = 已计划好的。**will** = 临时决定或预测！",
+                explanation: "🤔 <strong>be going to</strong> = 已计划好的。<strong>will</strong> = 临时决定或预测！",
                 examples: [
                     { en: "I'm going to study tonight.", cn: "我打算今晚学习。（已计划）" },
                     { en: "I will help you.", cn: "我会帮你。（临时决定）" },
@@ -4387,7 +4387,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "had better 最好",
-                explanation: "💡 建议\"最好怎么做\"用 **had better + 动词**！可缩写成 **'d better**！",
+                explanation: "💡 建议\"最好怎么做\"用 <strong>had better + 动词</strong>！可缩写成 <strong>'d better</strong>！",
                 examples: [
                     { en: "You'd better go now.", cn: "你最好现在走。" },
                     { en: "You'd better eat something.", cn: "你最好吃点东西。" },
@@ -4396,7 +4396,7 @@ const lessonsData = {
             },
             {
                 topic: "had better not 最好不要",
-                explanation: "⚠️ 建议\"最好不要\"用 **had better not**！You'd better not be late. 你最好别迟到。",
+                explanation: "⚠️ 建议\"最好不要\"用 <strong>had better not</strong>！You'd better not be late. 你最好别迟到。",
                 examples: [
                     { en: "You'd better not be late.", cn: "你最好别迟到。" },
                     { en: "You'd better not eat that.", cn: "你最好别吃那个。" },
@@ -4493,7 +4493,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "形容词顺序",
-                explanation: "🎨 多个形容词要按顺序：**大小 → 颜色 → 名词**！a small blue bag（一个蓝色的小包）！",
+                explanation: "🎨 多个形容词要按顺序：<strong>大小 → 颜色 → 名词</strong>！a small blue bag（一个蓝色的小包）！",
                 examples: [
                     { en: "a small blue bag", cn: "一个蓝色的小包" },
                     { en: "a big red apple", cn: "一个红色的大苹果" },
@@ -4502,7 +4502,7 @@ const lessonsData = {
             },
             {
                 topic: "belong to 属于",
-                explanation: "👤 说\"属于某人\"用 **belong to + 人**！This book belongs to me. 这本书属于我。",
+                explanation: "👤 说\"属于某人\"用 <strong>belong to + 人</strong>！This book belongs to me. 这本书属于我。",
                 examples: [
                     { en: "This book belongs to me.", cn: "这本书属于我。" },
                     { en: "That bag belongs to her.", cn: "那个包属于她。" },
@@ -4573,7 +4573,7 @@ const lessonsData = {
             },
             {
                 topic: "By oneself 独自",
-                explanation: "👤 **by oneself** = 独自一人。I did it by myself. 我独自做的。",
+                explanation: "👤 <strong>by oneself</strong> = 独自一人。I did it by myself. 我独自做的。",
                 examples: [
                     { en: "I did it by myself.", cn: "我独自做的。" },
                     { en: "She lives by herself.", cn: "她独自生活。" },
@@ -4650,7 +4650,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在完成时 just/already",
-                explanation: "⏰ **just** = 刚刚（才发生），**already** = 已经（比预期早）！都放在 have/has 后面！",
+                explanation: "⏰ <strong>just</strong> = 刚刚（才发生），<strong>already</strong> = 已经（比预期早）！都放在 have/has 后面！",
                 examples: [
                     { en: "I have just eaten.", cn: "我刚吃完。" },
                     { en: "She has already left.", cn: "她已经离开了。" },
@@ -4659,7 +4659,7 @@ const lessonsData = {
             },
             {
                 topic: "not...yet 还没",
-                explanation: "⏳ \"还没\"用 **haven't/hasn't + 动词 + yet**！**yet** 放句末！",
+                explanation: "⏳ \"还没\"用 <strong>haven't/hasn't + 动词 + yet</strong>！<strong>yet</strong> 放句末！",
                 examples: [
                     { en: "I haven't finished yet.", cn: "我还没完成。" },
                     { en: "She hasn't eaten yet.", cn: "她还没吃。" },
@@ -4706,7 +4706,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "enough 足够",
-                explanation: "✅ **enough** 放在形容词后面：old enough（够大）。放在名词前面：enough money（足够的钱）！",
+                explanation: "✅ <strong>enough</strong> 放在形容词后面：old enough（够大）。放在名词前面：enough money（足够的钱）！",
                 examples: [
                     { en: "I'm old enough.", cn: "我够大了。" },
                     { en: "It's big enough.", cn: "它够大了。" },
@@ -4715,7 +4715,7 @@ const lessonsData = {
             },
             {
                 topic: "not...enough 不够",
-                explanation: "❌ \"不够\"用 **not + 形容词 + enough**！He's not old enough. 他不够大。",
+                explanation: "❌ \"不够\"用 <strong>not + 形容词 + enough</strong>！He's not old enough. 他不够大。",
                 examples: [
                     { en: "He's not old enough.", cn: "他不够大。" },
                     { en: "It's not big enough.", cn: "它不够大。" },
@@ -4787,7 +4787,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "too 太...",
-                explanation: "😵 **too** 表示\"太...了\"，超过合适的程度！通常暗示\"不好\"！",
+                explanation: "😵 <strong>too</strong> 表示\"太...了\"，超过合适的程度！通常暗示\"不好\"！",
                 examples: [
                     { en: "It's too hot.", cn: "太热了。" },
                     { en: "It's too big.", cn: "太大了。" },
@@ -4796,7 +4796,7 @@ const lessonsData = {
             },
             {
                 topic: "形容词同级比较 as...as",
-                explanation: "⚖️ 说\"和...一样\"用 **as + 形容词 + as**！I am as tall as Tom. 我和汤姆一样高。",
+                explanation: "⚖️ 说\"和...一样\"用 <strong>as + 形容词 + as</strong>！I am as tall as Tom. 我和汤姆一样高。",
                 examples: [
                     { en: "I am as tall as Tom.", cn: "我和汤姆一样高。" },
                     { en: "She is as old as me.", cn: "她和我一样大。" },
@@ -4853,7 +4853,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "too...to... 太...以至于不能...",
-                explanation: "🚫 **too + 形容词 + to + 动词** = 太...以至于不能做某事！",
+                explanation: "🚫 <strong>too + 形容词 + to + 动词</strong> = 太...以至于不能做某事！",
                 examples: [
                     { en: "I'm too tired to walk.", cn: "我太累了走不动。" },
                     { en: "It's too big to carry.", cn: "它太大了搬不动。" },
@@ -4862,7 +4862,7 @@ const lessonsData = {
             },
             {
                 topic: "enough to 足够...可以",
-                explanation: "✅ **形容词 + enough + to + 动词** = 足够...可以做某事！",
+                explanation: "✅ <strong>形容词 + enough + to + 动词</strong> = 足够...可以做某事！",
                 examples: [
                     { en: "I'm old enough to drive.", cn: "我够大了可以开车。" },
                     { en: "It's big enough to hold it.", cn: "它够大可以装下。" },
@@ -4959,7 +4959,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "a little / a few 一点点/几个",
-                explanation: "📏 不可数用 **a little**（a little water 一点水），可数用 **a few**（a few books 几本书）！",
+                explanation: "📏 不可数用 <strong>a little</strong>（a little water 一点水），可数用 <strong>a few</strong>（a few books 几本书）！",
                 examples: [
                     { en: "I have a little water.", cn: "我有一点水。" },
                     { en: "I have a few books.", cn: "我有几本书。" },
@@ -4968,7 +4968,7 @@ const lessonsData = {
             },
             {
                 topic: "little / few 几乎没有",
-                explanation: "❌ 不加 a 表示\"几乎没有\"！**little water**（几乎没水）、**few books**（几乎没书）！",
+                explanation: "❌ 不加 a 表示\"几乎没有\"！<strong>little water</strong>（几乎没水）、<strong>few books</strong>（几乎没书）！",
                 examples: [
                     { en: "I have little water.", cn: "我几乎没水了。" },
                     { en: "He has few friends.", cn: "他几乎没有朋友。" },
@@ -5035,7 +5035,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "形容词最高级 the + -est / most",
-                explanation: "🏆 三个或更多比较谁最...？短词加 **est**，长词加 **the most**！别忘了 **the**！",
+                explanation: "🏆 三个或更多比较谁最...？短词加 <strong>est</strong>，长词加 <strong>the most</strong>！别忘了 <strong>the</strong>！",
                 examples: [
                     { en: "He is the tallest in class.", cn: "他是班里最高的。" },
                     { en: "This is the biggest apple.", cn: "这是最大的苹果。" },
@@ -5136,7 +5136,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "neither/either 也（不）",
-                explanation: "👯 别人说什么你也一样！肯定用 **So do I**，否定用 **Neither can I**！",
+                explanation: "👯 别人说什么你也一样！肯定用 <strong>So do I</strong>，否定用 <strong>Neither can I</strong>！",
                 examples: [
                     { en: " — I can't swim.", cn: "我不会游泳。— 我也不会。", answer: "I can't swim." },
                     { en: " — I can sing.", cn: "我会唱歌。— 我也会。", answer: "I can sing." },
@@ -5145,7 +5145,7 @@ const lessonsData = {
             },
             {
                 topic: "So do I / Neither do I",
-                explanation: "✅ 注意结构：**So + 助动词 + 主语**（肯定），**Neither + 助动词 + 主语**（否定）！",
+                explanation: "✅ 注意结构：<strong>So + 助动词 + 主语</strong>（肯定），<strong>Neither + 助动词 + 主语</strong>（否定）！",
                 examples: [
                     { en: "So do I.", cn: "我也是。（同意肯定句）" },
                     { en: "Neither do I.", cn: "我也不。（同意否定句）" },
@@ -5207,7 +5207,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "不定代词 someone/anyone/no one",
-                explanation: "👤 **someone**（某人）用在肯定句，**anyone**（任何人）用在疑问句/否定句，**no one**（没有人）！",
+                explanation: "👤 <strong>someone</strong>（某人）用在肯定句，<strong>anyone</strong>（任何人）用在疑问句/否定句，<strong>no one</strong>（没有人）！",
                 examples: [
                     { en: "Someone is at the door.", cn: "有人在门口。" },
                     { en: "Is anyone there?", cn: "有人在吗？" },
@@ -5216,7 +5216,7 @@ const lessonsData = {
             },
             {
                 topic: "复合不定代词",
-                explanation: "📦 **someone/something/somewhere** 某人/某物/某地，**anyone/anything/anywhere** 任何人/物/地！",
+                explanation: "📦 <strong>someone/something/somewhere</strong> 某人/某物/某地，<strong>anyone/anything/anywhere</strong> 任何人/物/地！",
                 examples: [
                     { en: "I saw someone.", cn: "我看到某人了。" },
                     { en: "Is there anything?", cn: "有什么东西吗？" },
@@ -5268,7 +5268,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "不定代词 something/anything/nothing",
-                explanation: "📦 **something**（某物）肯定句，**anything**（任何东西）疑问/否定句，**nothing**（什么都没有）！",
+                explanation: "📦 <strong>something</strong>（某物）肯定句，<strong>anything</strong>（任何东西）疑问/否定句，<strong>nothing</strong>（什么都没有）！",
                 examples: [
                     { en: "I want something to eat.", cn: "我想吃点东西。" },
                     { en: "Do you have anything?", cn: "你有什么东西吗？" },
@@ -5277,7 +5277,7 @@ const lessonsData = {
             },
             {
                 topic: "形容词修饰不定代词",
-                explanation: "🎨 形容词放在不定代词后面！**something new**（新的东西），**nothing important**（没什么重要的）！",
+                explanation: "🎨 形容词放在不定代词后面！<strong>something new</strong>（新的东西），<strong>nothing important</strong>（没什么重要的）！",
                 examples: [
                     { en: "I want something cold.", cn: "我想要冷的东西。" },
                     { en: "Is there anything new?", cn: "有什么新的吗？" },
@@ -5339,7 +5339,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "过去进行时 + when",
-                explanation: "⚡ 描述\"当...时正在做...\"用 **was/were doing + when**！when 后面的动作打断前面的！",
+                explanation: "⚡ 描述\"当...时正在做...\"用 <strong>was/were doing + when</strong>！when 后面的动作打断前面的！",
                 examples: [
                     { en: "I was sleeping when he came.", cn: "他来时我正在睡觉。" },
                     { en: "She was eating when I called.", cn: "我打电话时她正在吃东西。" },
@@ -5348,7 +5348,7 @@ const lessonsData = {
             },
             {
                 topic: "while 当...的时候",
-                explanation: "⏱️ **while** 后面跟持续的动作。**While I was reading, he came.** 我正在看书时他来了。",
+                explanation: "⏱️ <strong>while</strong> 后面跟持续的动作。<strong>While I was reading, he came.</strong> 我正在看书时他来了。",
                 examples: [
                     { en: "While I was reading, he came.", cn: "我正在看书时他来了。" },
                     { en: "While she was cooking, I helped.", cn: "她做饭时我帮忙了。" },
@@ -5425,7 +5425,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "定语从句 who/which",
-                explanation: "🎯 想描述\"哪一个人/东西\"？用 **who**（指人👤）或 **which**（指物📦）来连接！",
+                explanation: "🎯 想描述\"哪一个人/东西\"？用 <strong>who</strong>（指人👤）或 <strong>which</strong>（指物📦）来连接！",
                 examples: [
                     { en: "The boy who is running is Tom.", cn: "跑步的那个男孩是汤姆。" },
                     { en: "The book which is on the desk is mine.", cn: "桌上的那本书是我的。" },
@@ -5434,7 +5434,7 @@ const lessonsData = {
             },
             {
                 topic: "定语从句 that",
-                explanation: "📝 **that** 可以代替 who 和 which！The book that is on the desk = The book which is on the desk！",
+                explanation: "📝 <strong>that</strong> 可以代替 who 和 which！The book that is on the desk = The book which is on the desk！",
                 examples: [
                     { en: "The boy that is running is Tom.", cn: "跑步的男孩是汤姆。" },
                     { en: "The book that I bought is good.", cn: "我买的书很好。" },
@@ -5526,7 +5526,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "现在完成时 yet/already",
-                explanation: "⏰ **yet** 放句末，用在疑问句和否定句。**already** 放中间，用在肯定句！",
+                explanation: "⏰ <strong>yet</strong> 放句末，用在疑问句和否定句。<strong>already</strong> 放中间，用在肯定句！",
                 examples: [
                     { en: " — Have you finished yet?", cn: "你完成了吗？— 还没有。", answer: "Have you finished yet?" },
                     { en: " — Has she left yet?", cn: "她走了吗？— 是的，她已经走了。", answer: "Has she left yet?" },
@@ -5535,7 +5535,7 @@ const lessonsData = {
             },
             {
                 topic: "询问经历 Have you ever...?",
-                explanation: "🌍 问\"你有没有经历过\"用 **Have you ever + 动词过去分词?**",
+                explanation: "🌍 问\"你有没有经历过\"用 <strong>Have you ever + 动词过去分词?</strong>",
                 examples: [
                     { en: " — Have you ever been to Australia?", cn: "你去过澳大利亚吗？— 没有，从来没有。", answer: "Have you ever been to Australia?" },
                     { en: " — Have you ever seen snow?", cn: "你见过雪吗？— 见过。", answer: "Have you ever seen snow?" },
@@ -5627,7 +5627,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "have to vs must",
-                explanation: "🤔 **must** 是自己觉得必须，**have to** 是外在原因。否定不同：mustn't（禁止）vs don't have to（不必）！",
+                explanation: "🤔 <strong>must</strong> 是自己觉得必须，<strong>have to</strong> 是外在原因。否定不同：mustn't（禁止）vs don't have to（不必）！",
                 examples: [
                     { en: "I must study hard.", cn: "我必须努力学习。（自己想的）" },
                     { en: "I have to go now.", cn: "我现在不得不走了。（有事情）" },
@@ -5636,7 +5636,7 @@ const lessonsData = {
             },
             {
                 topic: "don't have to 不必",
-                explanation: "✅ **don't have to** = 不必、可以不做。和 mustn't（禁止）不同！",
+                explanation: "✅ <strong>don't have to</strong> = 不必、可以不做。和 mustn't（禁止）不同！",
                 examples: [
                     { en: "You don't have to come.", cn: "你不必来。（可以不来）" },
                     { en: "You mustn't go.", cn: "你不准去。（禁止去）" },
@@ -5713,7 +5713,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "被动语态 is/was + done",
-                explanation: "🎬 强调\"被做\"用被动语态！**The book was written by Tom.** 重点在书📖，不在汤姆！",
+                explanation: "🎬 强调\"被做\"用被动语态！<strong>The book was written by Tom.</strong> 重点在书📖，不在汤姆！",
                 examples: [
                     { en: "The book was written by Tom.", cn: "这本书是汤姆写的。" },
                     { en: "The door was opened.", cn: "门被打开了。" },
@@ -5722,7 +5722,7 @@ const lessonsData = {
             },
             {
                 topic: "by + 执行者",
-                explanation: "👤 说\"被谁做的\"用 **by + 人**！The cake was made by mom. 蛋糕是妈妈做的。",
+                explanation: "👤 说\"被谁做的\"用 <strong>by + 人</strong>！The cake was made by mom. 蛋糕是妈妈做的。",
                 examples: [
                     { en: "The cake was made by mom.", cn: "蛋糕是妈妈做的。" },
                     { en: "The letter was written by Tom.", cn: "信是汤姆写的。" },
@@ -5779,7 +5779,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "过去进行时描述当时状态",
-                explanation: "🚗 描述过去某时刻\"正在做什么\"用 **was/were + doing**！像回放视频📹！",
+                explanation: "🚗 描述过去某时刻\"正在做什么\"用 <strong>was/were + doing</strong>！像回放视频📹！",
                 examples: [
                     { en: "I was driving at that time.", cn: "那时我正在开车。" },
                     { en: "She was running very fast.", cn: "她那时跑得很快。" },
@@ -5788,7 +5788,7 @@ const lessonsData = {
             },
             {
                 topic: "速度表达 miles an hour",
-                explanation: "🏎️ 说速度用 **数字 + miles an/per hour**！70 miles an hour = 时速70英里！",
+                explanation: "🏎️ 说速度用 <strong>数字 + miles an/per hour</strong>！70 miles an hour = 时速70英里！",
                 examples: [
                     { en: "He was driving at 70 miles an hour.", cn: "他以时速70英里行驶。" },
                     { en: "The speed limit is 60 miles per hour.", cn: "限速是时速60英里。" },
@@ -5895,7 +5895,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "may/might 可能",
-                explanation: "🤷 不确定会不会发生用 **may** 或 **might**！might 比 may 更不确定！",
+                explanation: "🤷 不确定会不会发生用 <strong>may</strong> 或 <strong>might</strong>！might 比 may 更不确定！",
                 examples: [
                     { en: "He may come tomorrow.", cn: "他明天可能来。" },
                     { en: "It might rain later.", cn: "待会可能下雨。" },
@@ -5904,7 +5904,7 @@ const lessonsData = {
             },
             {
                 topic: "may not / might not",
-                explanation: "❓ \"可能不\"用 **may not / might not**！He may not come. 他可能不来。",
+                explanation: "❓ \"可能不\"用 <strong>may not / might not</strong>！He may not come. 他可能不来。",
                 examples: [
                     { en: "He may not come.", cn: "他可能不来。" },
                     { en: "It might not rain.", cn: "可能不下雨。" },
@@ -5971,7 +5971,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "将来完成时 will have done",
-                explanation: "📅 说\"到将来某时将已经完成\"用 **will have + 动词过去分词**！",
+                explanation: "📅 说\"到将来某时将已经完成\"用 <strong>will have + 动词过去分词</strong>！",
                 examples: [
                     { en: "I will have finished by 5.", cn: "我5点前会完成。" },
                     { en: "She will have left by then.", cn: "到那时她会已经走了。" },
@@ -5980,7 +5980,7 @@ const lessonsData = {
             },
             {
                 topic: "by + 时间 到...时候",
-                explanation: "⏰ **by + 时间** = 到...时候为止。By 5 o'clock = 到5点为止！",
+                explanation: "⏰ <strong>by + 时间</strong> = 到...时候为止。By 5 o'clock = 到5点为止！",
                 examples: [
                     { en: "I will finish by 5.", cn: "我会在5点前完成。" },
                     { en: "She will be here by noon.", cn: "她中午前会到。" },
@@ -6042,7 +6042,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "shall 用于提议",
-                explanation: "💬 提议\"我们做...好吗\"用 **Shall we + 动词?** 很有礼貌！",
+                explanation: "💬 提议\"我们做...好吗\"用 <strong>Shall we + 动词?</strong> 很有礼貌！",
                 examples: [
                     { en: " — Shall we go?", cn: "我们走吧？— 好，走吧。", answer: "Shall we go?" },
                     { en: " — Shall we eat now?", cn: "我们现在吃吧？— 好，吃吧。", answer: "Shall we eat now?" },
@@ -6051,7 +6051,7 @@ const lessonsData = {
             },
             {
                 topic: "Shall I...? 要我...吗",
-                explanation: "🙋 主动提出帮忙用 **Shall I + 动词?** 可以吗？",
+                explanation: "🙋 主动提出帮忙用 <strong>Shall I + 动词?</strong> 可以吗？",
                 examples: [
                     { en: "Shall I open the door?", cn: "要我开门吗？" },
                     { en: "Shall I help you?", cn: "要我帮你吗？" },
@@ -6118,7 +6118,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "条件句 if...will...",
-                explanation: "🔗 说\"如果...就会...\"用 **If + 现在时, will + 动词**！注意 if 后不用 will！",
+                explanation: "🔗 说\"如果...就会...\"用 <strong>If + 现在时, will + 动词</strong>！注意 if 后不用 will！",
                 examples: [
                     { en: "If it rains, I will stay home.", cn: "如果下雨，我就待在家。" },
                     { en: "If you come, I will be happy.", cn: "如果你来，我会很开心。" },
@@ -6127,7 +6127,7 @@ const lessonsData = {
             },
             {
                 topic: "条件句否定",
-                explanation: "🚫 条件句否定：**If + 否定, will...** 或 **If..., won't...**",
+                explanation: "🚫 条件句否定：<strong>If + 否定, will...</strong> 或 <strong>If..., won't...</strong>",
                 examples: [
                     { en: "If it doesn't rain, we will go out.", cn: "如果不下雨，我们就出去。" },
                     { en: "If you come, I won't be angry.", cn: "如果你来，我不会生气。" },
@@ -6199,7 +6199,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "be about to 即将",
-                explanation: "⏰ 马上就要做某事用 **be about to + 动词**！比 be going to 更紧迫！",
+                explanation: "⏰ 马上就要做某事用 <strong>be about to + 动词</strong>！比 be going to 更紧迫！",
                 examples: [
                     { en: "I am about to go out.", cn: "我正要出门。" },
                     { en: "She is about to eat lunch.", cn: "她正要吃午餐。" },
@@ -6208,7 +6208,7 @@ const lessonsData = {
             },
             {
                 topic: "was about to 正要...的时候",
-                explanation: "⏮️ \"正要做...的时候\"用 **was/were about to + 动词 + when...**",
+                explanation: "⏮️ \"正要做...的时候\"用 <strong>was/were about to + 动词 + when...</strong>",
                 examples: [
                     { en: "I was about to leave when he came.", cn: "我正要走时他来了。" },
                     { en: "She was about to eat when the phone rang.", cn: "她正要吃时电话响了。" },
@@ -6290,7 +6290,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "used to 过去常常",
-                explanation: "⏮️ 说\"过去常常做（现在不做了）\"用 **used to + 动词**！",
+                explanation: "⏮️ 说\"过去常常做（现在不做了）\"用 <strong>used to + 动词</strong>！",
                 examples: [
                     { en: "I used to run every day.", cn: "我过去每天跑步。" },
                     { en: "She used to sing a lot.", cn: "她过去常唱歌。" },
@@ -6299,7 +6299,7 @@ const lessonsData = {
             },
             {
                 topic: "didn't use to 过去不常",
-                explanation: "🚫 \"过去不常做\"用 **didn't use to**！I didn't use to like milk. 我过去不喜欢牛奶。",
+                explanation: "🚫 \"过去不常做\"用 <strong>didn't use to</strong>！I didn't use to like milk. 我过去不喜欢牛奶。",
                 examples: [
                     { en: "I didn't use to like milk.", cn: "我过去不喜欢牛奶。" },
                     { en: "She didn't use to be shy.", cn: "她过去不害羞。" },
@@ -6366,7 +6366,7 @@ const lessonsData = {
         coreGrammar: [
             {
                 topic: "被动语态 be covered with",
-                explanation: "❄️ 描述\"被...覆盖\"用 **be covered with + 名词**！",
+                explanation: "❄️ 描述\"被...覆盖\"用 <strong>be covered with + 名词</strong>！",
                 examples: [
                     { en: "The ground is covered with snow.", cn: "地上覆盖着雪。" },
                     { en: "The table is covered with books.", cn: "桌上堆满了书。" },
@@ -6375,7 +6375,7 @@ const lessonsData = {
             },
             {
                 topic: "be filled with / be made of",
-                explanation: "📦 **be filled with** = 充满，**be made of** = 由...制成！",
+                explanation: "📦 <strong>be filled with</strong> = 充满，<strong>be made of</strong> = 由...制成！",
                 examples: [
                     { en: "The box is filled with toys.", cn: "盒子里装满了玩具。" },
                     { en: "The desk is made of wood.", cn: "桌子是木头做的。" },
