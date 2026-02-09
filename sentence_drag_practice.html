@@ -890,6 +890,9 @@
                     <button class="toggle-chinese" id="toggleChinese" onclick="toggleChineseHint()">
                         👁️ 隐藏中文
                     </button>
+                    <button class="toggle-chinese" id="toggleWords" onclick="toggleWordPool()">
+                        🙈 隐藏单词
+                    </button>
                 </div>
                 <div class="speaker-badge" id="speakerBadge">SAM</div>
                 <div class="chinese-hint" id="chineseHint">中文提示</div>
@@ -1397,6 +1400,24 @@
                 hint.classList.remove('hidden');
                 btn.classList.remove('hidden-mode');
                 btn.innerHTML = '👁️ 隐藏中文';
+            }
+        }
+
+        // 切换单词池显示/隐藏
+        let wordsHidden = false;
+        function toggleWordPool() {
+            const pool = document.getElementById('wordPool');
+            const btn = document.getElementById('toggleWords');
+            wordsHidden = !wordsHidden;
+
+            if (wordsHidden) {
+                pool.style.visibility = 'hidden';
+                btn.classList.add('hidden-mode');
+                btn.innerHTML = '🐵 显示单词';
+            } else {
+                pool.style.visibility = 'visible';
+                btn.classList.remove('hidden-mode');
+                btn.innerHTML = '🙈 隐藏单词';
             }
         }
 
