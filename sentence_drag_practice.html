@@ -1163,6 +1163,7 @@
             const cleanText = text.trim();
             if (!cleanText) return;
 
+            // 停止之前的音频
             if (window.currentAudio) {
                 window.currentAudio.pause();
                 window.currentAudio = null;
@@ -1170,45 +1171,83 @@
             if (window.audioTimeout) {
                 clearTimeout(window.audioTimeout);
             }
+            // 取消之前的 speechSynthesis
+            if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+            }
 
-            // 有道API优先，百度作为备选（中国可用）
-            const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
-            const baiduUrl = `https://fanyi.baidu.com/gettts?lan=en&text=${encodeURIComponent(cleanText)}&spd=5&source=web`;
+            // 多个TTS源，按优先级尝试
+            const ttsUrls = [
+                `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`,
+                `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=2`,
+            ];
 
-            const audio = new Audio();
-            window.currentAudio = audio;
-            let fallbackTriggered = false;
+            let currentTtsIndex = 0;
+            let resolved = false;
 
-            const triggerFallback = () => {
-                if (fallbackTriggered) return;
-                fallbackTriggered = true;
-                if (window.audioTimeout) clearTimeout(window.audioTimeout);
-                playFallbackTTS(baiduUrl);
-            };
+            function tryNextTTS() {
+                if (resolved) return;
 
-            // 各种失败情况都触发回退
-            audio.onerror = triggerFallback;
-            audio.onstalled = triggerFallback;
+                // 所有URL都试完了，使用浏览器内置 speechSynthesis 作为最终兜底
+                if (currentTtsIndex >= ttsUrls.length) {
+                    resolved = true;
+                    speakWithBrowserTTS(cleanText);
+                    return;
+                }
 
-            // 1.5秒超时回退
-            window.audioTimeout = setTimeout(triggerFallback, 1500);
+                const url = ttsUrls[currentTtsIndex];
+                currentTtsIndex++;
 
-            // 成功加载时清除超时
-            audio.oncanplaythrough = () => {
-                if (window.audioTimeout) clearTimeout(window.audioTimeout);
-            };
+                const audio = new Audio();
+                window.currentAudio = audio;
 
-            audio.src = youdaoUrl;
-            audio.play().catch(triggerFallback);
+                // 超时计时器
+                const timeout = setTimeout(() => {
+                    if (!resolved) {
+                        audio.pause();
+                        audio.src = '';
+                        tryNextTTS();
+                    }
+                }, 3000);
+
+                audio.onloadeddata = () => {
+                    // 检查音频是否有实际内容（有些API返回空音频）
+                    if (audio.duration > 0.1) {
+                        clearTimeout(timeout);
+                        resolved = true;
+                        audio.play().catch(() => {
+                            resolved = false;
+                            tryNextTTS();
+                        });
+                    } else {
+                        clearTimeout(timeout);
+                        audio.pause();
+                        tryNextTTS();
+                    }
+                };
+
+                audio.onerror = () => {
+                    clearTimeout(timeout);
+                    tryNextTTS();
+                };
+
+                audio.src = url;
+                audio.load();
+            }
+
+            tryNextTTS();
         }
 
-        function playFallbackTTS(url) {
-            if (window.currentAudio) {
-                window.currentAudio.pause();
+        // 使用浏览器内置 Web Speech API 作为最终备选
+        function speakWithBrowserTTS(text) {
+            if (!window.speechSynthesis) {
+                console.log('浏览器不支持 speechSynthesis');
+                return;
             }
-            const audio = new Audio(url);
-            window.currentAudio = audio;
-            audio.play().catch(e => console.log('备选TTS也失败:', e));
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            window.speechSynthesis.speak(utterance);
         }
 
         // 设置拖拽事件
